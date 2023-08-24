@@ -1,0 +1,6 @@
+== Suppressed Messages ==
+# CPT and SOP codesystem cannot be validated
+Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
+Code System URI 'https://nahdo.org/sopt' is unknown so the code cannot be validated
+Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)

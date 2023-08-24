@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="original-bundle-reference"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2023-08-03T16:53:00.948Z"/>
+    </meta>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/original-bundle-reference"/>
+    <name value="OPAOriginalBundleReference"/>
+    <title value="OPA Original Bundle Reference"/>
+    <status value="active"/>
+    <description value="Subsequent Lab Resulting Bundles being submitted to OPA should use this Extension to include the Bundle.indentifier (system &amp; value) of the originally submitted (Full Encounter Report) Bundle."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Bundle"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://oash.org/fhir/us/opa/StructureDefinition/original-bundle-reference"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

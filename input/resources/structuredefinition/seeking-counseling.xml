@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="seeking-counseling"/>
+    <meta>
+        <versionId value="14"/>
+        <lastUpdated value="2023-08-21T15:16:21.575Z"/>
+    </meta>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/seeking-counseling"/>
+    <name value="SeekingCounseling"/>
+    <title value="Seeking Counseling"/>
+    <status value="active"/>
+    <description value="Observation to convey 'Do you want to talk about contraception or pregnancy prevention during your visit today?'"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="98076-3"/>
+                    <display value="Do you want to talk about contraception or pregnancy prevention during your visit today"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+            </type>
+        </element>
+        <element id="Observation.subject.type">
+            <path value="Observation.subject.type"/>
+            <type>
+                <code value="uri"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+            </type>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.211"/>
+            </binding>
+        </element>
+        <element id="Observation.dataAbsentReason">
+            <path value="Observation.dataAbsentReason"/>
+            <mustSupport value="false"/>
+        </element>
+    </differential>
+</StructureDefinition>

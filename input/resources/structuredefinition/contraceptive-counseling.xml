@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="contraceptive-counseling"/>
+    <meta>
+        <versionId value="16"/>
+        <lastUpdated value="2023-08-21T15:07:18.003Z"/>
+    </meta>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling"/>
+    <name value="ContraceptiveCounseling"/>
+    <title value="Contraceptive Counseling"/>
+    <status value="active"/>
+    <description value="How contraceptive counseling was provided (DE #21). If counseling was not provided, use Observation.dataAbsentReason (DE#22). Observation.valueCodeableConcept should contain one of the allowable VSAC codes for how counseling was provided."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="86652-5"/>
+                    <display value="How birth control method was provided"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+            </type>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.21"/>
+            </binding>
+        </element>
+        <element id="Observation.dataAbsentReason">
+            <path value="Observation.dataAbsentReason"/>
+            <short value="When contraceptive counseling was not performed"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="encounter-submission-full-report"/>
+    <meta>
+        <versionId value="23"/>
+        <lastUpdated value="2023-08-08T15:02:06.211Z"/>
+    </meta>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/encounter-submission-full-report"/>
+    <name value="OPAEncounterSubmissionFullReport"/>
+    <title value="OPA Encounter Submission Full Report"/>
+    <status value="active"/>
+    <description value="The Bundle Profile represents all encounter data (DEs #1-43) to be submitted to OPA compiled into a FHIR Bundle initially. Note- subsequent lab result reports should not use this profile (see subsequent lab submission Bundle profile)."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Bundle"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Bundle">
+            <path value="Bundle"/>
+        </element>
+        <element id="Bundle.identifier">
+            <path value="Bundle.identifier"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <fixedCode value="collection"/>
+        </element>
+        <element id="Bundle.entry">
+            <path value="Bundle.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resource"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="5"/>
+        </element>
+        <element id="Bundle.entry:patient">
+            <path value="Bundle.entry"/>
+            <sliceName value="patient"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:patient.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:encounter">
+            <path value="Bundle.entry"/>
+            <sliceName value="encounter"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:encounter.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:family-planning-provider-organization">
+            <path value="Bundle.entry"/>
+            <sliceName value="family-planning-provider-organization"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:family-planning-provider-organization.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/fp-provider-organization"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:provider-role">
+            <path value="Bundle.entry"/>
+            <sliceName value="provider-role"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:provider-role.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:blood-pressure">
+            <path value="Bundle.entry"/>
+            <sliceName value="blood-pressure"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:blood-pressure.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:body-height">
+            <path value="Bundle.entry"/>
+            <sliceName value="body-height"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:body-height.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:body-weight">
+            <path value="Bundle.entry"/>
+            <sliceName value="body-weight"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:body-weight.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:smoking-status">
+            <path value="Bundle.entry"/>
+            <sliceName value="smoking-status"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:smoking-status.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:sexual-orientation">
+            <path value="Bundle.entry"/>
+            <sliceName value="sexual-orientation"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:sexual-orientation.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:pregnancy-status">
+            <path value="Bundle.entry"/>
+            <sliceName value="pregnancy-status"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:pregnancy-status.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:pregnancy-intention">
+            <path value="Bundle.entry"/>
+            <sliceName value="pregnancy-intention"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:pregnancy-intention.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:contractive-method-intake">
+            <path value="Bundle.entry"/>
+            <sliceName value="contractive-method-intake"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:contractive-method-intake.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-intake"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:no-contractive-method-reason-intake">
+            <path value="Bundle.entry"/>
+            <sliceName value="no-contractive-method-reason-intake"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:no-contractive-method-reason-intake.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraception-reason-intake"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:contraceptive-method-exit">
+            <path value="Bundle.entry"/>
+            <sliceName value="contraceptive-method-exit"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:contraceptive-method-exit.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-exit"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:no-contraceptive-reason-exit">
+            <path value="Bundle.entry"/>
+            <sliceName value="no-contraceptive-reason-exit"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:no-contraceptive-reason-exit.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraception-reason-exit"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:how-contraceptive-method-was-provided">
+            <path value="Bundle.entry"/>
+            <sliceName value="how-contraceptive-method-was-provided"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:how-contraceptive-method-was-provided.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:pregnancy-counseling-provided">
+            <path value="Bundle.entry"/>
+            <sliceName value="pregnancy-counseling-provided"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:pregnancy-counseling-provided.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/pregnancy-counseling"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:seeking-counseling">
+            <path value="Bundle.entry"/>
+            <sliceName value="seeking-counseling"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:seeking-counseling.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/seeking-counseling"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:pap-smear">
+            <path value="Bundle.entry"/>
+            <sliceName value="pap-smear"/>
+        </element>
+        <element id="Bundle.entry:pap-smear.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:hpv">
+            <path value="Bundle.entry"/>
+            <sliceName value="hpv"/>
+        </element>
+        <element id="Bundle.entry:hpv.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/hpv-result"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:chlamydia">
+            <path value="Bundle.entry"/>
+            <sliceName value="chlamydia"/>
+        </element>
+        <element id="Bundle.entry:chlamydia.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:gonorrhoeae">
+            <path value="Bundle.entry"/>
+            <sliceName value="gonorrhoeae"/>
+        </element>
+        <element id="Bundle.entry:gonorrhoeae.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:hiv">
+            <path value="Bundle.entry"/>
+            <sliceName value="hiv"/>
+        </element>
+        <element id="Bundle.entry:hiv.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:syphilis">
+            <path value="Bundle.entry"/>
+            <sliceName value="syphilis"/>
+        </element>
+        <element id="Bundle.entry:syphilis.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

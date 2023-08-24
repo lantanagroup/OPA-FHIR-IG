@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="household-income"/>
+    <meta>
+        <versionId value="17"/>
+        <lastUpdated value="2023-07-20T15:35:01.356Z"/>
+    </meta>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/household-income"/>
+    <name value="HouseholdIncome"/>
+    <title value="Household Income"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="63586-2"/>
+                    <display value="What was your best estimate of the total income of all family members from all sources, before taxes, in last year [PhenX]"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+            </type>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <type>
+                <code value="integer"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.dataAbsentReason">
+            <path value="Observation.dataAbsentReason"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

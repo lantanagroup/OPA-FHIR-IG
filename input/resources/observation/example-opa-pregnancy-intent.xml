@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="example-opa-pregnancy-intent"/>
+    <meta>
+        <versionId value="7"/>
+        <lastUpdated value="2023-07-20T15:34:13.121Z"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+        </coding>
+        <text value="Social History"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="86645-9"/>
+            <display value="Pregnancy intention in the next year - Reported"/>
+        </coding>
+        <text value="Pregnancy Intent"/>
+    </code>
+    <subject>
+        <reference value="Patient/example-opa-patient"/>
+    </subject>
+    <effectiveDateTime value="2022-09-23T22:39:43Z"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="454381000124105"/>
+            <display value="Not sure of desire to become pregnant (finding)"/>
+        </coding>
+        <text value="Pregnant"/>
+    </valueCodeableConcept>
+</Observation>

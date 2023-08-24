@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole
+    xmlns="http://hl7.org/fhir">
+    <id value="example-opa-practitioner-role"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2023-07-20T15:34:50.233Z"/>
+    </meta>
+    <identifier>
+        <system value="http://www.acme.org/practitioners"/>
+        <value value="23"/>
+    </identifier>
+    <active value="true"/>
+    <period>
+        <start value="2012-01-01"/>
+        <end value="2012-03-31"/>
+    </period>
+    <practitioner>
+        <reference value="Practitioner/example-opa-practitioner"/>
+        <display value="Dr Adam Careful"/>
+    </practitioner>
+    <code>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0286"/>
+            <code value="RP"/>
+        </coding>
+    </code>
+    <specialty>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="408443003"/>
+            <display value="General medical practice"/>
+        </coding>
+    </specialty>
+</PractitionerRole>

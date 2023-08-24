@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="opa-practitioner-role"/>
+    <meta>
+        <versionId value="8"/>
+        <lastUpdated value="2023-07-21T15:36:21.374Z"/>
+    </meta>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner-role"/>
+    <name value="OPAPractitionerRole"/>
+    <title value="OPA Practitioner Role profile"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="PractitionerRole"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="PractitionerRole">
+            <path value="PractitionerRole"/>
+        </element>
+        <element id="PractitionerRole.organization">
+            <path value="PractitionerRole.organization"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/fp-provider-organization"/>
+            </type>
+        </element>
+        <element id="PractitionerRole.code">
+            <path value="PractitionerRole.code"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.29"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

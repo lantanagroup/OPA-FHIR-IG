@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="contraceptive-method-intake"/>
+    <meta>
+        <versionId value="8"/>
+        <lastUpdated value="2023-07-20T15:35:00.823Z"/>
+    </meta>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-intake"/>
+    <name value="ContraceptiveMethodIntake"/>
+    <title value="Contraceptive Method - Intake"/>
+    <status value="active"/>
+    <description value="Contraceptive method at intake (DE#17)"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="86649-1"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <description value="Contraceptive Type"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.17"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

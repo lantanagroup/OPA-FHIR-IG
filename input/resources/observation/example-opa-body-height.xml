@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="example-opa-body-height"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-08-04T15:32:18.865Z"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
+        </coding>
+        <text value="Vital Signs"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="8302-2"/>
+            <display value="Body height"/>
+        </coding>
+        <text value="height"/>
+    </code>
+    <subject>
+        <reference value="Patient/example-opa-patient"/>
+    </subject>
+    <effectiveDateTime value="2021-11-11"/>
+    <valueQuantity>
+        <value value="111.506"/>
+        <unit value="cm"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="cm"/>
+    </valueQuantity>
+</Observation>

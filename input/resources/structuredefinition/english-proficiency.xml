@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="english-proficiency"/>
+    <meta>
+        <versionId value="18"/>
+        <lastUpdated value="2023-08-23T22:16:17.521Z"/>
+    </meta>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/english-proficiency"/>
+    <name value="EnglishProficiencyExtension"/>
+    <title value="English Proficiency Extension"/>
+    <status value="active"/>
+    <description value="Extension to convey Limited English Proficiency (DE#8). This concept further specifies a Patient's communication."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Patient"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+            <definition value="A code classifying the person's English proficiency."/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://oash.org/fhir/us/opa/StructureDefinition/english-proficiency"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="code"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <description value="Code for Patient's English proficiency"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.31"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

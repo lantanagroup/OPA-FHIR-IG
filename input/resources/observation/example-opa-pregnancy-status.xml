@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="example-opa-pregnancy-status"/>
+    <meta>
+        <versionId value="6"/>
+        <lastUpdated value="2023-07-20T15:34:13.204Z"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+        </coding>
+        <text value="Social History"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="82810-3"/>
+            <display value="Pregnancy status"/>
+        </coding>
+        <text value="Pregnancy Status"/>
+    </code>
+    <subject>
+        <reference value="Patient/example-opa-patient"/>
+    </subject>
+    <effectiveDateTime value="2022-08-24T10:39:52Z"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="77386006"/>
+            <display value="Pregnant"/>
+        </coding>
+        <text value="Pregnant"/>
+    </valueCodeableConcept>
+</Observation>

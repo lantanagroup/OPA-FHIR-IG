@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="syphilis-result"/>
+    <meta>
+        <versionId value="7"/>
+        <lastUpdated value="2023-07-20T22:15:06.348Z"/>
+    </meta>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result"/>
+    <name value="SyphilisResult"/>
+    <title value="Syphilis Result"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <binding>
+                <strength value="required"/>
+                <description value="Syphilis Test Types"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.117"/>
+            </binding>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="0"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <description value="Syphilis Result Concepts"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.3"/>
+            </binding>
+        </element>
+        <element id="Observation.dataAbsentReason">
+            <path value="Observation.dataAbsentReason"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

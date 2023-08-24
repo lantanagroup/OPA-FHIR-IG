@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="no-contraception-reason-exit"/>
+    <meta>
+        <versionId value="16"/>
+        <lastUpdated value="2023-07-20T15:35:01.898Z"/>
+    </meta>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraception-reason-exit"/>
+    <name value="NoContraceptionReasonExit"/>
+    <title value="No Contraception Reason Exit"/>
+    <status value="active"/>
+    <description value="Reason for no contraceptive method use at exit (DE#20)"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="86653-3"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+            </type>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="false"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.18"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

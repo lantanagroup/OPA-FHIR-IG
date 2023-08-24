@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="example-opa-contraceptive-counseling-not-given"/>
+    <meta>
+        <versionId value="6"/>
+        <lastUpdated value="2023-07-20T15:34:13.574Z"/>
+        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="86652-5"/>
+            <display value="How birth control method was provided"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/example-opa-patient"/>
+    </subject>
+    <effectiveDateTime value="2022-01-01"/>
+    <dataAbsentReason>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+        </coding>
+    </dataAbsentReason>
+</Observation>

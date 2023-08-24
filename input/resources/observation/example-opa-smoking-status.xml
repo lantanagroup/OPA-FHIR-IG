@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="example-opa-smoking-status"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2023-07-20T15:34:13.355Z"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+        </coding>
+        <text value="Social History"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="72166-2"/>
+            <display value="Tobacco smoking status"/>
+        </coding>
+        <text value="Tobacco smoking status"/>
+    </code>
+    <subject>
+        <reference value="Patient/example-opa-patient"/>
+    </subject>
+    <effectiveDateTime value="2016-03-18T05:27:04Z"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="428041000124106"/>
+        </coding>
+        <text value="Current some day smoker"/>
+    </valueCodeableConcept>
+</Observation>

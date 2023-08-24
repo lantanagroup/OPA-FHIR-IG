@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="example-opa-household-income"/>
+    <meta>
+        <versionId value="6"/>
+        <lastUpdated value="2023-07-20T15:34:13.867Z"/>
+        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/household-income"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="63586-2"/>
+            <display value="What was your best estimate of the total income of all family members from all sources, before taxes, in last year [PhenX]"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/example-opa-patient"/>
+    </subject>
+    <effectiveDateTime value="2022-01-01"/>
+    <valueInteger value="100000"/>
+</Observation>

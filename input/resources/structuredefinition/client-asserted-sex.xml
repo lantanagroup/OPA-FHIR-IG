@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="client-asserted-sex"/>
+    <meta>
+        <versionId value="7"/>
+        <lastUpdated value="2023-08-04T19:39:14.571Z"/>
+    </meta>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/client-asserted-sex"/>
+    <name value="ClientAssertedSex"/>
+    <title value="Client Asserted Sex"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Patient"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://oash.org/fhir/us/opa/StructureDefinition/client-asserted-sex"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="code"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

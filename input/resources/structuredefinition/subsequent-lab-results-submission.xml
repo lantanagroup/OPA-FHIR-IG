@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="subsequent-lab-results-submission"/>
+    <meta>
+        <versionId value="14"/>
+        <lastUpdated value="2023-08-09T21:00:41.661Z"/>
+    </meta>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/subsequent-lab-results-submission"/>
+    <name value="OPASubsequentLabResultSubmission"/>
+    <title value="OPA Subsequent Lab Result Submission"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Bundle"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Bundle">
+            <path value="Bundle"/>
+        </element>
+        <element id="Bundle.extension">
+            <path value="Bundle.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <short value="Extension"/>
+            <definition value="An Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+            <base>
+                <path value="DomainResource.extension"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <constraint>
+                <key value="ele-1"/>
+                <severity value="error"/>
+                <human value="All FHIR elements must have a @value or children"/>
+                <expression value="hasValue() or (children().count() &gt; id.count())"/>
+                <xpath value="@value|f:*|h:div"/>
+                <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+            </constraint>
+            <constraint>
+                <key value="ext-1"/>
+                <severity value="error"/>
+                <human value="Must have either extensions or value[x], not both"/>
+                <expression value="extension.exists() != value.exists()"/>
+                <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+                <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+            </constraint>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+            <isSummary value="false"/>
+        </element>
+        <element id="Bundle.extension:originalBundleReference">
+            <path value="Bundle.extension"/>
+            <sliceName value="originalBundleReference"/>
+            <short value="Original Bundle Reference"/>
+            <definition value="Subsequent Lab Resulting Bundles being submitted to OPA should use this Extension to include the Bundle.indentifier (system and value) of the originally submitted (Full Encounter Report) Bundle."/>
+            <comment value="Subsequent Lab Resulting Bundles being submitted to OPA should use this Extension to include the Bundle.indentifier (system and value) of the originally submitted (Full Encounter Report) Bundle."/>
+            <min value="1"/>
+            <max value="1"/>
+            <base>
+                <path value="DomainResource.extension"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/original-bundle-reference"/>
+            </type>
+            <condition value="ele-1"/>
+            <constraint>
+                <key value="ele-1"/>
+                <severity value="error"/>
+                <human value="All FHIR elements must have a @value or children"/>
+                <expression value="hasValue() or (children().count() &gt; id.count())"/>
+                <xpath value="@value|f:*|h:div"/>
+                <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+            </constraint>
+            <constraint>
+                <key value="ext-1"/>
+                <severity value="error"/>
+                <human value="Must have either extensions or value[x], not both"/>
+                <expression value="extension.exists() != value.exists()"/>
+                <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+                <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+            </constraint>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Bundle.identifier">
+            <path value="Bundle.identifier"/>
+            <label value="Subsequent Lab Bundles should contain a Bundle.identifier that matches the Full Encounter Submission Bundle.identifier"/>
+            <short value="Subsequent Lab Bundles should contain a Bundle.identifier that matches the Full Encounter Submission Bundle.identifier"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <fixedCode value="collection"/>
+        </element>
+        <element id="Bundle.entry">
+            <path value="Bundle.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resource"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="3"/>
+        </element>
+        <element id="Bundle.entry:patient">
+            <path value="Bundle.entry"/>
+            <sliceName value="patient"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:patient.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:encounter">
+            <path value="Bundle.entry"/>
+            <sliceName value="encounter"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:encounter.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:family-planning-provider-org">
+            <path value="Bundle.entry"/>
+            <sliceName value="family-planning-provider-org"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:family-planning-provider-org.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/fp-provider-organization"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:pap-smear">
+            <path value="Bundle.entry"/>
+            <sliceName value="pap-smear"/>
+        </element>
+        <element id="Bundle.entry:pap-smear.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:hpv">
+            <path value="Bundle.entry"/>
+            <sliceName value="hpv"/>
+        </element>
+        <element id="Bundle.entry:hpv.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/hpv-result"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:chlamydia">
+            <path value="Bundle.entry"/>
+            <sliceName value="chlamydia"/>
+        </element>
+        <element id="Bundle.entry:chlamydia.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:gonorrhoeae">
+            <path value="Bundle.entry"/>
+            <sliceName value="gonorrhoeae"/>
+        </element>
+        <element id="Bundle.entry:gonorrhoeae.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:hiv">
+            <path value="Bundle.entry"/>
+            <sliceName value="hiv"/>
+        </element>
+        <element id="Bundle.entry:hiv.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:syphilis">
+            <path value="Bundle.entry"/>
+            <sliceName value="syphilis"/>
+        </element>
+        <element id="Bundle.entry:syphilis.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

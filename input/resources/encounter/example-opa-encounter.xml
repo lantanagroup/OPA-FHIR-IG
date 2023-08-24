@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Encounter
+    xmlns="http://hl7.org/fhir">
+    <id value="example-opa-encounter"/>
+    <meta>
+        <versionId value="14"/>
+        <lastUpdated value="2023-08-24T15:21:44.206Z"/>
+        <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
+    </meta>
+    <extension url="https://hl7.org/fhir/us/opa/StructureDefinition/Coverage"/>
+    <extension url="http://oash.org/fhir/us/opa/StructureDefinition/insurance-type">
+        <valueCodeableConcept>
+            <coding>
+                <system value="https://nahdo.org/sopt"/>
+                <code value="5"/>
+                <display value="PRIVATE HEALTH INSURANCE"/>
+            </coding>
+            <text value="PRIVATE HEALTH INSURANCE"/>
+        </valueCodeableConcept>
+    </extension>
+    <extension url="http://oash.org/fhir/us/opa/StructureDefinition/payer-for-visit">
+        <valueCodeableConcept>
+            <coding>
+                <system value="https://nahdo.org/sopt"/>
+                <code value="111"/>
+                <display value="Medicare HMO"/>
+            </coding>
+            <text value="Medicare HMO"/>
+        </valueCodeableConcept>
+    </extension>
+    <status value="finished"/>
+    <class>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="AMB"/>
+        <display value="ambulatory"/>
+    </class>
+    <type>
+        <coding>
+            <system value="http://www.ama-assn.org/go/cpt"/>
+            <code value="99201"/>
+        </coding>
+        <text value="Office Visit"/>
+    </type>
+    <subject>
+        <reference value="Patient/example-opa-patient"/>
+    </subject>
+    <period>
+        <start value="2023-04-05T17:00:14-05:00"/>
+        <end value="2023-04-13T18:00:14-05:00"/>
+    </period>
+</Encounter>

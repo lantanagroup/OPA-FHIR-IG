@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="example-opa-pap-smear-result-final"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-08-23T16:23:35.843Z"/>
+        <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/pap-smear-result"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+        </coding>
+        <text value="Laboratory"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="19765-7"/>
+            <display value="Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/example-opa-patient"/>
+    </subject>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="125152006"/>
+            <display value="Specimen satisfactory for evaluation"/>
+        </coding>
+    </valueCodeableConcept>
+</Observation>

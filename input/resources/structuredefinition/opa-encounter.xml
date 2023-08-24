@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="opa-encounter"/>
+    <meta>
+        <versionId value="28"/>
+        <lastUpdated value="2023-08-24T14:03:39.568Z"/>
+    </meta>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
+    <name value="OPAEncounter"/>
+    <title value="OPA Encounter"/>
+    <status value="active"/>
+    <description value="FAMILY PLANNING ENCOUNTER – A family planning encounter is a documented contact between an individual and a family planning provider that is either face-to-face in a Title X service site or virtual using telehealth technology. The purpose of a family planning encounter—whether clinical or nonclinical—is to provide family planning and related preventive health services to female and male clients who want to avoid unintended pregnancies or achieve intended pregnancies. To be counted for purposes of the FPAR, a written record of the services provided during the family planning encounter must be documented in the client record.&#xA;&#xA;A virtual family planning encounter uses telecommunications and information technology to provide access to Title X family planning and related preventive health services, including assessment, diagnosis, intervention, consultation, education and counseling, and supervision, at a distance. Telehealth technologies include telephone, facsimile machines, electronic mail systems, videoconferencing, store-and-forward imaging, streaming media, remote monitoring devices, and terrestrial and wireless communications.&#xA;&#xA;There are two types of family planning encounters: (1) family planning encounters with a Clinical Services Provider and (2) family planning encounters with an Other Services Provider. The type of family planning provider who renders the care, regardless of the services rendered, determines the type of family planning encounter. Although a client may meet with both Clinical and Other Services Providers during an encounter, the provider with the highest level of training, who takes ultimate responsibility for the client’s clinical or nonclinical assessment and care during the encounter, is credited with the encounter. &#xA;&#xA;FAMILY PLANNING ENCOUNTER WITH A CLINICAL SERVICES PROVIDER – A documented, face-to-face or virtual encounter between a family planning client and a Clinical Services Provider. &#xA;&#xA;FAMILY PLANNING ENCOUNTER WITH AN OTHER SERVICES PROVIDER – A documented, face-to-face or virtual encounter between a family planning client and an Other Services Provider. &#xA;Laboratory tests and related counseling and education, in and of themselves, do not constitute a family planning encounter unless there is face-to-face or virtual contact between the client and provider, the provider documents the encounter in the client’s record, and the tests are accompanied by family planning counseling or education."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Encounter"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Encounter">
+            <path value="Encounter"/>
+        </element>
+        <element id="Encounter.extension">
+            <path value="Encounter.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <short value="Extension"/>
+            <definition value="An Extension"/>
+            <min value="1"/>
+            <base>
+                <path value="DomainResource.extension"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <isModifier value="false"/>
+            <isSummary value="false"/>
+        </element>
+        <element id="Encounter.extension:insuranceType">
+            <path value="Encounter.extension"/>
+            <sliceName value="insuranceType"/>
+            <definition value="Insurance Type for the visit"/>
+            <min value="0"/>
+            <base>
+                <path value="DomainResource.extension"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/insurance-type"/>
+            </type>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Encounter.extension:payerForVisit">
+            <path value="Encounter.extension"/>
+            <sliceName value="payerForVisit"/>
+            <base>
+                <path value="DomainResource.extension"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/payer-for-visit"/>
+            </type>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Encounter.subject">
+            <path value="Encounter.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+            </type>
+        </element>
+        <element id="Encounter.period">
+            <path value="Encounter.period"/>
+            <min value="1"/>
+        </element>
+        <element id="Encounter.serviceProvider">
+            <path value="Encounter.serviceProvider"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/fp-provider-organization"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="household-size"/>
+    <meta>
+        <versionId value="10"/>
+        <lastUpdated value="2023-07-20T15:35:01.436Z"/>
+    </meta>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/household-size"/>
+    <name value="HouseholdSize"/>
+    <title value="Household Size"/>
+    <status value="active"/>
+    <description value="Placeholder text for household size [integer]"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="86639-2"/>
+                    <display value="Household size [#]"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+            </type>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <type>
+                <code value="integer"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.dataAbsentReason">
+            <path value="Observation.dataAbsentReason"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

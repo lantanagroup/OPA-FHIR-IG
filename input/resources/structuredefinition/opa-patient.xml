@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="opa-patient"/>
+    <meta>
+        <versionId value="41"/>
+        <lastUpdated value="2023-08-23T22:01:49.484Z"/>
+    </meta>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+    <name value="OPAPatient"/>
+    <title value="OPA Patient"/>
+    <status value="active"/>
+    <description value="OPA Patient conforms to US Core Patient and requires birthDate"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Patient"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Patient">
+            <path value="Patient"/>
+        </element>
+        <element id="Patient.extension">
+            <path value="Patient.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+        </element>
+        <element id="Patient.extension:birthsex">
+            <path value="Patient.extension"/>
+            <sliceName value="birthsex"/>
+            <min value="1"/>
+        </element>
+        <element id="Patient.extension:birthsex.url">
+            <path value="Patient.extension.url"/>
+        </element>
+        <element id="Patient.extension:birthsex.value[x]">
+            <path value="Patient.extension.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="code"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+            </binding>
+        </element>
+        <element id="Patient.extension:genderIdentity">
+            <path value="Patient.extension"/>
+            <sliceName value="genderIdentity"/>
+            <min value="0"/>
+        </element>
+        <element id="Patient.extension:genderIdentity.url">
+            <path value="Patient.extension.url"/>
+        </element>
+        <element id="Patient.extension:genderIdentity.value[x]">
+            <path value="Patient.extension.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.extension:clientAssertedSex">
+            <path value="Patient.extension"/>
+            <sliceName value="clientAssertedSex"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/client-asserted-sex"/>
+            </type>
+        </element>
+        <element id="Patient.extension:englishProficiency">
+            <path value="Patient.extension"/>
+            <sliceName value="englishProficiency"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/english-proficiency"/>
+            </type>
+        </element>
+        <element id="Patient.birthDate">
+            <path value="Patient.birthDate"/>
+            <min value="1"/>
+        </element>
+    </differential>
+</StructureDefinition>

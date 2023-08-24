@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="example-opa-sexual-orientation"/>
+    <meta>
+        <versionId value="7"/>
+        <lastUpdated value="2023-07-20T15:34:13.284Z"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="76690-7"/>
+            <display value="Sexual orientation"/>
+        </coding>
+        <text value="Sexual orientation"/>
+    </code>
+    <subject>
+        <reference value="Patient/example-opa-patient"/>
+    </subject>
+    <effectiveDateTime value="2021-11-11"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="42035005"/>
+            <display value="Bisexual"/>
+        </coding>
+        <text value="Bisexual"/>
+    </valueCodeableConcept>
+</Observation>

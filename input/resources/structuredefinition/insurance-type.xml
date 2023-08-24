@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="insurance-type"/>
+    <meta>
+        <versionId value="13"/>
+        <lastUpdated value="2023-08-04T16:07:18.708Z"/>
+    </meta>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/insurance-type"/>
+    <name value="OPAInsuranceCoverageType"/>
+    <title value="OPA Insurance Coverage Type"/>
+    <status value="active"/>
+    <description value="Extension to reference Coverage information (ie Insurance Coverage Type and Payer for Visit) from the Encounter. This extension is expected to be used within Encounter (i.e. Encounter.extension) and reference Coverage."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Encounter"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://oash.org/fhir/us/opa/StructureDefinition/insurance-type"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.29"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>
