@@ -616,6 +616,16 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/example-opa-seeking-counseling"/>
+                <display value="Seeking Counseling example"/>
+            </reference>
+            <name value="Seeking Counseling example"/>
+            <description value="Seeking Counseling example"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/example-opa-household-income"/>
                 <display value="Household Income example"/>
             </reference>
