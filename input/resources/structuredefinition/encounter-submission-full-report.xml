@@ -94,7 +94,7 @@
             <max value="1"/>
             <type>
                 <code value="Resource"/>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner-role"/>
             </type>
         </element>
         <element id="Bundle.entry:blood-pressure">

@@ -52,6 +52,9 @@
         <grouping id="new-group1">
             <name value="Lab Testing Profiles"/>
         </grouping>
+        <grouping id="new-group11">
+            <name value="Submission Bundle Examples"/>
+        </grouping>
         <grouping id="new-group3">
             <name value="OPA General Examples"/>
         </grouping>
@@ -639,6 +642,14 @@
             <description value="US Edition of Snomed"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group4"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/example-opa-full-encounter-submission-bundle-1"/></reference>
+            <name value="Encounter Submission Full Report Example"/>
+            <description value="Encounter Submission Full Report Example"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group11"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

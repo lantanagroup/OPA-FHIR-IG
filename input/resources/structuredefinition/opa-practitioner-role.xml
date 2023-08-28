@@ -31,7 +31,7 @@
             <path value="PractitionerRole.code"/>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.29"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.24"/>
             </binding>
         </element>
     </differential>

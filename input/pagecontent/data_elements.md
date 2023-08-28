@@ -23,7 +23,7 @@ table, th, td
 th {
   background: Azure; 
 }
-</style>
+</style> 
 
 
 |**DE#**|**FPAR 2.0 Data Element** | **FHIR Resource Path**                  |**FHIR Profile**   |**Code System**   |**Value Set**   |
