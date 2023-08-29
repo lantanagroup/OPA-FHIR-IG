@@ -76,7 +76,7 @@
                 <display value="EncounterSubmissionFullReport"/>
             </reference>
             <name value="Encounter Submission Full Report"/>
-            <description value="The Bundle Profile defines how all encounter data (DEs #1-43) are to be submitted as a FHIR Bundle. Note- subsequent lab result reports should not use this profile (see Subsequent Lab Result Submission Bundle profile).&#xA;&#xA;Test: Only ordered STI tests, regardless of result availability, should be included in submission Bundles. For example, if a Patient has Chlamydia, HIV, Syphilis and HPV tests ordered (i.e. no Gonorrhoeae or Pap Smear tests ordered), this Patient’s full Encounter Submission Bundle would include four STI Lab Observation Bundle entries (one pertaining to each ordered test). The submission Bundle will never contain any data pertaining to not-ordered lab tests. In the above example scenario, this Patient’s full submission Bundle would not contain Observation entries pertaining to Gonorrhoeae or Pap Smear).&#xA;&#xA;STI Lab Observations that have been ordered but do not have a result available for any reason are expected to contain an Observation.status=preliminary. If/When the result becomes available, a Subsequent Lab Result Submission Bundle should be compiled and submitted."/>
+            <description value="The Bundle Profile defines how all encounter data (DEs #1-43) are to be submitted as a FHIR Bundle. Note- subsequent lab result reports should not use this profile (see Subsequent Lab Result Submission Bundle profile).&#xA;&#xA;Only ordered STI tests, regardless of result availability, should be included in submission Bundles. For example, if a Patient has Chlamydia, HIV, Syphilis and HPV tests ordered (i.e. no Gonorrhoeae or Pap Smear tests ordered), this Patient’s full Encounter Submission Bundle would include four STI Lab Observation Bundle entries (one pertaining to each ordered test). The submission Bundle will never contain any data pertaining to not-ordered lab tests. In the above example scenario, this Patient’s full submission Bundle would not contain Observation entries pertaining to Gonorrhoeae or Pap Smear).&#xA;&#xA;STI Lab Observations that have been ordered but do not have a result available for any reason are expected to contain an Observation.status=preliminary. If/When the result becomes available, a Subsequent Lab Result Submission Bundle should be compiled and submitted."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group6"/>
         </resource>
@@ -655,18 +655,27 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Bundle/example-opa-full-encounter-submission-bundle-1"/>
-            <name value="Encounter Submission Full Report Example 1"/>
-            <description value="Encounter Submission Full Report Example 1"/>
+                <reference value="Bundle/example-opa-full-encounter-submission-bundle-1"/></reference>
+            <name value="Encounter Submission Full Report Example"/>
+            <description value="This Bundle exemplifies a scenario of an encounter where the Patient reported using an oral contraception at intake, had a contraceptive provision method of a procedure during the encounter, and at exit, reported contraceptive method of an IUD.&#xA;&#xA;The following information was documented: patient, provider and encounter details, vital signs for blood pressure, height and weight, smoking status, sexual orientation, pregnancy status and intent, contraceptive method at intake and exit, reason for no contraception use at intake, contraceptive and pregnancy counseling provided, and five possible STI lab tests (pending pap-smear, HPV, Chlamydia, Gonorrhoaea, and HIV).&#xA;&#xA;Note the pap smear Observation exemplifies a pending/preliminary result (Observation.status=preliminary and .value is omitted). No test for syphilis was ordered as part of this example encounter and therefore, no Observation pertaining to Syphilis is included in this Bundle.&#xA;&#xA;Because contraceptive methods at intake and exit were provided, reasons for no contraceptive method (at intake and exit) are omitted from this Bundle."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group11"/>
         </resource>
         <resource>
-        <reference value="Bundle/example-opa-full-encounter-submission-bundle-2"/>
-        <name value="Encounter Submission Full Report Example 2"/>
-        <description value="Encounter Submission Full Report Example 2"/>
-        <exampleBoolean value="true"/>
-        <groupingId value="new-group11"/>
+            <reference>
+                <reference value="Bundle/example-opa-full-encounter-submission-bundle-2"/></reference>
+            <name value="Encounter Submission Full Report Example 2"/>
+            <description value="This Bundle example exemplifies a scenario of an encounter where the Patient reported no contraception use because she wants to become pregnant, and has responded ‘true’ in response to ‘Counseling to achieve pregnancy was provided’ (Observation.code=86655-8). This Patient therefore does not have contraceptive counseling provided (i.e. Contraceptive Counseling Observation is omitted). This Patient also has a pregnancy status of ‘not pregnant’ and a pregnancy intent of ‘wants to become pregnant’.&#xA;&#xA;This Patient is also an ex-smoker, has a heterosexual sexual orientation. This example does not include any STI tests/results."/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group11"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/example-opa-subsequent-lab-result-submission-bundle"/></reference>
+            <name value="Subsequent Lab Result Submission Bundle"/>
+            <description value="This Bundle exemplifies the finalization of a the pap-smear Lab Result Observation. Subsequent Lab Result Bundles reference their original Bundles’ identifiers through the original-bundle-reference extension (Bundle.extension). "/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group11"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
