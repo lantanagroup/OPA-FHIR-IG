@@ -527,10 +527,10 @@
                 <valueCodeableConcept>
                     <coding>
                         <system value="http://snomed.info/sct"/>
-                        <code value="77386006"/>
-                        <display value="Pregnant"/>
+                        <code value="60001007"/>
+                        <display value="Not pregnant (finding)"/>
                     </coding>
-                    <text value="Pregnant"/>
+                    <text value="Not pregnant"/>
                 </valueCodeableConcept>
             </Observation>
         </resource>
@@ -572,7 +572,7 @@
                         <code value="454381000124105"/>
                         <display value="Not sure of desire to become pregnant (finding)"/>
                     </coding>
-                    <text value="Pregnant"/>
+                    <text value="Not sure of desire to become pregnant"/>
                 </valueCodeableConcept>
             </Observation>
         </resource>
