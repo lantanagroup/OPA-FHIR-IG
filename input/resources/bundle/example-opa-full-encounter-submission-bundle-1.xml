@@ -607,8 +607,8 @@
                 <valueCodeableConcept>
                     <coding>
                         <system value="http://snomed.info/sct"/>
-                        <code value="169450001"/>
-                        <display value="No contraceptive precautions (situation)"/>
+                        <code value="268458002"/>
+                        <display value="Combined oral contraceptive - use (finding)"/>
                     </coding>
                 </valueCodeableConcept>
             </Observation>
