@@ -615,43 +615,6 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/example-opa-no-contraceptive-method-intake"/>
-        <resource>
-            <Observation xmlns="http://hl7.org/fhir">
-                <id value="example-opa-no-contraceptive-method-intake"/>
-                <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/no-contraception-reason-intake"/>
-                </meta>
-                <status value="final"/> 
-                <category> 
-                    <coding> 
-                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/> 
-                        <code value="survey"/> 
-                        <display value="Survey"/> 
-                    </coding> 
-                </category> 
-                <code> 
-                    <coding> 
-                        <system value="http://loinc.org"/> 
-                        <code value="86650-9"/> 
-                        <display value="Reason for no birth control use - Reported --at intake"/> 
-                    </coding>  
-                </code> 
-                <subject> 
-                    <reference value="Patient/example-opa-patient"/> 
-                </subject> 
-                <effectiveDateTime value="2022-01-01"/> 
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="454411000124108"/>
-                        <display value="Wants to become pregnant"/>
-                    </coding>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
         <fullUrl value="http://example.org/fhir/Observation/example-opa-contraceptive-method-exit"/>
         <resource>
             <Observation xmlns="http://hl7.org/fhir">
