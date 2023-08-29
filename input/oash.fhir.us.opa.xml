@@ -655,11 +655,18 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Bundle/example-opa-full-encounter-submission-bundle-1"/></reference>
-            <name value="Encounter Submission Full Report Example"/>
-            <description value="Encounter Submission Full Report Example"/>
+                <reference value="Bundle/example-opa-full-encounter-submission-bundle-1"/>
+            <name value="Encounter Submission Full Report Example 1"/>
+            <description value="Encounter Submission Full Report Example 1"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group11"/>
+        </resource>
+        <resource>
+        <reference value="Bundle/example-opa-full-encounter-submission-bundle-2"/>
+        <name value="Encounter Submission Full Report Example 2"/>
+        <description value="Encounter Submission Full Report Example 2"/>
+        <exampleBoolean value="true"/>
+        <groupingId value="new-group11"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
