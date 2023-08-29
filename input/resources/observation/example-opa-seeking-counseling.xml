@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="example-opa-seeking-counseling"/>
+    <meta>
+        <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/seeking-counseling"/>
+    </meta>
+    <status value="final"/> 
+    <code> 
+        <coding> 
+            <system value="http://loinc.org"/> 
+            <code value="98076-3 "/> 
+            <display value="Do you want to talk about contraception or pregnancy prevention during your visit today"/> 
+        </coding>  
+    </code> 
+    <subject> 
+        <reference value="Patient/example-opa-patient"/> 
+    </subject> 
+    <effectiveDateTime value="2023-01-01"/> 
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes"/>
+        </coding>
+    </valueCodeableConcept>
+</Observation>
