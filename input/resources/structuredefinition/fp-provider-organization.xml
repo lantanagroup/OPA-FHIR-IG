@@ -31,5 +31,11 @@
             </slicing>
             <min value="1"/>
         </element>
+        <element id="Organization.identifier:NPI">
+            <path value="Organization.identifier"/>
+            <sliceName value="NPI"/>
+            <short value="National Provider Identifier (NPI)"/>
+            <min value="1"/>
+        </element>
     </differential>
 </StructureDefinition>

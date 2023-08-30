@@ -59,7 +59,7 @@
             <path value="Bundle.entry"/>
             <sliceName value="encounter"/>
             <min value="1"/>
-            <max value="1"/>
+            <max value="*"/>
         </element>
         <element id="Bundle.entry:encounter.resource">
             <path value="Bundle.entry.resource"/>
@@ -288,6 +288,7 @@
         <element id="Bundle.entry:pap-smear.resource">
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Resource"/>
                 <profile value="http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result"/>
@@ -300,6 +301,7 @@
         <element id="Bundle.entry:hpv.resource">
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Resource"/>
                 <profile value="http://oash.org/fhir/us/opa/StructureDefinition/hpv-result"/>
@@ -312,6 +314,7 @@
         <element id="Bundle.entry:chlamydia.resource">
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Resource"/>
                 <profile value="http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
@@ -324,6 +327,7 @@
         <element id="Bundle.entry:gonorrhoeae.resource">
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Resource"/>
                 <profile value="http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result"/>
@@ -336,6 +340,7 @@
         <element id="Bundle.entry:hiv.resource">
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Resource"/>
                 <profile value="http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result"/>
@@ -348,6 +353,7 @@
         <element id="Bundle.entry:syphilis.resource">
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Resource"/>
                 <profile value="http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result"/>
