@@ -61,7 +61,7 @@
     <extension url="http://oash.org/fhir/us/opa/StructureDefinition/client-asserted-sex">
         <valueCode value="female"/>
     </extension>
-    <extension url="https://hl7.org/fhir/us/opa/StructureDefinition/english-proficiency">
+    <extension url="http://oash.org/fhir/us/opa/StructureDefinition/english-proficiency">
         <valueCoding>
             <system value="http://snomed.info/sct"/>
             <code value="455961000124100"/>
