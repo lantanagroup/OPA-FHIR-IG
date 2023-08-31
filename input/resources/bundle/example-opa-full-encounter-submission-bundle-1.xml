@@ -702,13 +702,7 @@
                     <reference value="Patient/example-opa-patient"/> 
                 </subject> 
                 <effectiveDateTime value="2023-01-01"/> 
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="373066001"/>
-                        <display value="Yes"/>
-                    </coding>
-                </valueCodeableConcept>
+                <valueBoolean value="true"/>
             </Observation>
         </resource>
     </entry>
@@ -734,8 +728,8 @@
                 <effectiveDateTime value="2023-01-01"/> 
                 <valueCodeableConcept>
                     <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="373066001"/>
+                        <system value="http://loinc.org"/>
+                        <code value="LA33-6"/>
                         <display value="Yes"/>
                     </coding>
                 </valueCodeableConcept>
