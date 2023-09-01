@@ -1,0 +1,726 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="example-opa-full-encounter-submission-bundle-1"/>
+    <meta>
+        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/encounter-submission-full-report"/>
+    </meta>
+    <identifier>
+        <system value="http://example.org/fhir/Patient/example-opa-patient"/>
+        <value value="dd3fa897-5b5a-43ee-9617-bf5fe46b9e94"/>
+    </identifier>
+    <type value="collection"/>
+    <timestamp value="2023-08-25T10:06:42.482-04:00"/>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Patient/example-opa-patient"/>
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <id value="example-opa-patient"/>
+                <meta>
+                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+                </meta>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                            <code value="2106-3"/>
+                            <display value="White"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                            <code value="1002-5"/>
+                            <display value="American Indian or Alaska Native"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                            <code value="2028-9"/>
+                            <display value="Asian"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="text">
+                        <valueString value="Mixed"/>
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                            <code value="2135-2"/>
+                            <display value="Hispanic or Latino"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="text">
+                        <valueString value="Hispanic or Latino"/>
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+                    <valueCode value="F"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+                            <code value="ASKU"/>
+                            <display value="asked but unknown"/>
+                        </coding>
+                        <text value="asked but unknown"/>
+                    </valueCodeableConcept>
+                </extension>
+                <extension url="http://oash.org/fhir/us/opa/StructureDefinition/client-asserted-sex">
+                    <valueCode value="female"/>
+                </extension>
+                <extension url="https://hl7.org/fhir/us/opa/StructureDefinition/english-proficiency">
+                    <valueCoding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="455961000124100"/>
+                        <display value="Not proficient in English (finding)"/>
+                    </valueCoding>
+                </extension>
+                <identifier>
+                    <use value="usual"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MR"/>
+                            <display value="Medical Record Number"/>
+                        </coding>
+                        <text value="Medical Record Number"/>
+                    </type>
+                    <system value="http://hospital.smarthealthit.org"/>
+                    <value value="M00002232"/>
+                </identifier>
+                <active value="true"/>
+                <name>
+                    <family value="Woodrow"/>
+                    <given value="Alisha"/>
+                    <period>
+                        <start value="1990-07-22"/>
+                    </period>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="555-555-5555"/>
+                    <use value="home"/>
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="alisha.woodrow@example.com"/>
+                </telecom>
+                <gender value="female"/>
+                <birthDate value="1990-07-22"/>
+                <address>
+                    <line value="555 Paul Rigal Blvd"/>
+                    <city value="Dublin"/>
+                    <state value="OH"/>
+                    <postalCode value="43017"/>
+                    <country value="US"/>
+                    <period>
+                        <start value="2020-07-22"/>
+                    </period>
+                </address>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Encounter/example-opa-encounter-1"/>
+        <resource> 
+            <Encounter
+                xmlns="http://hl7.org/fhir">
+                <id value="example-opa-encounter-1"/>
+                <meta>
+                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
+                </meta>
+                <extension url="http://oash.org/fhir/us/opa/StructureDefinition/insurance-type">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="https://nahdo.org/sopt"/>
+                            <code value="5"/>
+                            <display value="PRIVATE HEALTH INSURANCE"/>
+                        </coding>
+                        <text value="PRIVATE HEALTH INSURANCE"/>
+                    </valueCodeableConcept>
+                </extension>
+                <extension url="http://oash.org/fhir/us/opa/StructureDefinition/payer-for-visit">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="https://nahdo.org/sopt"/>
+                            <code value="111"/>
+                            <display value="Medicare HMO"/>
+                        </coding>
+                        <text value="Medicare HMO"/>
+                    </valueCodeableConcept>
+                </extension>
+                <status value="finished"/>
+                <class>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                    <code value="AMB"/>
+                    <display value="ambulatory"/>
+                </class>
+                <type>
+                    <coding>
+                        <system value="http://www.ama-assn.org/go/cpt"/>
+                        <code value="99201"/>
+                    </coding>
+                    <text value="Office Visit"/>
+                </type>
+                <subject>
+                    <reference value="Patient/example-opa-patient"/>
+                </subject>
+                <period>
+                    <start value="2023-01-01T17:00:14-05:00"/>
+                    <end value="2023-01-01T18:00:14-05:00"/>
+                </period>
+            </Encounter>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Encounter/example-opa-encounter-2"/>
+        <resource> 
+            <Encounter
+                xmlns="http://hl7.org/fhir">
+                <id value="example-opa-encounter-2"/>
+                <meta>
+                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
+                </meta>
+                <extension url="http://oash.org/fhir/us/opa/StructureDefinition/insurance-type">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="https://nahdo.org/sopt"/>
+                            <code value="5"/>
+                            <display value="PRIVATE HEALTH INSURANCE"/>
+                        </coding>
+                        <text value="PRIVATE HEALTH INSURANCE"/>
+                    </valueCodeableConcept>
+                </extension>
+                <extension url="http://oash.org/fhir/us/opa/StructureDefinition/payer-for-visit">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="https://nahdo.org/sopt"/>
+                            <code value="111"/>
+                            <display value="Medicare HMO"/>
+                        </coding>
+                        <text value="Medicare HMO"/>
+                    </valueCodeableConcept>
+                </extension>
+                <status value="finished"/>
+                <class>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                    <code value="AMB"/>
+                    <display value="ambulatory"/>
+                </class>
+                <type>
+                    <coding>
+                        <system value="http://www.ama-assn.org/go/cpt"/>
+                        <code value="99201"/>
+                    </coding>
+                    <text value="Office Visit"/>
+                </type>
+                <subject>
+                    <reference value="Patient/example-opa-patient"/>
+                </subject>
+                <period>
+                    <start value="2023-02-02T17:00:14-05:00"/>
+                    <end value="2023-02-02T18:00:14-05:00"/>
+                </period>
+            </Encounter>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Encounter/example-opa-encounter-3"/>
+        <resource> 
+            <Encounter
+                xmlns="http://hl7.org/fhir">
+                <id value="example-opa-encounter-3"/>
+                <meta>
+                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
+                </meta>
+                <extension url="http://oash.org/fhir/us/opa/StructureDefinition/insurance-type">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="https://nahdo.org/sopt"/>
+                            <code value="5"/>
+                            <display value="PRIVATE HEALTH INSURANCE"/>
+                        </coding>
+                        <text value="PRIVATE HEALTH INSURANCE"/>
+                    </valueCodeableConcept>
+                </extension>
+                <extension url="http://oash.org/fhir/us/opa/StructureDefinition/payer-for-visit">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="https://nahdo.org/sopt"/>
+                            <code value="111"/>
+                            <display value="Medicare HMO"/>
+                        </coding>
+                        <text value="Medicare HMO"/>
+                    </valueCodeableConcept>
+                </extension>
+                <status value="finished"/>
+                <class>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                    <code value="AMB"/>
+                    <display value="ambulatory"/>
+                </class>
+                <type>
+                    <coding>
+                        <system value="http://www.ama-assn.org/go/cpt"/>
+                        <code value="99201"/>
+                    </coding>
+                    <text value="Office Visit"/>
+                </type>
+                <subject>
+                    <reference value="Patient/example-opa-patient"/>
+                </subject>
+                <period>
+                    <start value="2023-04-04T17:00:14-05:00"/>
+                    <end value="2023-04-04T18:00:14-05:00"/>
+                </period>
+            </Encounter>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Organization/example-opa-fp-provider-organization"/>
+        <resource>
+            <Organization xmlns="http://hl7.org/fhir">
+                <id value="example-opa-fp-provider-organization"/>
+                <meta>
+                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/fp-provider-organization"/>
+                </meta>
+                <identifier>
+                    <system value="http://hl7.org/fhir/sid/us-npi"/>
+                    <value value="1407071236"/>
+                </identifier>
+                <active value="true"/>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+                        <code value="prov"/>
+                        <display value="Healthcare Provider"/>
+                    </coding>
+                </type>
+                <name value="Acme Clinic"/>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="(+1) 734-677-7777"/>
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="customer-service@acme-clinic.org"/>
+                </telecom>
+                <address>
+                    <line value="3300 Washtenaw Avenue, Suite 227"/>
+                    <city value="Amherst"/>
+                    <state value="MA"/>
+                    <postalCode value="01002"/>
+                    <country value="USA"/>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/PractitionerRole/example-opa-practitioner-role"/>
+        <resource>            
+            <PractitionerRole
+                xmlns="http://hl7.org/fhir">
+                <id value="example-opa-practitioner-role"/>
+                <meta>
+                    <versionId value="5"/>
+                    <lastUpdated value="2023-07-20T15:34:50.233Z"/>
+                </meta>
+                <identifier>
+                    <system value="http://www.acme.org/practitioners"/>
+                    <value value="23"/>
+                </identifier>
+                <active value="true"/>
+                <period>
+                    <start value="2012-01-01"/>
+                </period>
+                <practitioner>
+                    <reference value="Practitioner/example-opa-practitioner"/>
+                    <display value="Dr Adam Careful"/>
+                </practitioner>
+                <code>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0286"/>
+                        <code value="RP"/>
+                    </coding>
+                </code>
+                <specialty>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="408443003"/>
+                        <display value="General medical practice"/>
+                    </coding>
+                </specialty>
+            </PractitionerRole> 
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/example-opa-blood-pressure"/>
+        <resource>
+            <Observation
+                xmlns="http://hl7.org/fhir">
+                <id value="example-opa-blood-pressure"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2023-08-04T15:27:07.103Z"/>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure"/>
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                        <display value="Vital Signs"/>
+                    </coding>
+                    <text value="Vital Signs"/>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="85354-9"/>
+                        <display value="Blood pressure panel with all children optional"/>
+                    </coding>
+                    <text value="Blood pressure systolic and diastolic"/>
+                </code>
+                <subject>
+                    <reference value="Patient/example-opa-patient"/>
+                </subject>
+                <effectiveDateTime value="2021-11-11"/>
+                <component>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="8480-6"/>
+                            <display value="Systolic blood pressure"/>
+                        </coding>
+                        <text value="Systolic blood pressure"/>
+                    </code>
+                    <valueQuantity>
+                        <value value="109"/>
+                        <unit value="mmHg"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mm[Hg]"/>
+                    </valueQuantity>
+                </component>
+                <component>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="8462-4"/>
+                            <display value="Diastolic blood pressure"/>
+                        </coding>
+                        <text value="Diastolic blood pressure"/>
+                    </code>
+                    <valueQuantity>
+                        <value value="44"/>
+                        <unit value="mmHg"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mm[Hg]"/>
+                    </valueQuantity>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/example-opa-body-height"/>
+        <resource>
+            <Observation
+                xmlns="http://hl7.org/fhir">
+                <id value="example-opa-body-height"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2023-08-04T15:32:18.865Z"/>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height"/>
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                        <display value="Vital Signs"/>
+                    </coding>
+                    <text value="Vital Signs"/>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="8302-2"/>
+                        <display value="Body height"/>
+                    </coding>
+                    <text value="height"/>
+                </code>
+                <subject>
+                    <reference value="Patient/example-opa-patient"/>
+                </subject>
+                <effectiveDateTime value="2021-11-11"/>
+                <valueQuantity>
+                    <value value="111.506"/>
+                    <unit value="cm"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="cm"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/example-opa-body-weight"/>
+        <resource>
+            <Observation
+                xmlns="http://hl7.org/fhir">
+                <id value="example-opa-body-weight"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2023-08-04T15:32:19.040Z"/>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"/>
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                        <display value="Vital Signs"/>
+                    </coding>
+                    <text value="Vital Signs"/>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="29463-7"/>
+                        <display value="Body Weight"/>
+                    </coding>
+                    <text value="weight"/>
+                </code>
+                <subject>
+                    <reference value="Patient/example-opa-patient"/>
+                </subject>
+                <effectiveDateTime value="2021-07-02"/>
+                <valueQuantity>
+                    <value value="20.09414"/>
+                    <unit value="kg"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="kg"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/example-opa-smoking-status"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="example-opa-smoking-status"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"/>
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="social-history"/>
+                        <display value="Social History"/>
+                    </coding>
+                    <text value="Social History"/>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="72166-2"/>
+                        <display value="Tobacco smoking status"/>
+                    </coding>
+                    <text value="Tobacco smoking status"/>
+                </code>
+                <subject>
+                    <reference value="Patient/example-opa-patient"/>
+                </subject>
+                <effectiveDateTime value="2016-03-18T05:27:04Z"/>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="266919005"/>
+                    </coding>
+                    <text value="Never smoked tobacco (finding)"/>
+                </valueCodeableConcept>
+            </Observation> 
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/example-opa-sexual-orientation"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="example-opa-sexual-orientation"/>
+                <meta>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+                        <valueString value="Sexual Orientation Observation Example"/>
+                    </extension>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation"/>
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="social-history"/>
+                        <display value="Social History"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="76690-7"/>
+                        <display value="Sexual orientation"/>
+                    </coding>
+                    <text value="Sexual orientation"/>
+                </code>
+                <subject>
+                    <reference value="Patient/example-opa-patient"/>
+                </subject>
+                <effectiveDateTime value="2021-11-11"/>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+                        <code value="ASKU"/>
+                        <display value="Asked but no answer"/>
+                    </coding>
+                    <text value="Asked but no answer"/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/example-opa-seeking-counseling"/>
+        <resource>  
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="example-opa-seeking-counseling"/>
+                <meta>
+                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/seeking-counseling"/>
+                </meta>
+                <status value="final"/> 
+                <code> 
+                    <coding> 
+                        <system value="http://loinc.org"/> 
+                        <code value="98076-3 "/> 
+                        <display value="Do you want to talk about contraception or pregnancy prevention during your visit today"/> 
+                    </coding>  
+                </code> 
+                <subject> 
+                    <reference value="Patient/example-opa-patient"/> 
+                </subject> 
+                <effectiveDateTime value="2023-01-01"/> 
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="LA32390-9"/>
+                        <display value="No - This question does not apply to me/I prefer not to answer"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/example-opa-chlamydia-result-final-1"/>
+        <resource>   
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="example-opa-chlamydia-result-final-1"/>
+                <meta>
+                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
+                </meta>
+                <status value="final"/>
+                <category> 
+                    <coding> 
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/> 
+                        <code value="laboratory"/> 
+                        <display value="Laboratory"/> 
+                    </coding> 
+                    <text value="Laboratory"/> 
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="16601-7"/>
+                        <display value="Chlamydia trachomatis rRNA [Presence] in Urine by Probe"/>
+                    </coding>
+                </code> 
+                <subject> 
+                    <reference value="Patient/example-opa-patient"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="419984006"/>
+                        <display value="Inconclusive (qualifier value)"/>
+                    </coding>
+                </valueCodeableConcept> 
+            </Observation> 
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/example-opa-chlamydia-result-final-2"/>
+        <resource>   
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="example-opa-chlamydia-result-final-2"/>
+                <meta>
+                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
+                </meta>
+                <status value="final"/>
+                <category> 
+                    <coding> 
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/> 
+                        <code value="laboratory"/> 
+                        <display value="Laboratory"/> 
+                    </coding> 
+                    <text value="Laboratory"/> 
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="16601-7"/>
+                        <display value="Chlamydia trachomatis rRNA [Presence] in Urine by Probe"/>
+                    </coding>
+                </code> 
+                <subject> 
+                    <reference value="Patient/example-opa-patient"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="10828004"/>
+                        <display value="Positive"/>
+                    </coding>
+                </valueCodeableConcept> 
+            </Observation> 
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/example-opa-chlamydia-result-prelim"/>
+        <resource>   
+            <Observation
+                xmlns="http://hl7.org/fhir">
+                <id value="example-opa-chlamydia-result-prelim"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2023-08-23T16:23:34.050Z"/>
+                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
+                </meta>
+                <status value="preliminary"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="laboratory"/>
+                        <display value="Laboratory"/>
+                    </coding>
+                    <text value="Laboratory"/>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="16601-7"/>
+                        <display value="Chlamydia trachomatis rRNA [Presence] in Urine by Probe"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/example-opa-patient"/>
+                </subject>
+            </Observation>
+        </resource>
+    </entry>
+</Bundle>
