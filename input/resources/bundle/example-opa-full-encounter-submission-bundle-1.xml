@@ -707,7 +707,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Encounter/example-opa-seeking-counseling"/>
+        <fullUrl value="http://example.org/fhir/Observation/example-opa-seeking-counseling"/>
         <resource>  
             <Observation xmlns="http://hl7.org/fhir">
                 <id value="example-opa-seeking-counseling"/>
