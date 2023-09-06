@@ -28,6 +28,13 @@
                 <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.12"/>
             </binding>
         </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+            </type>
+        </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
             <min value="0"/>

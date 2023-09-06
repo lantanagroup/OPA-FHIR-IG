@@ -3,7 +3,7 @@
 <Observation xmlns="http://hl7.org/fhir">
     <id value="example-opa-seeking-counseling"/>
     <meta>
-        <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/seeking-counseling"/>
+        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/seeking-counseling"/>
     </meta>
     <status value="final"/> 
     <code> 

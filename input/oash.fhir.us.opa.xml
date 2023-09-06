@@ -371,7 +371,8 @@
             </reference>
             <name value="OPA Family Planning Clinic example"/>
             <description value="OPA Family Planning Clinic example"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/fp-provider-organization"/>
             <groupingId value="new-group3"/>
         </resource>
         <resource>
@@ -446,7 +447,8 @@
                 <reference value="Observation/example-opa-pap-smear-result-prelim"/></reference>
             <name value="Pap Smear Lab Result example - Preliminary"/>
             <description value="Pap Smear Lab Result example - Preliminary"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result"/>
             <groupingId value="new-group9"/>
         </resource>
         <resource>
@@ -454,7 +456,8 @@
                 <reference value="Observation/example-opa-chlamydia-result-prelim"/></reference>
             <name value="Chlamydia Lab Result example - Preliminary"/>
             <description value="Chlamydia Lab Result example - Preliminary"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
             <groupingId value="new-group9"/>
         </resource>
         <resource>
@@ -462,7 +465,8 @@
                 <reference value="Observation/example-opa-hpv-result-prelim"/></reference>
             <name value="HPV Lab Result example - Preliminary"/>
             <description value="HPV Lab Result example - Preliminary"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/hpv-result"/>
             <groupingId value="new-group9"/>
         </resource>
         <resource>
@@ -470,7 +474,8 @@
                 <reference value="Observation/example-opa-neisseria-gonorrhoeae-result-prelim"/></reference>
             <name value="Neisseria Gonorrhoeae Lab Result example - Preliminary"/>
             <description value="Neisseria Gonorrhoeae Lab Result example - Preliminary"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result"/>
             <groupingId value="new-group9"/>
         </resource>
         <resource>
@@ -478,7 +483,8 @@
                 <reference value="Observation/example-opa-hiv-1-2-result-prelim"/></reference>
             <name value="HIV Lab Result example - Preliminary"/>
             <description value="HIV Lab Result example - Preliminary"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result"/>
             <groupingId value="new-group9"/>
         </resource>
         <resource>
@@ -486,7 +492,8 @@
                 <reference value="Observation/example-opa-syphilis-result-prelim"/></reference>
             <name value="Syphilis Lab Result example - Preliminary"/>
             <description value="Syphilis Lab Result example - Preliminary"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result"/>
             <groupingId value="new-group9"/>
         </resource>
         <resource>
@@ -494,7 +501,8 @@
                 <reference value="Observation/example-opa-pap-smear-result-final"/></reference>
             <name value="Pap Smear Lab Result example - Final"/>
             <description value="Pap Smear Lab Result example - Final"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result"/>
             <groupingId value="new-group10"/>
         </resource>
         <resource>
@@ -502,7 +510,8 @@
                 <reference value="Observation/example-opa-chlamydia-result-final"/></reference>
             <name value="Chlamydia Lab Result example - Final"/>
             <description value="Chlamydia Lab Result example - Final"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
             <groupingId value="new-group10"/>
         </resource>
         <resource>
@@ -510,7 +519,8 @@
                 <reference value="Observation/example-opa-hpv-result-final"/></reference>
             <name value="HPV Lab Result example - Final"/>
             <description value="HPV Lab Result example - Final"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/hpv-result"/>
             <groupingId value="new-group10"/>
         </resource>
         <resource>
@@ -518,7 +528,8 @@
                 <reference value="Observation/example-opa-neisseria-gonorrhoeae-result-final"/></reference>
             <name value="Neisseria Gonorrhoeae Lab Result example - Final"/>
             <description value="Neisseria Gonorrhoeae Lab Result example - Final"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result"/>
             <groupingId value="new-group10"/>
         </resource>
         <resource>
@@ -526,7 +537,8 @@
                 <reference value="Observation/example-opa-hiv-1-2-result-final"/></reference>
             <name value="HIV Lab Result example - Final"/>
             <description value="HIV Lab Result example - Final"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result"/>
             <groupingId value="new-group10"/>
         </resource>
         <resource>
@@ -534,7 +546,8 @@
                 <reference value="Observation/example-opa-syphilis-result-final"/></reference>
             <name value="Syphilis Lab Result example - Final"/>
             <description value="Syphilis Lab Result example - Final"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result"/>
             <groupingId value="new-group10"/>
         </resource>
         <resource>
@@ -611,7 +624,7 @@
             <name value="Pregnancy Counseling example"/>
             <description value="Pregnancy Counseling example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="https://hl7.org/fhir/us/opa/StructureDefinition/pregnancy-counseling"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/opa/StructureDefinition/pregnancy-counseling"/>
             <groupingId value="new-group8"/>
         </resource>
         <resource>
