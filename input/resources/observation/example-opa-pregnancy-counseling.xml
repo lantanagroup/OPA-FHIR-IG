@@ -3,13 +3,7 @@
 <Observation xmlns="http://hl7.org/fhir">
     <id value="example-opa-pregnancy-counseling"/>
     <meta>
-<<<<<<< HEAD
         <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/pregnancy-counseling"/>
-=======
-        <versionId value="1"/>
-        <lastUpdated value="2023-08-21T13:10:37.333Z"/>
-        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/pregnancy-counseling"/>
->>>>>>> 404000353beee300c6e44a911e6957050d8b57bf
     </meta>
     <status value="final"/>
     <code>
