@@ -29,8 +29,8 @@
     <valueCodeableConcept>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="419984006"/>
-            <display value="Inconclusive"/>
+            <code value="82334004"/>
+            <display value="Indeterminate (qualifier value)"/>
         </coding>
     </valueCodeableConcept>
 </Observation>

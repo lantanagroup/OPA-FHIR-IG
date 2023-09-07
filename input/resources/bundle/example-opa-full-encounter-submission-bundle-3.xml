@@ -579,9 +579,9 @@
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
                         <code value="ASKU"/>
-                        <display value="Asked but no answer"/>
+                        <display value="asked but unknown"/>
                     </coding>
-                    <text value="Asked but no answer"/>
+                    <text value="asked but unknown"/>
                 </valueCodeableConcept>
             </Observation>
         </resource>

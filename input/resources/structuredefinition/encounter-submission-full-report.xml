@@ -38,6 +38,7 @@
                     <path value="resource"/>
                 </discriminator>
                 <rules value="open"/>
+                <minimum value="4"/>
             </slicing>
         </element>
         <element id="Bundle.entry:patient">

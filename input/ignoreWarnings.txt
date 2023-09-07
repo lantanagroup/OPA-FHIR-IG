@@ -10,3 +10,9 @@ The Implementation Guide contains no examples for this extension
 
 # US Core Lab Observation Category version consistent with US Core 6.1.0
 Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
+
+# OPA ValueSets in VSAC
+ValueSet http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.211 not found
+The valueSet reference http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.210 on element Observation.value[x] could not be resolved
+ValueSet http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.210 not found
+The valueSet reference http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.211 on element Observation.value[x] could not be resolved 

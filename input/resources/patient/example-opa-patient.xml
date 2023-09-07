@@ -5,6 +5,7 @@
     <meta>
         <versionId value="10"/>
         <lastUpdated value="2023-08-09T17:01:13.300Z"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
         <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">

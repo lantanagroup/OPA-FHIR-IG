@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<Observation xmlns="http://hl7.org/fhir">
+<Observation
+    xmlns="http://hl7.org/fhir">
     <id value="example-opa-pregnancy-counseling"/>
     <meta>
-        <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/pregnancy-counseling"/>
+        <versionId value="1"/>
+        <lastUpdated value="2023-08-21T13:10:37.333Z"/>
+        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/pregnancy-counseling"/>
     </meta>
     <status value="final"/>
     <code>
