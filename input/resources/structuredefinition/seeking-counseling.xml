@@ -44,7 +44,6 @@
             <path value="Observation.subject.type"/>
             <type>
                 <code value="uri"/>
-                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
             </type>
         </element>
         <element id="Observation.value[x]">
