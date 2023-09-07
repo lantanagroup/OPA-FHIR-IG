@@ -40,12 +40,15 @@
                 <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
             </type>
         </element>
+<<<<<<< HEAD
         <element id="Observation.subject.type">
             <path value="Observation.subject.type"/>
             <type>
                 <code value="uri"/>
             </type>
         </element>
+=======
+>>>>>>> 404000353beee300c6e44a911e6957050d8b57bf
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
             <min value="1"/>

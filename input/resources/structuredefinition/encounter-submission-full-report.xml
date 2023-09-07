@@ -39,7 +39,6 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
-            <min value="5"/>
         </element>
         <element id="Bundle.entry:patient">
             <path value="Bundle.entry"/>

@@ -5,7 +5,7 @@
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2023-08-23T16:23:35.643Z"/>
-        <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result"/>
+        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result"/>
     </meta>
     <status value="preliminary"/>
     <category>
@@ -26,4 +26,11 @@
     <subject>
         <reference value="Patient/example-opa-patient"/>
     </subject>
+    <dataAbsentReason>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+        </coding>
+    </dataAbsentReason>
 </Observation>
