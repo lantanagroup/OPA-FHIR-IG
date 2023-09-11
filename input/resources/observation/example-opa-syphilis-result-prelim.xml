@@ -5,7 +5,7 @@
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2023-08-23T16:23:32.985Z"/>
-        <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/syphilis-result"/>
+        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result"/>
     </meta>
     <status value="preliminary"/>
     <category>

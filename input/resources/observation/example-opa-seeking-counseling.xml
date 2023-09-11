@@ -9,7 +9,7 @@
     <code> 
         <coding> 
             <system value="http://loinc.org"/> 
-            <code value="98076-3 "/> 
+            <code value="98076-3"/> 
             <display value="Do you want to talk about contraception or pregnancy prevention during your visit today"/> 
         </coding>  
     </code> 

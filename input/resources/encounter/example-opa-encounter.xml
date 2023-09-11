@@ -5,7 +5,7 @@
     <meta>
         <versionId value="14"/>
         <lastUpdated value="2023-08-24T15:21:44.206Z"/>
-        <profile value="https://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
+        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
     </meta>
     <extension url="http://oash.org/fhir/us/opa/StructureDefinition/insurance-type">
         <valueCodeableConcept>

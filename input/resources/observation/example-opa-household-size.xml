@@ -5,7 +5,7 @@
     <meta>
         <versionId value="7"/>
         <lastUpdated value="2023-07-20T15:34:13.937Z"/>
-        <profile value="http:​/​/oash​.org​/fhir​/us​/opa​/StructureDefinition​/household-size"/>
+        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/household-size"/>
     </meta>
     <status value="final"/>
     <category>

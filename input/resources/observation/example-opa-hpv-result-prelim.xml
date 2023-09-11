@@ -28,7 +28,7 @@
     </subject>
     <dataAbsentReason>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
             <code value="temp-unknown"/>
             <display value="Temporarily Unknown"/>
         </coding>

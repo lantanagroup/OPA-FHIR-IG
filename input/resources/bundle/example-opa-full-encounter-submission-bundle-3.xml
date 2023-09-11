@@ -12,10 +12,14 @@
     <entry>
         <fullUrl value="http://example.org/fhir/Patient/example-opa-patient"/>
         <resource>
-            <Patient xmlns="http://hl7.org/fhir">
+            <Patient
+                xmlns="http://hl7.org/fhir">
                 <id value="example-opa-patient"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+                    <versionId value="10"/>
+                    <lastUpdated value="2023-08-09T17:01:13.300Z"/>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
                 </meta>
                 <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
                     <extension url="ombCategory">
@@ -71,12 +75,14 @@
                 <extension url="http://oash.org/fhir/us/opa/StructureDefinition/client-asserted-sex">
                     <valueCode value="female"/>
                 </extension>
-                <extension url="https://hl7.org/fhir/us/opa/StructureDefinition/english-proficiency">
-                    <valueCoding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="455961000124100"/>
-                        <display value="Not proficient in English (finding)"/>
-                    </valueCoding>
+                <extension url="http://oash.org/fhir/us/opa/StructureDefinition/english-proficiency">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="455961000124100"/>
+                            <display value="Not proficient in English (finding)"/>
+                        </coding>
+                    </valueCodeableConcept>
                 </extension>
                 <identifier>
                     <use value="usual"/>
@@ -130,7 +136,7 @@
                 xmlns="http://hl7.org/fhir">
                 <id value="example-opa-encounter-1"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
                 </meta>
                 <extension url="http://oash.org/fhir/us/opa/StructureDefinition/insurance-type">
                     <valueCodeableConcept>
@@ -161,7 +167,7 @@
                 <type>
                     <coding>
                         <system value="http://www.ama-assn.org/go/cpt"/>
-                        <code value="99201"/>
+                        <code value="99202"/>
                     </coding>
                     <text value="Office Visit"/>
                 </type>
@@ -182,7 +188,7 @@
                 xmlns="http://hl7.org/fhir">
                 <id value="example-opa-encounter-2"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
                 </meta>
                 <extension url="http://oash.org/fhir/us/opa/StructureDefinition/insurance-type">
                     <valueCodeableConcept>
@@ -213,7 +219,7 @@
                 <type>
                     <coding>
                         <system value="http://www.ama-assn.org/go/cpt"/>
-                        <code value="99201"/>
+                        <code value="99202"/>
                     </coding>
                     <text value="Office Visit"/>
                 </type>
@@ -234,7 +240,7 @@
                 xmlns="http://hl7.org/fhir">
                 <id value="example-opa-encounter-3"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
                 </meta>
                 <extension url="http://oash.org/fhir/us/opa/StructureDefinition/insurance-type">
                     <valueCodeableConcept>
@@ -265,7 +271,7 @@
                 <type>
                     <coding>
                         <system value="http://www.ama-assn.org/go/cpt"/>
-                        <code value="99201"/>
+                        <code value="99202"/>
                     </coding>
                     <text value="Office Visit"/>
                 </type>
@@ -285,7 +291,7 @@
             <Organization xmlns="http://hl7.org/fhir">
                 <id value="example-opa-fp-provider-organization"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/fp-provider-organization"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/fp-provider-organization"/>
                 </meta>
                 <identifier>
                     <system value="http://hl7.org/fhir/sid/us-npi"/>
@@ -592,13 +598,13 @@
             <Observation xmlns="http://hl7.org/fhir">
                 <id value="example-opa-seeking-counseling"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/seeking-counseling"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/seeking-counseling"/>
                 </meta>
                 <status value="final"/> 
                 <code> 
                     <coding> 
                         <system value="http://loinc.org"/> 
-                        <code value="98076-3 "/> 
+                        <code value="98076-3"/> 
                         <display value="Do you want to talk about contraception or pregnancy prevention during your visit today"/> 
                     </coding>  
                 </code> 
@@ -622,7 +628,7 @@
             <Observation xmlns="http://hl7.org/fhir">
                 <id value="example-opa-chlamydia-result-final-1"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
                 </meta>
                 <status value="final"/>
                 <category> 
@@ -659,7 +665,7 @@
             <Observation xmlns="http://hl7.org/fhir">
                 <id value="example-opa-chlamydia-result-final-2"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
                 </meta>
                 <status value="final"/>
                 <category> 
@@ -699,7 +705,7 @@
                 <meta>
                     <versionId value="1"/>
                     <lastUpdated value="2023-08-23T16:23:34.050Z"/>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
                 </meta>
                 <status value="preliminary"/>
                 <category>

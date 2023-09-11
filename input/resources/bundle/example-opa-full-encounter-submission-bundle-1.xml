@@ -12,10 +12,14 @@
     <entry>
         <fullUrl value="http://example.org/fhir/Patient/example-opa-patient"/>
         <resource>
-            <Patient xmlns="http://hl7.org/fhir">
+            <Patient
+                xmlns="http://hl7.org/fhir">
                 <id value="example-opa-patient"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+                    <versionId value="10"/>
+                    <lastUpdated value="2023-08-09T17:01:13.300Z"/>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
                 </meta>
                 <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
                     <extension url="ombCategory">
@@ -71,12 +75,14 @@
                 <extension url="http://oash.org/fhir/us/opa/StructureDefinition/client-asserted-sex">
                     <valueCode value="female"/>
                 </extension>
-                <extension url="https://hl7.org/fhir/us/opa/StructureDefinition/english-proficiency">
-                    <valueCoding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="455961000124100"/>
-                        <display value="Not proficient in English (finding)"/>
-                    </valueCoding>
+                <extension url="http://oash.org/fhir/us/opa/StructureDefinition/english-proficiency">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="455961000124100"/>
+                            <display value="Not proficient in English (finding)"/>
+                        </coding>
+                    </valueCodeableConcept>
                 </extension>
                 <identifier>
                     <use value="usual"/>
@@ -132,7 +138,7 @@
                 <meta>
                     <versionId value="14"/>
                     <lastUpdated value="2023-08-24T15:21:44.206Z"/>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
                 </meta>
                 <extension url="http://oash.org/fhir/us/opa/StructureDefinition/insurance-type">
                     <valueCodeableConcept>
@@ -163,7 +169,7 @@
                 <type>
                     <coding>
                         <system value="http://www.ama-assn.org/go/cpt"/>
-                        <code value="99201"/>
+                        <code value="99202"/>
                     </coding>
                     <text value="Office Visit"/>
                 </type>
@@ -183,7 +189,7 @@
             <Organization xmlns="http://hl7.org/fhir">
                 <id value="example-opa-fp-provider-organization"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/fp-provider-organization"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/fp-provider-organization"/>
                 </meta>
                 <identifier>
                     <system value="http://hl7.org/fhir/sid/us-npi"/>
@@ -475,7 +481,7 @@
                 <effectiveDateTime value="2021-11-11"/>
                 <valueCodeableConcept>
                     <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+                        <system value="http://snomed.info/sct"/>
                         <code value="42035005"/>
                         <display value="Bisexual"/>
                     </coding>
@@ -494,7 +500,7 @@
                         <valueString value="Pregnancy Status Observation Example"/>
                     </extension>
                     <profile
-                        value="https://hl7.org/fhir/us/opa/StructureDefinition/pregnancy-status"/>
+                        value="http://hl7.org/fhir/us/opa/StructureDefinition/pregnancy-status"/>
                 </meta>
                 <status value="final"/>
                 <category>
@@ -536,7 +542,7 @@
                 <id value="example-opa-pregnancy-intent"/>
                 <meta>
                     <profile
-                        value="https://hl7.org/fhir/us/opa/StructureDefinition/pregnancy-intention"/>
+                        value="http://hl7.org/fhir/us/opa/StructureDefinition/pregnancy-intention"/>
                 </meta>
                 <status value="final"/>
                 <category>
@@ -577,7 +583,7 @@
             <Observation xmlns="http://hl7.org/fhir">
                 <id value="example-opa-contraceptive-method-intake"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/contraception-method-intake"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/contraception-method-intake"/>
                 </meta>
                 <status value="final"/> 
                 <category> 
@@ -602,7 +608,7 @@
                     <coding>
                         <system value="http://snomed.info/sct"/>
                         <code value="268458002"/>
-                        <display value="Combined oral contraceptive - use (finding)"/>
+                        <display value="Uses combined oral contraception (finding)"/>
                     </coding>
                 </valueCodeableConcept>
             </Observation>
@@ -614,7 +620,7 @@
             <Observation xmlns="http://hl7.org/fhir">
                 <id value="example-opa-contraceptive-method-exit"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/contraception-method-exit"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/contraception-method-exit"/>
                 </meta>
                 <status value="final"/> 
                 <category> 
@@ -639,7 +645,7 @@
                     <coding>
                         <system value="http://snomed.info/sct"/>
                         <code value="312081001"/>
-                        <display value="Intrauterine device contraception (finding)"/>
+                        <display value="Uses intrauterine device contraception (finding)"/>
                     </coding>
                 </valueCodeableConcept>
             </Observation>
@@ -651,7 +657,7 @@
             <Observation xmlns="http://hl7.org/fhir">
                 <id value="example-opa-contraceptive-counseling"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/contraception-counseling"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/contraception-counseling"/>
                 </meta>
                 <status value="final"/> 
                 <category> 
@@ -688,7 +694,7 @@
             <Observation xmlns="http://hl7.org/fhir">
                 <id value="example-opa-pregnancy-counseling"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/pregnancy-counseling"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/pregnancy-counseling"/>
                 </meta>
                 <status value="final"/> 
                 <code> 
@@ -712,13 +718,13 @@
             <Observation xmlns="http://hl7.org/fhir">
                 <id value="example-opa-seeking-counseling"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/seeking-counseling"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/seeking-counseling"/>
                 </meta>
                 <status value="final"/> 
                 <code> 
                     <coding> 
                         <system value="http://loinc.org"/> 
-                        <code value="98076-3 "/> 
+                        <code value="98076-3"/> 
                         <display value="Do you want to talk about contraception or pregnancy prevention during your visit today"/> 
                     </coding>  
                 </code> 
@@ -742,7 +748,7 @@
             <Observation xmlns="http://hl7.org/fhir">
                 <id value="example-opa-pap-smear-result-prelim"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/pap-smear-result"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result"/>
                 </meta>
                 <status value="preliminary"/>
                 <category> 
@@ -772,7 +778,7 @@
             <Observation xmlns="http://hl7.org/fhir">
                 <id value="example-opa-hpv-result-final"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/hpv-result"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/hpv-result"/>
                 </meta>
                 <status value="final"/>
                 <category> 
@@ -809,7 +815,7 @@
             <Observation xmlns="http://hl7.org/fhir">
                 <id value="example-opa-chlamydia-result-final"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
                 </meta>
                 <status value="final"/>
                 <category> 
@@ -846,7 +852,7 @@
             <Observation xmlns="http://hl7.org/fhir">
                 <id value="example-opa-neisseria-gonorrhoeae-result-final"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result"/>
                 </meta>
                 <status value="final"/>
                 <category> 
@@ -883,7 +889,7 @@
             <Observation xmlns="http://hl7.org/fhir">
                 <id value="example-opa-hiv-1-2-result-final"/>
                 <meta>
-                    <profile value="https://hl7.org/fhir/us/opa/StructureDefinition/hiv-1-2-result"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result"/>
                 </meta>
                 <status value="final"/>
                 <category> 
