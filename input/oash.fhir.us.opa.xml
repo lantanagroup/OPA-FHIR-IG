@@ -624,7 +624,7 @@
             <name value="Pregnancy Counseling example"/>
             <description value="Pregnancy Counseling example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/opa/StructureDefinition/pregnancy-counseling"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/pregnancy-counseling"/>
             <groupingId value="new-group8"/>
         </resource>
         <resource>
