@@ -1,12 +1,8 @@
 == Suppressed Messages ==
 # CPT and SOP codesystem cannot be validated
-Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
 The definition for the Code System with URI 'https://nahdo.org/sopt' doesnt provide any codes so the code cannot be validated
 	The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-
-# No examples for extensions, as these are included in containing resource examples
-The Implementation Guide contains no examples for this extension
 
 # US Core Lab Observation Category version consistent with US Core 6.1.0
 Reference to draft item http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
@@ -22,3 +18,4 @@ This element does not match any known slice defined in the profile http://hl7.or
 
 # OPA PractitionerRole codes
 None of the codings provided are in the value set 'Practice Setting Code Value Set' (http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#223366009)
+Details for PractitionerRole/example-opa-practitioner-role matching against profile http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1

@@ -674,8 +674,8 @@
                 <valueCodeableConcept>
                     <coding>
                         <system value="http://snomed.info/sct"/>
-                        <code value="419984006"/>
-                        <display value="Inconclusive (qualifier value)"/>
+                        <code value="10828004"/>
+                        <display value="Positive (qualifier value)"/>
                     </coding>
                 </valueCodeableConcept> 
             </Observation> 

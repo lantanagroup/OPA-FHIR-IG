@@ -249,8 +249,8 @@
                 </practitioner>
                 <code>
                     <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/v2-0286"/>
-                        <code value="RP"/>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="223366009"/>
                     </coding>
                 </code>
                 <specialty>
