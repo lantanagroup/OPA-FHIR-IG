@@ -20,56 +20,11 @@
         <element id="Bundle">
             <path value="Bundle"/>
         </element>
-        <element id="Bundle.extension">
-            <path value="Bundle.extension"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-            <short value="Extension"/>
-            <definition value="An Extension"/>
-            <min value="0"/>
-            <max value="*"/>
-            <base>
-                <path value="DomainResource.extension"/>
-                <min value="0"/>
-                <max value="*"/>
-            </base>
-            <type>
-                <code value="Extension"/>
-            </type>
-            <mustSupport value="true"/>
-            <isModifier value="false"/>
-            <isSummary value="false"/>
-        </element>
-        <element id="Bundle.extension:originalBundleReference">
-            <path value="Bundle.extension"/>
-            <sliceName value="originalBundleReference"/>
-            <short value="Original Bundle Reference"/>
-            <definition value="Subsequent Lab Resulting Bundles being submitted to OPA should use this Extension to include the Bundle.indentifier (system and value) of the originally submitted (Full Encounter Report) Bundle."/>
-            <comment value="Subsequent Lab Resulting Bundles being submitted to OPA should use this Extension to include the Bundle.indentifier (system and value) of the originally submitted (Full Encounter Report) Bundle."/>
-            <min value="1"/>
-            <max value="1"/>
-            <base>
-                <path value="DomainResource.extension"/>
-                <min value="0"/>
-                <max value="*"/>
-            </base>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/original-bundle-reference"/>
-            </type>
-            <mustSupport value="true"/>
-            <isModifier value="false"/>
-        </element>
         <element id="Bundle.identifier">
             <path value="Bundle.identifier"/>
-            <label value="Subsequent Lab Bundles should contain a Bundle.identifier that matches the Full Encounter Submission Bundle.identifier"/>
-            <short value="Subsequent Lab Bundles should contain a Bundle.identifier that matches the Full Encounter Submission Bundle.identifier"/>
-            <mustSupport value="true"/>
+            <label value="Subsequent Lab Bundles SHALL contain a Bundle.identifier that matches the Full Encounter Submission Bundle.identifier. Bundle identifiers SHOULD contain both a system and value"/>
+            <short value="Subsequent Lab Bundles SHALL contain a Bundle.identifier that matches the Full Encounter Submission Bundle.identifier. Bundle identifiers SHOULD contain both a system and value"/>
+            <min value="1"/>
         </element>
         <element id="Bundle.type">
             <path value="Bundle.type"/>

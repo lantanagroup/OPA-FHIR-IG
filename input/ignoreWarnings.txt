@@ -16,3 +16,9 @@ ValueSet http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.211 not
 The valueSet reference http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.210 on element Observation.value[x] could not be resolved
 ValueSet http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.210 not found
 The valueSet reference http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.211 on element Observation.value[x] could not be resolved 
+
+# OPA-defined slices are not expected to be known within US Core Patient profile
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0
+
+# OPA PractitionerRole codes
+None of the codings provided are in the value set 'Practice Setting Code Value Set' (http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#223366009)

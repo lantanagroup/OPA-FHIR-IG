@@ -27,7 +27,10 @@
     <subject>
         <reference value="Patient/example-opa-patient"/>
     </subject>
-    <effectiveDateTime value="2021-11-11"/>
+    <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
+    <performer>
+        <reference value="PractitionerRole/example-opa-practitioner-role"/>
+    </performer>
     <component>
         <code>
             <coding>

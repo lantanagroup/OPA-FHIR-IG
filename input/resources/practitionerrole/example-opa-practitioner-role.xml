@@ -27,8 +27,12 @@
     <specialty>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="408443003"/>
-            <display value="General medical practice"/>
+            <code value="223366009"/>
+            <display value="Healthcare professional (occupation)"/>
         </coding>
     </specialty>
+    <telecom>
+        <system value="phone"/>
+        <value value="555-555-5555"/>
+    </telecom>
 </PractitionerRole>

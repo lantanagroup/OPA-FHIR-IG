@@ -2,141 +2,137 @@
   <id value="example-opa-subsequent-lab-result-submission-bundle"/>
   <meta>
     <profile
-        value="http://oash.org/fhir/us/opa/StructureDefinition/subsequent-lab-results-submission"/>
+      value="http://oash.org/fhir/us/opa/StructureDefinition/subsequent-lab-results-submission"/>
   </meta>
-    <extension url="http://oash.org/fhir/us/opa/StructureDefinition/original-bundle-reference">
-        <valueIdentifier>
-            <system value="http://example.org/fhir/Patient/example-opa-patient"/>
-            <value value="dd3fa897-5b5a-43ee-9617-bf5fe46b9e94"/>
-        </valueIdentifier>
-    </extension>
+  <Identifier>
+    <system value="http://example.org/fhir/Patient/example-opa-patient"/>
+    <value value="dd3fa897-5b5a-43ee-9617-bf5fe46b9e94"/>
+  </Identifier>
   <type value="collection"/>
   <timestamp value="2023-08-25T10:06:42.482-04:00"/>
   <entry>
     <fullUrl value="http://example.org/fhir/Patient/example-opa-patient"/>
     <resource>
-      <Patient
-      xmlns="http://hl7.org/fhir">
-      <id value="example-opa-patient"/>
-      <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2023-08-09T17:01:13.300Z"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
-      </meta>
-      <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
-        <extension url="ombCategory">
-          <valueCoding>
-            <system value="urn:oid:2.16.840.1.113883.6.238"/>
-            <code value="2106-3"/>
-            <display value="White"/>
-          </valueCoding>
+      <Patient xmlns="http://hl7.org/fhir">
+        <id value="example-opa-patient"/>
+        <meta>
+          <versionId value="10"/>
+          <lastUpdated value="2023-08-09T17:01:13.300Z"/>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+          <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+        </meta>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2106-3"/>
+              <display value="White"/>
+            </valueCoding>
+          </extension>
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="1002-5"/>
+              <display value="American Indian or Alaska Native"/>
+            </valueCoding>
+          </extension>
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2028-9"/>
+              <display value="Asian"/>
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="Mixed"/>
+          </extension>
         </extension>
-        <extension url="ombCategory">
-          <valueCoding>
-            <system value="urn:oid:2.16.840.1.113883.6.238"/>
-            <code value="1002-5"/>
-            <display value="American Indian or Alaska Native"/>
-          </valueCoding>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2135-2"/>
+              <display value="Hispanic or Latino"/>
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="Hispanic or Latino"/>
+          </extension>
         </extension>
-        <extension url="ombCategory">
-          <valueCoding>
-            <system value="urn:oid:2.16.840.1.113883.6.238"/>
-            <code value="2028-9"/>
-            <display value="Asian"/>
-          </valueCoding>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+          <valueCode value="F"/>
         </extension>
-        <extension url="text">
-          <valueString value="Mixed"/>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+              <code value="ASKU"/>
+              <display value="asked but unknown"/>
+            </coding>
+            <text value="asked but unknown"/>
+          </valueCodeableConcept>
         </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
-        <extension url="ombCategory">
-          <valueCoding>
-            <system value="urn:oid:2.16.840.1.113883.6.238"/>
-            <code value="2135-2"/>
-            <display value="Hispanic or Latino"/>
-          </valueCoding>
+        <extension url="http://oash.org/fhir/us/opa/StructureDefinition/client-asserted-sex">
+          <valueCode value="female"/>
         </extension>
-        <extension url="text">
-          <valueString value="Hispanic or Latino"/>
+        <extension url="http://oash.org/fhir/us/opa/StructureDefinition/english-proficiency">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="455961000124100"/>
+              <display value="Not proficient in English (finding)"/>
+            </coding>
+          </valueCodeableConcept>
         </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
-        <valueCode value="F"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity">
-        <valueCodeableConcept>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
-            <code value="ASKU"/>
-            <display value="asked but unknown"/>
-          </coding>
-          <text value="asked but unknown"/>
-        </valueCodeableConcept>
-      </extension>
-      <extension url="http://oash.org/fhir/us/opa/StructureDefinition/client-asserted-sex">
-        <valueCode value="female"/>
-      </extension>
-      <extension url="http://oash.org/fhir/us/opa/StructureDefinition/english-proficiency">
-        <valueCodeableConcept>
-          <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="455961000124100"/>
-            <display value="Not proficient in English (finding)"/>
-          </coding>
-        </valueCodeableConcept>
-      </extension>
-      <identifier>
-        <use value="usual"/>
-        <type>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-            <code value="MR"/>
-            <display value="Medical Record Number"/>
-          </coding>
-          <text value="Medical Record Number"/>
-        </type>
-        <system value="http://hospital.smarthealthit.org"/>
-        <value value="M00002232"/>
-      </identifier>
-      <active value="true"/>
-      <name>
-        <family value="Woodrow"/>
-        <given value="Alisha"/>
-        <period>
-          <start value="1990-07-22"/>
-        </period>
-      </name>
-      <telecom>
-        <system value="phone"/>
-        <value value="555-555-5555"/>
-        <use value="home"/>
-      </telecom>
-      <telecom>
-        <system value="email"/>
-        <value value="alisha.woodrow@example.com"/>
-      </telecom>
-      <gender value="female"/>
-      <birthDate value="1990-07-22"/>
-      <address>
-        <line value="555 Paul Rigal Blvd"/>
-        <city value="Dublin"/>
-        <state value="OH"/>
-        <postalCode value="43017"/>
-        <country value="US"/>
-        <period>
-          <start value="2020-07-22"/>
-        </period>
-      </address>
+        <identifier>
+          <use value="usual"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+              <display value="Medical Record Number"/>
+            </coding>
+            <text value="Medical Record Number"/>
+          </type>
+          <system value="http://hospital.smarthealthit.org"/>
+          <value value="M00002232"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <family value="Woodrow"/>
+          <given value="Alisha"/>
+          <period>
+            <start value="1990-07-22"/>
+          </period>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="555-555-5555"/>
+          <use value="home"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="alisha.woodrow@example.com"/>
+        </telecom>
+        <gender value="female"/>
+        <birthDate value="1990-07-22"/>
+        <address>
+          <line value="555 Paul Rigal Blvd"/>
+          <city value="Dublin"/>
+          <state value="OH"/>
+          <postalCode value="43017"/>
+          <country value="US"/>
+          <period>
+            <start value="2020-07-22"/>
+          </period>
+        </address>
       </Patient>
     </resource>
   </entry>
   <entry>
     <fullUrl value="http://example.org/fhir/Encounter/example-opa-encounter"/>
     <resource>
-      <Encounter
-        xmlns="http://hl7.org/fhir">
+      <Encounter xmlns="http://hl7.org/fhir">
         <id value="example-opa-encounter"/>
         <meta>
           <versionId value="14"/>
@@ -187,11 +183,9 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl
-             value="http://example.org/fhir/Organization/example-opa-fp-provider-organization"/>
+    <fullUrl value="http://example.org/fhir/Organization/example-opa-fp-provider-organization"/>
     <resource>
-      <Organization
-        xmlns="http://hl7.org/fhir">
+      <Organization xmlns="http://hl7.org/fhir">
         <id value="example-opa-fp-provider-organization"/>
         <meta>
           <versionId value="5"/>
@@ -230,43 +224,44 @@
     </resource>
   </entry>
   <entry>
-        <fullUrl value="http://example.org/fhir/Observation/example-opa-pap-smear-result-final"/>
-        <resource>
-          <Observation
-            xmlns="http://hl7.org/fhir">
-            <id value="example-opa-pap-smear-result-final"/>
-            <meta>
-              <versionId value="1"/>
-              <lastUpdated value="2023-08-23T16:23:35.843Z"/>
-              <profile value="http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result"/>
-            </meta>
-            <status value="final"/>
-            <category>
-              <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-                <code value="laboratory"/>
-                <display value="Laboratory"/>
-              </coding>
-              <text value="Laboratory"/>
-            </category>
-            <code>
-              <coding>
-                <system value="http://loinc.org"/>
-                <code value="19765-7"/>
-                <display value="Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain"/>
-              </coding>
-            </code>
-            <subject>
-              <reference value="Patient/example-opa-patient"/>
-            </subject>
-            <valueCodeableConcept>
-              <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="125152006"/>
-                <display value="Specimen satisfactory for evaluation"/>
-              </coding>
-            </valueCodeableConcept>
-          </Observation>
-        </resource>
-    </entry>
+    <fullUrl value="http://example.org/fhir/Observation/example-opa-pap-smear-result-final"/>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="example-opa-pap-smear-result-final"/>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2023-08-23T16:23:35.843Z"/>
+          <profile value="http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result"/>
+        </meta>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+          </coding>
+          <text value="Laboratory"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="19765-7"/>
+            <display
+              value="Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain"
+            />
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/example-opa-patient"/>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="125152006"/>
+            <display value="Specimen satisfactory for evaluation"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
 </Bundle>

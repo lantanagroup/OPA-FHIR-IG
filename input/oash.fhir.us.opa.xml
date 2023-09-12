@@ -172,16 +172,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/original-bundle-reference"/>
-                <display value="OriginalBundleReference"/>
-            </reference>
-            <name value="Original Bundle Reference"/>
-            <description value="Subsequent Lab Resulting Bundles submitted to OPA should use this Extension to include the Bundle.identifier (system &amp;amp; value) of the originally submitted (Full Encounter Report) Bundle. This extension is required to be present in all Subsequent Lab Submission Bundles and is used by OPA to uniquely link Subsequent Lab submission Bundles to the corresponding Original Submission Bundle."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group7"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/contraceptive-method-intake"/>
                 <display value="ContraceptiveMethodIntake"/>
             </reference>
@@ -695,7 +685,7 @@
             <reference>
                 <reference value="Bundle/example-opa-subsequent-lab-result-submission-bundle"/></reference>
             <name value="Subsequent Lab Result Submission Bundle"/>
-            <description value="This Bundle exemplifies the finalization of a the pap-smear Lab Result Observation. Subsequent Lab Result Bundles reference their original Bundles’ identifiers through the original-bundle-reference extension (Bundle.extension). "/>
+            <description value="This Bundle exemplifies the finalization of a the pap-smear Lab Result Observation. Subsequent Lab Result Bundle.identifier SHALL match (system and value) the Bundle.identifier of the Bundle to which it is associated."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group11"/>
         </resource>

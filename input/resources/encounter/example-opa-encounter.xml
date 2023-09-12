@@ -44,7 +44,7 @@
         <reference value="Patient/example-opa-patient"/>
     </subject>
     <period>
-        <start value="2023-04-05T17:00:14-05:00"/>
+        <start value="2023-04-13T17:00:14-05:00"/>
         <end value="2023-04-13T18:00:14-05:00"/>
     </period>
 </Encounter>

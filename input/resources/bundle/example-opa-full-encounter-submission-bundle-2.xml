@@ -291,7 +291,10 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
-                <effectiveDateTime value="2021-11-11"/>
+                <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
+                <performer>
+                    <reference value="PractitionerRole/example-opa-practitioner-role"/>
+                </performer>
                 <component>
                     <code>
                         <coding>
@@ -358,7 +361,10 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
-                <effectiveDateTime value="2021-11-11"/>
+                <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
+                <performer>
+                    <reference value="PractitionerRole/example-opa-practitioner-role"/>
+                </performer>
                 <valueQuantity>
                     <value value="111.506"/>
                     <unit value="cm"/>
@@ -399,7 +405,10 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
-                <effectiveDateTime value="2021-07-02"/>
+                <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
+                <performer>
+                    <reference value="PractitionerRole/example-opa-practitioner-role"/>
+                </performer>
                 <valueQuantity>
                     <value value="20.09414"/>
                     <unit value="kg"/>
@@ -437,7 +446,10 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
-                <effectiveDateTime value="2016-03-18T05:27:04Z"/>
+                <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
+                <performer>
+                    <reference value="PractitionerRole/example-opa-practitioner-role"/>
+                </performer>
                 <valueCodeableConcept>
                     <coding>
                         <system value="http://snomed.info/sct"/>
@@ -479,7 +491,10 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
-                <effectiveDateTime value="2021-11-11"/>
+                <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
+                <performer>
+                    <reference value="PractitionerRole/example-opa-practitioner-role"/>
+                </performer>
                 <valueCodeableConcept>
                     <coding>
                         <system value="http://snomed.info/sct"/>
@@ -524,7 +539,10 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
-                <effectiveDateTime value="2022-08-24T10:39:52Z"/>
+                <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
+                <performer>
+                    <reference value="PractitionerRole/example-opa-practitioner-role"/>
+                </performer>
                 <valueCodeableConcept>
                     <coding>
                         <system value="http://snomed.info/sct"/>
@@ -566,7 +584,10 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
-                <effectiveDateTime value="2022-09-23T22:39:43Z"/>
+                <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
+                <performer>
+                    <reference value="PractitionerRole/example-opa-practitioner-role"/>
+                </performer>
                 <valueCodeableConcept>
                     <coding>
                         <system value="http://snomed.info/sct"/>
@@ -604,7 +625,10 @@
             <subject> 
                 <reference value="Patient/example-opa-patient"/> 
             </subject> 
-            <effectiveDateTime value="2022-01-01"/> 
+            <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
+            <performer>
+                <reference value="PractitionerRole/example-opa-practitioner-role"/>
+            </performer>
             <valueCodeableConcept>
                 <coding>
                     <system value="http://snomed.info/sct"/>
@@ -645,7 +669,10 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
-                <effectiveDateTime value="2022-01-01"/>
+                <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
+                <performer>
+                    <reference value="PractitionerRole/example-opa-practitioner-role"/>
+                </performer>
                 <valueCodeableConcept>
                     <coding>
                         <system value="http://snomed.info/sct"/>
@@ -675,7 +702,10 @@
                 <subject> 
                     <reference value="Patient/example-opa-patient"/> 
                 </subject> 
-                <effectiveDateTime value="2023-01-01"/> 
+                <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
+                <performer>
+                    <reference value="PractitionerRole/example-opa-practitioner-role"/>
+                </performer>
                 <valueBoolean value="true"/>
             </Observation>
         </resource>
@@ -699,7 +729,10 @@
                 <subject> 
                     <reference value="Patient/example-opa-patient"/> 
                 </subject> 
-                <effectiveDateTime value="2023-01-01"/> 
+                <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
+                <performer>
+                    <reference value="PractitionerRole/example-opa-practitioner-role"/>
+                </performer>
                 <valueCodeableConcept>
                     <coding>
                         <system value="http://loinc.org"/>
