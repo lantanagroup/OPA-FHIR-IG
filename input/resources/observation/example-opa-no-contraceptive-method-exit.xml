@@ -5,7 +5,7 @@
     <meta>
         <versionId value="7"/>
         <lastUpdated value="2023-07-20T15:34:12.895Z"/>
-        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraception-reason-exit"/>
+        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-exit"/>
     </meta>
     <status value="final"/>
     <category>

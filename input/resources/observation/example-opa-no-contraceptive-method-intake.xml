@@ -5,7 +5,7 @@
     <meta>
         <versionId value="7"/>
         <lastUpdated value="2023-07-20T15:34:12.977Z"/>
-        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraception-reason-intake"/>
+        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-intake"/>
     </meta>
     <status value="final"/>
     <category>

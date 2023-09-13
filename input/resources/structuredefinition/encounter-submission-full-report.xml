@@ -186,12 +186,12 @@
                 <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent"/>
             </type>
         </element>
-        <element id="Bundle.entry:contractive-method-intake">
+        <element id="Bundle.entry:contraceptive-method-intake">
             <path value="Bundle.entry"/>
-            <sliceName value="contractive-method-intake"/>
+            <sliceName value="contraceptive-method-intake"/>
             <max value="1"/>
         </element>
-        <element id="Bundle.entry:contractive-method-intake.resource">
+        <element id="Bundle.entry:contraceptive-method-intake.resource">
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>
@@ -199,18 +199,18 @@
                 <profile value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-intake"/>
             </type>
         </element>
-        <element id="Bundle.entry:no-contractive-method-reason-intake">
+        <element id="Bundle.entry:no-contraceptive-method-reason-intake">
             <path value="Bundle.entry"/>
-            <sliceName value="no-contractive-method-reason-intake"/>
+            <sliceName value="no-contraceptive-method-reason-intake"/>
             <min value="0"/>
             <max value="1"/>
         </element>
-        <element id="Bundle.entry:no-contractive-method-reason-intake.resource">
+        <element id="Bundle.entry:no-contraceptive-method-reason-intake.resource">
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>
                 <code value="Resource"/>
-                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraception-reason-intake"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-intake"/>
             </type>
         </element>
         <element id="Bundle.entry:contraceptive-method-exit">
@@ -236,7 +236,7 @@
             <min value="1"/>
             <type>
                 <code value="Resource"/>
-                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraception-reason-exit"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-exit"/>
             </type>
         </element>
         <element id="Bundle.entry:how-contraceptive-method-was-provided">

@@ -605,7 +605,7 @@
         <Observation xmlns="http://hl7.org/fhir">
             <id value="example-opa-no-contraceptive-method-intake"/>
             <meta>
-                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraception-reason-intake"/>
+                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-intake"/>
             </meta>
             <status value="final"/> 
             <category> 
@@ -648,7 +648,7 @@
                 <meta>
                     <versionId value="7"/>
                     <lastUpdated value="2023-07-20T15:34:12.895Z"/>
-                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraception-reason-exit"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-exit"/>
                 </meta>
                 <status value="final"/>
                 <category>

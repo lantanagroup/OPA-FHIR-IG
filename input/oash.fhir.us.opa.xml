@@ -192,20 +192,20 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/no-contraception-reason-intake"/>
-                <display value="NoContraceptionReasonIntake"/>
+                <reference value="StructureDefinition/no-contraceptive-reason-intake"/>
+                <display value="NoContraceptiveReasonIntake"/>
             </reference>
-            <name value="Reason For No Contraception - Intake"/>
+            <name value="Reason For No Contraceptive - Intake"/>
             <description value="Reason for no contraceptive method use at intake (DE#18)"/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group2"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/no-contraception-reason-exit"/>
-                <display value="NoContraceptionReasonExit"/>
+                <reference value="StructureDefinition/no-contraceptive-reason-exit"/>
+                <display value="NoContraceptiveReasonExit"/>
             </reference>
-            <name value="Reason For No Contraception - Exit"/>
+            <name value="Reason For No Contraceptive - Exit"/>
             <description value="Reason for no contraceptive method use at exit (DE#20)"/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group2"/>
@@ -236,7 +236,7 @@
                 <display value="SeekingCounseling"/>
             </reference>
             <name value="Seeking Counseling"/>
-            <description value="Observation to convey 'Do you want to talk about contraception or pregnancy prevention during your visit today?' (DE#41)"/>
+            <description value="Observation to convey 'Do you want to talk about contraceptive or pregnancy prevention during your visit today?' (DE#41)"/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group2"/>
         </resource>
@@ -548,7 +548,7 @@
             <name value="Contraceptive Counseling- Intake Observation example"/>
             <description value="Contraceptive Counseling- Intake Observation example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraception-counseling"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling"/>
             <groupingId value="new-group8"/>
         </resource>
         <resource>
@@ -559,7 +559,7 @@
             <name value="Contraceptive Counseling not given example"/>
             <description value="Contraceptive Counseling not given example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraception-counciling"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counciling"/>
             <groupingId value="new-group8"/>
         </resource>
         <resource>
@@ -570,7 +570,7 @@
             <name value="Contraceptive Method - Intake Observation example"/>
             <description value="Contraceptive Method - Intake Observation example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraception-method-intake"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-intake"/>
             <groupingId value="new-group8"/>
         </resource>
         <resource>
@@ -581,29 +581,29 @@
             <name value="Contraceptive Method - Exit Observation example"/>
             <description value="Contraceptive Method - Exit Observation example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraception-method-exit"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-exit"/>
             <groupingId value="new-group8"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/example-opa-no-contraceptive-method-intake"/>
-                <display value="No Contraception Method - Intake example"/>
+                <display value="No Contraceptive Method - Intake example"/>
             </reference>
-            <name value="No Contraception Method - Intake example"/>
-            <description value="No Contraception Method - Intake example"/>
+            <name value="No Contraceptive Method - Intake example"/>
+            <description value="No Contraceptive Method - Intake example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraception-reason-intake"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-intake"/>
             <groupingId value="new-group8"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/example-opa-no-contraceptive-method-exit"/>
-                <display value="No Contraception Method - Exit example"/>
+                <display value="No Contraceptive Method - Exit example"/>
             </reference>
-            <name value="No Contraception Method - Exit example"/>
-            <description value="No Contraception Method - Exit example"/>
+            <name value="No Contraceptive Method - Exit example"/>
+            <description value="No Contraceptive Method - Exit example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraception-reason-exit"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-exit"/>
             <groupingId value="new-group8"/>
         </resource>
         <resource>
@@ -661,7 +661,7 @@
             <reference>
                 <reference value="Bundle/example-opa-full-encounter-submission-bundle-1"/></reference>
             <name value="Encounter Submission Full Report Example"/>
-            <description value="This Bundle exemplifies a scenario of an encounter where the Patient reported using an oral contraception at intake, had a contraceptive provision method of a procedure during the encounter, and at exit, reported contraceptive method of an IUD.&#xA;&#xA;The following information was documented: patient, provider and encounter details, vital signs for blood pressure, height and weight, smoking status, sexual orientation, pregnancy status and intent, contraceptive method at intake and exit, reason for no contraception use at intake, contraceptive and pregnancy counseling provided, and five possible STI lab tests (pending pap-smear, HPV, Chlamydia, Gonorrhoaea, and HIV).&#xA;&#xA;Note the pap smear Observation exemplifies a pending/preliminary result (Observation.status=preliminary and .value is omitted). No test for syphilis was ordered as part of this example encounter and therefore, no Observation pertaining to Syphilis is included in this Bundle.&#xA;&#xA;Because contraceptive methods at intake and exit were provided, reasons for no contraceptive method (at intake and exit) are omitted from this Bundle."/>
+            <description value="This Bundle exemplifies a scenario of an encounter where the Patient reported using an oral contraceptive at intake, had a contraceptive provision method of a procedure during the encounter, and at exit, reported contraceptive method of an IUD.&#xA;&#xA;The following information was documented: patient, provider and encounter details, vital signs for blood pressure, height and weight, smoking status, sexual orientation, pregnancy status and intent, contraceptive method at intake and exit, reason for no contraceptive use at intake, contraceptive and pregnancy counseling provided, and five possible STI lab tests (pending pap-smear, HPV, Chlamydia, Gonorrhoaea, and HIV).&#xA;&#xA;Note the pap smear Observation exemplifies a pending/preliminary result (Observation.status=preliminary and .value is omitted). No test for syphilis was ordered as part of this example encounter and therefore, no Observation pertaining to Syphilis is included in this Bundle.&#xA;&#xA;Because contraceptive methods at intake and exit were provided, reasons for no contraceptive method (at intake and exit) are omitted from this Bundle."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group11"/>
         </resource>
@@ -669,7 +669,7 @@
             <reference>
                 <reference value="Bundle/example-opa-full-encounter-submission-bundle-2"/></reference>
             <name value="Encounter Submission Full Report Example 2"/>
-            <description value="This Bundle example exemplifies a scenario of an encounter where the Patient reported no contraception use because she wants to become pregnant, and has responded ‘true’ in response to ‘Counseling to achieve pregnancy was provided’ (Observation.code=86655-8). This Patient therefore does not have contraceptive counseling provided (i.e. Contraceptive Counseling Observation is omitted). This Patient also has a pregnancy status of ‘not pregnant’ and a pregnancy intent of ‘wants to become pregnant’.&#xA;&#xA;This Patient is also an ex-smoker, has a heterosexual sexual orientation. This example does not include any STI tests/results."/>
+            <description value="This Bundle example exemplifies a scenario of an encounter where the Patient reported no contraceptive use because she wants to become pregnant, and has responded ‘true’ in response to ‘Counseling to achieve pregnancy was provided’ (Observation.code=86655-8). This Patient therefore does not have contraceptive counseling provided (i.e. Contraceptive Counseling Observation is omitted). This Patient also has a pregnancy status of ‘not pregnant’ and a pregnancy intent of ‘wants to become pregnant’.&#xA;&#xA;This Patient is also an ex-smoker, has a heterosexual sexual orientation. This example does not include any STI tests/results."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group11"/>
         </resource>
