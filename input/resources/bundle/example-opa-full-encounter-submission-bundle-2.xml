@@ -516,7 +516,7 @@
                         <valueString value="Pregnancy Status Observation Example"/>
                     </extension>
                     <profile
-                        value="http://hl7.org/fhir/us/opa/StructureDefinition/pregnancy-status"/>
+                        value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus"/>
                 </meta>
                 <status value="final"/>
                 <category>
@@ -561,7 +561,7 @@
                 <id value="example-opa-pregnancy-intent"/>
                 <meta>
                     <profile
-                        value="http://hl7.org/fhir/us/opa/StructureDefinition/pregnancy-intention"/>
+                        value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent"/>
                 </meta>
                 <status value="final"/>
                 <category>

@@ -616,7 +616,7 @@
                 <id value="example-opa-contraceptive-method-intake"/>
                 <meta>
                     <profile
-                        value="http://oash.org/fhir/us/opa/StructureDefinition/contraception-method-intake"
+                        value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-intake"
                     />
                 </meta>
                 <status value="final"/>
@@ -658,7 +658,7 @@
                 <id value="example-opa-contraceptive-method-exit"/>
                 <meta>
                     <profile
-                        value="http://oash.org/fhir/us/opa/StructureDefinition/contraception-method-exit"
+                        value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-exit"
                     />
                 </meta>
                 <status value="final"/>
@@ -700,7 +700,7 @@
                 <id value="example-opa-contraceptive-counseling"/>
                 <meta>
                     <profile
-                        value="http://oash.org/fhir/us/opa/StructureDefinition/contraception-counseling"
+                        value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling"
                     />
                 </meta>
                 <status value="final"/>
@@ -1012,8 +1012,8 @@
                 <valueCodeableConcept>
                     <coding>
                         <system value="http://snomed.info/sct"/>
-                        <code value="419984006"/>
-                        <display value="Inconclusive (qualifier value)"/>
+                        <code value="260415000"/>
+                        <display value="Not detected"/>
                     </coding>
                 </valueCodeableConcept>
             </Observation>

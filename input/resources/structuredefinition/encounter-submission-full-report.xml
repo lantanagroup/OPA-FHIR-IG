@@ -255,7 +255,6 @@
         <element id="Bundle.entry:pregnancy-counseling-provided">
             <path value="Bundle.entry"/>
             <sliceName value="pregnancy-counseling-provided"/>
-            <min value="1"/>
             <max value="1"/>
         </element>
         <element id="Bundle.entry:pregnancy-counseling-provided.resource">

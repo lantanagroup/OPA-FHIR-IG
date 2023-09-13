@@ -4,10 +4,10 @@
     <profile
       value="http://oash.org/fhir/us/opa/StructureDefinition/subsequent-lab-results-submission"/>
   </meta>
-  <Identifier>
+  <identifier>
     <system value="http://example.org/fhir/Patient/example-opa-patient"/>
     <value value="dd3fa897-5b5a-43ee-9617-bf5fe46b9e94"/>
-  </Identifier>
+  </identifier>
   <type value="collection"/>
   <timestamp value="2023-08-25T10:06:42.482-04:00"/>
   <entry>
