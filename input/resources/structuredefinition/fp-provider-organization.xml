@@ -7,7 +7,7 @@
         <lastUpdated value="2023-08-03T17:17:26.842Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/fp-provider-organization"/>
-    <name value="OPAFamilyPlanningProviderOrganization"/>
+    <name value="OPA Family Planning Provider Organization"/>
     <title value="OPA Family Planning Provider Organization"/>
     <status value="active"/>
     <fhirVersion value="4.0.1"/>

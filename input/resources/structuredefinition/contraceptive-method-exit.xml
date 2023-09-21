@@ -7,7 +7,7 @@
         <lastUpdated value="2023-07-20T15:35:00.747Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-exit"/>
-    <name value="ContraceptiveMethodExit"/>
+    <name value="Contraceptive Method - Exit"/>
     <title value="Contraceptive Method - Exit"/>
     <status value="active"/>
     <description value="Contraceptive method at exit (DE#19)"/>
@@ -40,6 +40,7 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
+            <min value="1"/>
             <type>
                 <code value="CodeableConcept"/>
             </type>

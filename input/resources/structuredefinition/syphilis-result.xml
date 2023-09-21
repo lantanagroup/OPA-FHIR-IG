@@ -7,7 +7,7 @@
         <lastUpdated value="2023-07-20T22:15:06.348Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result"/>
-    <name value="SyphilisResult"/>
+    <name value="Syphilis Result"/>
     <title value="Syphilis Result"/>
     <status value="active"/>
     <fhirVersion value="4.0.1"/>
@@ -24,6 +24,13 @@
                 <description value="Syphilis Test Types"/>
                 <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.117"/>
             </binding>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+            </type>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>

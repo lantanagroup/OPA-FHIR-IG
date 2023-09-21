@@ -7,7 +7,7 @@
         <lastUpdated value="2023-07-21T15:36:21.374Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner-role"/>
-    <name value="OPAPractitionerRole"/>
+    <name value="OPA Practitioner Role"/>
     <title value="OPA Practitioner Role profile"/>
     <status value="active"/>
     <fhirVersion value="4.0.1"/>

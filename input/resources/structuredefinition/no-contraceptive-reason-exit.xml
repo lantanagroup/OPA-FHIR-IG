@@ -7,7 +7,7 @@
         <lastUpdated value="2023-07-20T15:35:01.898Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-exit"/>
-    <name value="NoContraceptiveReasonExit"/>
+    <name value="No Contraceptive Reason - Exit"/>
     <title value="No Contraceptive Reason Exit"/>
     <status value="active"/>
     <description value="Reason for no contraceptive method use at exit (DE#20)"/>
@@ -40,6 +40,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>

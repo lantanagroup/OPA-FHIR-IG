@@ -7,7 +7,7 @@
         <lastUpdated value="2023-08-03T17:13:20.829Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/payer-for-visit"/>
-    <name value="OPAPayerForVisit"/>
+    <name value="OPA Payer For Visit"/>
     <title value="OPA Payer for Visit"/>
     <status value="active"/>
     <fhirVersion value="4.0.1"/>

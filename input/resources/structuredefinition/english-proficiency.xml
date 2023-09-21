@@ -7,7 +7,7 @@
         <lastUpdated value="2023-08-23T22:16:17.521Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/english-proficiency"/>
-    <name value="EnglishProficiencyExtension"/>
+    <name value="English Proficiency Extension"/>
     <title value="English Proficiency Extension"/>
     <status value="active"/>
     <description value="Extension to convey Limited English Proficiency (DE#8). This concept further specifies a Patient's communication."/>

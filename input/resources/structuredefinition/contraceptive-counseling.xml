@@ -7,7 +7,7 @@
         <lastUpdated value="2023-08-21T15:07:18.003Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling"/>
-    <name value="ContraceptiveCounseling"/>
+    <name value="Contraceptive Counseling"/>
     <title value="Contraceptive Counseling"/>
     <status value="active"/>
     <description value="How contraceptive counseling was provided (DE #21). If counseling was not provided, use Observation.dataAbsentReason (DE#22). Observation.valueCodeableConcept should contain one of the allowable VSAC codes for how counseling was provided."/>
@@ -33,11 +33,11 @@
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
-            <min value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
@@ -48,6 +48,7 @@
                 <strength value="required"/>
                 <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.21"/>
             </binding>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.dataAbsentReason">
             <path value="Observation.dataAbsentReason"/>

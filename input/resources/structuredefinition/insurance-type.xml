@@ -7,7 +7,7 @@
         <lastUpdated value="2023-08-04T16:07:18.708Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/insurance-type"/>
-    <name value="OPAInsuranceCoverageType"/>
+    <name value="OPA Insurance Coverage Type"/>
     <title value="OPA Insurance Coverage Type"/>
     <status value="active"/>
     <description value="Extension to reference Coverage information (ie Insurance Coverage Type and Payer for Visit) from the Encounter. This extension is expected to be used within Encounter (i.e. Encounter.extension) and reference Coverage."/>

@@ -7,7 +7,7 @@
         <lastUpdated value="2023-07-20T15:35:01.436Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/household-size"/>
-    <name value="HouseholdSize"/>
+    <name value="Household Size"/>
     <title value="Household Size"/>
     <status value="active"/>
     <description value="Household size [integer]"/>

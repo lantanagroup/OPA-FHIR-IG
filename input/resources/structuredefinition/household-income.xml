@@ -7,7 +7,7 @@
         <lastUpdated value="2023-07-20T15:35:01.356Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/household-income"/>
-    <name value="HouseholdIncome"/>
+    <name value="Household Income"/>
     <title value="Household Income"/>
     <status value="active"/>
     <fhirVersion value="4.0.1"/>

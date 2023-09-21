@@ -7,7 +7,7 @@
         <lastUpdated value="2023-07-20T15:35:01.822Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result"/>
-    <name value="NeisseriaGonorrhoeaeResult"/>
+    <name value="Neisseria Gonorrhoeae Result"/>
     <title value="Neisseria Gonorrhoeae Result"/>
     <status value="active"/>
     <fhirVersion value="4.0.1"/>

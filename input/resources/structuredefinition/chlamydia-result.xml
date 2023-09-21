@@ -7,7 +7,7 @@
         <lastUpdated value="2023-08-14T22:45:16.231Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
-    <name value="ChlamydiaTrachomatisResult"/>
+    <name value="Chlamydia Trachomatis Result"/>
     <title value="Chlamydia Trachomatis Result"/>
     <status value="active"/>
     <fhirVersion value="4.0.1"/>

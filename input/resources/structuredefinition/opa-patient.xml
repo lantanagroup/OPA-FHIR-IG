@@ -7,7 +7,7 @@
         <lastUpdated value="2023-08-23T22:01:49.484Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
-    <name value="OPAPatient"/>
+    <name value="OPA Patient"/>
     <title value="OPA Patient"/>
     <status value="active"/>
     <description value="OPA Patient conforms to US Core Patient and requires birthDate"/>

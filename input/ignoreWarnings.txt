@@ -19,3 +19,6 @@ This element does not match any known slice defined in the profile http://hl7.or
 # OPA PractitionerRole codes
 None of the codings provided are in the value set 'Practice Setting Code Value Set' (http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#223366009)
 Details for PractitionerRole/example-opa-practitioner-role matching against profile http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1
+
+# Profile names contain spaces
+Rule sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed

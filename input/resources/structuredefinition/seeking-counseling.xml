@@ -7,7 +7,7 @@
         <lastUpdated value="2023-08-21T15:16:21.575Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/seeking-counseling"/>
-    <name value="SeekingCounseling"/>
+    <name value="Seeking Counseling"/>
     <title value="Seeking Counseling"/>
     <status value="active"/>
     <description value="Observation to convey 'Do you want to talk about contraception or pregnancy prevention during your visit today?'"/>
@@ -33,12 +33,11 @@
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
-            <min value="1"/>
-            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
@@ -50,10 +49,6 @@
                 <strength value="required"/>
                 <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.211"/>
             </binding>
-        </element>
-        <element id="Observation.dataAbsentReason">
-            <path value="Observation.dataAbsentReason"/>
-            <mustSupport value="false"/>
         </element>
     </differential>
 </StructureDefinition>
