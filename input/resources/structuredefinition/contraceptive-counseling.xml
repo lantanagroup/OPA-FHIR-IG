@@ -10,7 +10,9 @@
     <name value="Contraceptive Counseling"/>
     <title value="Contraceptive Counseling"/>
     <status value="active"/>
-    <description value="How contraceptive counseling was provided (DE #21). If counseling was not provided, use Observation.dataAbsentReason (DE#22). Observation.valueCodeableConcept should contain one of the allowable VSAC codes for how counseling was provided."/>
+    <description value="DE21 and DE22 both always able to be inferred from Observation with .code=86652-5
+        If Observation.code is only present = Contraceptive Counseling was not provided (DE21=N/A, DE22=No)
+        If both Observation.code and .valueCodeableconcept are present = Contraceptive Counseling was provided (DE21=.valueCodeableConcept, DE22=Yes)"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -48,11 +50,6 @@
                 <strength value="required"/>
                 <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.21"/>
             </binding>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Observation.dataAbsentReason">
-            <path value="Observation.dataAbsentReason"/>
-            <short value="When contraceptive counseling was not performed"/>
             <mustSupport value="true"/>
         </element>
     </differential>

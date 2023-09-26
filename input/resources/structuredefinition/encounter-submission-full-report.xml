@@ -134,55 +134,19 @@
                 <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"/>
             </type>
         </element>
-        <element id="Bundle.entry:smoking-status">
+        <element id="Bundle.entry:social-history">
             <path value="Bundle.entry"/>
-            <sliceName value="smoking-status"/>
-            <max value="1"/>
+            <sliceName value="social-history"/>
+            <max value="*"/>
         </element>
-        <element id="Bundle.entry:smoking-status.resource">
+        <element id="Bundle.entry:social-history.resource">
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>
                 <code value="Resource"/>
                 <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"/>
-            </type>
-        </element>
-        <element id="Bundle.entry:sexual-orientation">
-            <path value="Bundle.entry"/>
-            <sliceName value="sexual-orientation"/>
-            <max value="1"/>
-        </element>
-        <element id="Bundle.entry:sexual-orientation.resource">
-            <path value="Bundle.entry.resource"/>
-            <min value="1"/>
-            <type>
-                <code value="Resource"/>
                 <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation"/>
-            </type>
-        </element>
-        <element id="Bundle.entry:pregnancy-status">
-            <path value="Bundle.entry"/>
-            <sliceName value="pregnancy-status"/>
-            <max value="1"/>
-        </element>
-        <element id="Bundle.entry:pregnancy-status.resource">
-            <path value="Bundle.entry.resource"/>
-            <min value="1"/>
-            <type>
-                <code value="Resource"/>
                 <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus"/>
-            </type>
-        </element>
-        <element id="Bundle.entry:pregnancy-intention">
-            <path value="Bundle.entry"/>
-            <sliceName value="pregnancy-intention"/>
-            <max value="1"/>
-        </element>
-        <element id="Bundle.entry:pregnancy-intention.resource">
-            <path value="Bundle.entry.resource"/>
-            <min value="1"/>
-            <type>
-                <code value="Resource"/>
                 <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent"/>
             </type>
         </element>

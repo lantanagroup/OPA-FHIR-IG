@@ -48,9 +48,5 @@
                 <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.210"/>
             </binding>
         </element>
-        <element id="Observation.dataAbsentReason">
-            <path value="Observation.dataAbsentReason"/>
-            <mustSupport value="true"/>
-        </element>
     </differential>
 </StructureDefinition>

@@ -14,6 +14,8 @@ Value sets contain the allowable responses for each data element. The value sets
 
 This guide defines the following profiles to be used to meet the FPAR reporting data elements. Note: For lab observations, the path for the date of the lab is Observation.effective[x], the path for the result of the lab is Observation.value[x], and the path for the LOINC code is Observation.code.
 
+The dataAbsentReason element is not required, and will not be stored by the FPAR system.
+
 <style>
 table, th, td 
 {
@@ -34,7 +36,7 @@ th {
 |4| Patient Identifier          |  [OPA Patient](StructureDefinition-opa-patient.html) |Patient.identifier       | N/A | N/A |
 |5| Visit Date        |  [OPA Encounter](StructureDefinition-opa-encounter.html) |Encounter.period | N/A | N/A |
 |6| Birth Date        |  [OPA Patient](StructureDefinition-opa-patient.html) |Patient.birthDate | N/A | N/A |
-|7| Sex        |  [OPA Patient](StructureDefinition-opa-patient.html) |Patient.extension (birthsex) | HL7 | [US Core Birthsex Value Set](http://hl7.org/fhir/us/core/StructureDefinition-us-core-birthsex.html)|
+|7| Sex        |  [OPA Patient](StructureDefinition-opa-patient.html) |Patient.extension (birthsex) | HL7 | [US Core Birthsex Value Set](http://hl7.org/fhir/us/core/ValueSet-birthsex.html)|
 |8| Limited English Proficiency        |  [OPA English Proficiency Extension](StructureDefinition-english-proficiency.html)|Patient.communication.extension | SNOMED CT | [2.16.840.1.113762.1.4.1166.31](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1166.31/expansion/Latest) |
 |9| Ethnicity        |  [US Core Ethnicity](http://hl7.org/fhir/us/core/StructureDefinition-us-core-ethnicity.html)|Patient.extension (ethnicity)| CDCREC | [2.16.840.1.114222.4.11.837](https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.837/expansion/Latest)|
 |10| Race        |  [US Core Race](http://hl7.org/fhir/us/core/StructureDefinition-us-core-race.html)|Patient.extension (race)| CDCREC| [2.16.840.1.113883.3.2074.1.1.3](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.2074.1.1.3/expansion/Latest)|

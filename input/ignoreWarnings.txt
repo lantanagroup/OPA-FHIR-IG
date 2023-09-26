@@ -22,3 +22,11 @@ Details for PractitionerRole/example-opa-practitioner-role matching against prof
 
 # Profile names contain spaces
 Rule sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+
+# Smoking Status
+The entry resource matched more than one of the allowed profiles (http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus, http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation)
+The entry resource matched more than one of the allowed profiles (http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus, http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent)
+The entry resource matched more than one of the allowed profiles (http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus, http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus)
+Found multiple matching profiles among 2 choices: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus, http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus
+Found multiple matching profiles among 2 choices: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation, http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus
+Found multiple matching profiles among 2 choices: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent, http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus
