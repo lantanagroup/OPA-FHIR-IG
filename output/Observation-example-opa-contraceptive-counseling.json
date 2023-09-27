@@ -1,0 +1,42 @@
+{
+  "resourceType" : "Observation",
+  "id" : "example-opa-contraceptive-counseling",
+  "meta" : {
+    "versionId" : "6",
+    "lastUpdated" : "2023-07-20T15:34:13.505Z",
+    "profile" : ["http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-contraceptive-counseling\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-contraceptive-counseling&quot; Version &quot;6&quot; Updated &quot;2023-07-20 15:34:13+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-contraceptive-counseling.html\">Contraceptive Counseling</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p><p><b>code</b>: How birth control method was provided <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#86652-5)</span></p><p><b>subject</b>: <a href=\"Patient-example-opa-patient.html\">Patient/example-opa-patient</a> &quot; WOODROW&quot;</p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"PractitionerRole-example-opa-practitioner-role.html\">PractitionerRole/example-opa-practitioner-role</a></p><p><b>value</b>: Patient encounter procedure (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#308335008)</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey",
+      "display" : "Survey"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "86652-5",
+      "display" : "How birth control method was provided"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/example-opa-patient"
+  },
+  "effectiveDateTime" : "2023-04-13T18:00:14-05:00",
+  "performer" : [{
+    "reference" : "PractitionerRole/example-opa-practitioner-role"
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "308335008",
+      "display" : "Patient encounter procedure (procedure)"
+    }]
+  }
+}

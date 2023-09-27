@@ -10,9 +10,9 @@
     <name value="Contraceptive Counseling"/>
     <title value="Contraceptive Counseling"/>
     <status value="active"/>
-    <description value="DE21 and DE22 both always able to be inferred from Observation with .code=86652-5
-        If Observation.code is only present = Contraceptive Counseling was not provided (DE21=N/A, DE22=No)
-        If both Observation.code and .valueCodeableconcept are present = Contraceptive Counseling was provided (DE21=.valueCodeableConcept, DE22=Yes)"/>
+    <description value="DE21 and DE22 both always able to be inferred from Observation with .code=86652-5.
+        If Observation.code is only present = Contraceptive Counseling was not provided (DE21=N/A, DE22=No).
+        If both Observation.code and .valueCodeableconcept are present = Contraceptive Counseling was provided (DE21=.valueCodeableConcept, DE22=Yes)."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

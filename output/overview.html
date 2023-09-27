@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Overview - Family Planning Annual Report (FPAR) Implementation Guide v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/fhir-opa.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Family Planning Annual Report (FPAR) Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - CI Build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="overview.html">Overview</a></li>
+
+  <li><a href="data_elements.html">Data Elements</a></li>
+
+  <li><a href="reuse_of_external_profiles.html">Reuse of External Profiles</a></li>
+
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Overview</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Family Planning Annual Report (FPAR) Implementation Guide - Local Development build (v1.0.0). See the <a href="http://oash.org/fhir/us/opa/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Overview</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#about-this-implementation-guide" id="markdown-toc-about-this-implementation-guide">About this Implementation Guide</a></li>
+</ul>
+
+</div>
+<h3 id="background">Background</h3>
+
+<p>The U.S. Department of Health and Human Services’ Office of Population Affairs (OPA) has administered the National Family Planning Program since 1970. This program, authorized under <a href="https://opa.hhs.gov/sites/default/files/2020-07/title-x-statute-attachment-a_0.pdf">Title X of the Public Health Service Act</a>, is the only federal program dedicated solely to the provision of family planning and related preventive health care. Clinics in the Title X program provide a broad range of services, including: (1) effective contraceptive methods on a voluntary and confidential basis; (2) contraceptive education and counseling; (3) breast and cervical cancer screening; (4) sexually transmitted disease (STD) and human immunodeficiency virus (HIV) testing, referral, and prevention education; and (5) pregnancy diagnosis and counseling. The program is implemented through grants to public health departments and community health, family planning, and other private nonprofit agencies in all 50 states, the District of Columbia, and U.S. Territories. These grants support delivery of Title X services in thousands of clinical sites, serving millions of women and men of reproductive age each year nationwide.</p>
+
+<p>OPA currently collects aggregate and encounter-level data from Title X grantees on an annual basis. The data are compiled and published each year in the Family Planning Annual Report (FPAR). The FPAR is the only source of uniform reporting by all Title X services grantees. FPAR data are used to (1) monitor compliance with statutory requirements; (2) comply with accountability and federal performance reporting requirements for Title X family planning funds; (3) guide strategic and financial planning; (4) respond to inquiries from policy makers and Congress about Title X; (5) and estimate the impact of Title X-funded activities on key reproductive health outcomes, including prevention of unintended pregnancy, infertility, and invasive cervical cancer.</p>
+
+<h3 id="about-this-implementation-guide">About this Implementation Guide</h3>
+<p>OPA has created this FHIR implementation guide to collect a set of standardized data elements from all encounters across all Title X clinical sites. The goals of this guide are as follows:</p>
+<ul>
+  <li>Improve the quality of data sent to OPA to improve the ability to assess key performance metrics related to family planning and reproductive health;</li>
+  <li>Contribute to a learning healthcare environment by sending quality improvement-related information back to Title X providers;</li>
+  <li>Reduce the burden of annual reporting requirements on the Title X network;</li>
+  <li>Align with data modernization efforts sponsored by the Department of Health and Human Services;</li>
+  <li>Make the FHIR standard publicly available to all reproductive health providers outside of the Title X network so they can collect standardized family planning data and calculate performance metrics on their own.</li>
+</ul>
+
+<p>The Implementation Guide (IG) uses US Core profiles where possible, and may also leverage profiles in the HL7 FHIR Quality Improvement (QI) IG Cores well as base FHIR resources. The initial version of this IG contemplates a workflow mainly focused on Title X grantees submitting data to OPA.</p>
+
+<p>Note: DataAbsentReason is not required, and will not be stored by the FPAR system</p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package oash.fhir.us.opa#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 27, 2023 11:10-0600">2023-09-27</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

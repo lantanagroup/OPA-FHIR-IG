@@ -1,0 +1,1647 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://oash.org/fhir/us/opa/ImplementationGuide/oash.fhir.us.opa> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "oash.fhir.us.opa"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "209" ] ;
+     fhir:lastUpdated [ fhir:v "2023-08-24T15:12:03.431Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://oash.org/fhir/us/opa/ImplementationGuide/oash.fhir.us.opa"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "FamilyPlanningAnnualReport"] ; # 
+  fhir:title [ fhir:v "Family Planning Annual Report (FPAR) Implementation Guide"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-09-27T11:10:26-06:00"^^xsd:dateTime] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] ) ;
+     fhir:text [ fhir:v "USA" ]
+  ] ) ; # 
+  fhir:packageId [ fhir:v "oash.fhir.us.opa"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "5.3.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7fhiruscore" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#6.1.0"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#6.1.0>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.core" ] ;
+     fhir:version [ fhir:v "6.1.0" ]
+  ] [
+     fhir:id [ fhir:v "usnlmvsac" ] ;
+     fhir:uri [
+       fhir:v "http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac>
+     ] ;
+     fhir:packageId [ fhir:v "us.nlm.vsac" ] ;
+     fhir:version [ fhir:v "0.11.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "false" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-expansion-params" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "resources/parameters/expansion-parameters-opa.xml" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2020+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CI Build" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://oash.org/fhir/us/opa/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "false" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-expansion-params" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "resources/parameters/expansion-parameters-opa.xml" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2020+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CI Build" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://oash.org/fhir/us/opa/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:grouping ( [
+       fhir:id [ fhir:v "new-group6" ] ;
+       fhir:name [ fhir:v "Submission Bundles Profiles" ]
+     ] [
+       fhir:id [ fhir:v "new-group5" ] ;
+       fhir:name [ fhir:v "OPA General Profiles" ]
+     ] [
+       fhir:id [ fhir:v "new-group7" ] ;
+       fhir:name [ fhir:v "OPA Extensions" ]
+     ] [
+       fhir:id [ fhir:v "new-group2" ] ;
+       fhir:name [ fhir:v "Family Planning Observation Profiles" ]
+     ] [
+       fhir:id [ fhir:v "new-group1" ] ;
+       fhir:name [ fhir:v "Lab Testing Profiles" ]
+     ] [
+       fhir:id [ fhir:v "new-group11" ] ;
+       fhir:name [ fhir:v "Submission Bundle Examples" ]
+     ] [
+       fhir:id [ fhir:v "new-group3" ] ;
+       fhir:name [ fhir:v "OPA General Examples" ]
+     ] [
+       fhir:id [ fhir:v "new-group8" ] ;
+       fhir:name [ fhir:v "Family Planning Observation Examples" ]
+     ] [
+       fhir:id [ fhir:v "new-group9" ] ;
+       fhir:name [ fhir:v "Lab Testing Examples - Preliminary" ]
+     ] [
+       fhir:id [ fhir:v "new-group10" ] ;
+       fhir:name [ fhir:v "Lab Testing Examples - Final" ]
+     ] [
+       fhir:id [ fhir:v "new-group4" ] ;
+       fhir:name [ fhir:v "Terminology" ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/encounter-submission-full-report> ;
+         fhir:reference [ fhir:v "StructureDefinition/encounter-submission-full-report" ] ;
+         fhir:display [ fhir:v "EncounterSubmissionFullReport" ]
+       ] ;
+       fhir:name [ fhir:v "Encounter Submission Full Report" ] ;
+       fhir:description [ fhir:v "The Bundle Profile defines how all encounter data (DEs #1-43) are to be submitted as a FHIR Bundle. Note- subsequent lab result reports should not use this profile (see Subsequent Lab Result Submission Bundle profile).\n\nOnly ordered STI tests, regardless of result availability, should be included in submission Bundles. For example, if a Patient has Chlamydia, HIV, Syphilis and HPV tests ordered (i.e. no Gonorrhoeae or Pap Smear tests ordered), this Patient’s full Encounter Submission Bundle would include four STI Lab Observation Bundle entries (one pertaining to each ordered test). The submission Bundle will never contain any data pertaining to not-ordered lab tests. In the above example scenario, this Patient’s full submission Bundle would not contain Observation entries pertaining to Gonorrhoeae or Pap Smear).\n\nSTI Lab Observations that have been ordered but do not have a result available for any reason are expected to contain an Observation.status=preliminary. If/When the result becomes available, a Subsequent Lab Result Submission Bundle should be compiled and submitted." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group6" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/subsequent-lab-results-submission> ;
+         fhir:reference [ fhir:v "StructureDefinition/subsequent-lab-results-submission" ] ;
+         fhir:display [ fhir:v "SubsequentLabResultSubmission" ]
+       ] ;
+       fhir:name [ fhir:v "Subsequent Lab Result Submission" ] ;
+       fhir:description [ fhir:v "Subsequent Lab Result Submission Profile defines a subsequent lab results Bundle for submission. Submission Bundles conforming to this profile are only expected subsequently to an initial Encounter Submission Full Report. Subsequent Lab Result Bundles SHALL contain an 'originalBundleReference' extension which includes a valueIdentifier pertaining to the Bundle.identifier of the original Encounter Submission Full Report Bundle." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group6" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/opa-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/opa-patient" ] ;
+         fhir:display [ fhir:v "OPA Patient" ]
+       ] ;
+       fhir:name [ fhir:v "OPA Patient" ] ;
+       fhir:description [ fhir:v "OPA Patient conforms to US Core Patient and requires birthDate (DE#4, #6, #7, #8, #9, #10, #43)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group5" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/opa-encounter" ] ;
+         fhir:display [ fhir:v "OPAEncounter" ]
+       ] ;
+       fhir:name [ fhir:v "OPA Encounter" ] ;
+       fhir:description [ fhir:v "US Core Encounter with .period required (DE#5)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group5" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner-role> ;
+         fhir:reference [ fhir:v "StructureDefinition/opa-practitioner-role" ] ;
+         fhir:display [ fhir:v "OPAPractitionerRole" ]
+       ] ;
+       fhir:name [ fhir:v "OPA Provider Role" ] ;
+       fhir:description [ fhir:v "PractitionerRole profile bound to an allowable subset of PractitionerRole codes (DE#2, #3)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group5" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/fp-provider-organization> ;
+         fhir:reference [ fhir:v "StructureDefinition/fp-provider-organization" ] ;
+         fhir:display [ fhir:v "FamilyPlanningProviderOrganization" ]
+       ] ;
+       fhir:name [ fhir:v "OPA Family Planning Provider Organization" ] ;
+       fhir:description [ fhir:v "Family Planning Provider Organization (DE#1)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group5" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/payer-for-visit> ;
+         fhir:reference [ fhir:v "StructureDefinition/payer-for-visit" ] ;
+         fhir:display [ fhir:v "PayerForVisit" ]
+       ] ;
+       fhir:name [ fhir:v "Payer For Visit" ] ;
+       fhir:description [ fhir:v "Extension for Payer For Visit (DE#14)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group7" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/insurance-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/insurance-type" ] ;
+         fhir:display [ fhir:v "InsuranceType" ]
+       ] ;
+       fhir:name [ fhir:v "Insurance Coverage Type" ] ;
+       fhir:description [ fhir:v "Extension for Insurance Coverage Type (DE#13)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group7" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/english-proficiency> ;
+         fhir:reference [ fhir:v "StructureDefinition/english-proficiency" ] ;
+         fhir:display [ fhir:v "EnglishProficiencyExtension" ]
+       ] ;
+       fhir:name [ fhir:v "English Proficiency" ] ;
+       fhir:description [ fhir:v "Extension to convey Limited English Proficiency (DE#8). This extension is expected to extend Patient.communication." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group7" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/client-asserted-sex> ;
+         fhir:reference [ fhir:v "StructureDefinition/client-asserted-sex" ] ;
+         fhir:display [ fhir:v "ClientAssertedSex" ]
+       ] ;
+       fhir:name [ fhir:v "Client Asserted Sex" ] ;
+       fhir:description [ fhir:v "'Sex' as asserted by the Patient (client)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group7" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-intake> ;
+         fhir:reference [ fhir:v "StructureDefinition/contraceptive-method-intake" ] ;
+         fhir:display [ fhir:v "ContraceptiveMethodIntake" ]
+       ] ;
+       fhir:name [ fhir:v "Contraceptive Method - Intake" ] ;
+       fhir:description [ fhir:v "Contraceptive method at intake (DE#17)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group2" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-exit> ;
+         fhir:reference [ fhir:v "StructureDefinition/contraceptive-method-exit" ] ;
+         fhir:display [ fhir:v "ContraceptiveMethodExit" ]
+       ] ;
+       fhir:name [ fhir:v "Contraceptive Method - Exit" ] ;
+       fhir:description [ fhir:v "Contraceptive method at exit (DE#19)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group2" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-intake> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-contraceptive-reason-intake" ] ;
+         fhir:display [ fhir:v "NoContraceptiveReasonIntake" ]
+       ] ;
+       fhir:name [ fhir:v "Reason For No Contraceptive - Intake" ] ;
+       fhir:description [ fhir:v "Reason for no contraceptive method use at intake (DE#18)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group2" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-exit> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-contraceptive-reason-exit" ] ;
+         fhir:display [ fhir:v "NoContraceptiveReasonExit" ]
+       ] ;
+       fhir:name [ fhir:v "Reason For No Contraceptive - Exit" ] ;
+       fhir:description [ fhir:v "Reason for no contraceptive method use at exit (DE#20)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group2" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling> ;
+         fhir:reference [ fhir:v "StructureDefinition/contraceptive-counseling" ] ;
+         fhir:display [ fhir:v "ContraceptiveCounseling" ]
+       ] ;
+       fhir:name [ fhir:v "Contraceptive Counseling" ] ;
+       fhir:description [ fhir:v "How contraceptive counseling was provided (DE #21). If counseling was not provided, use Observation.dataAbsentReason (DE#22). Observation.valueCodeableConcept should contain one of the allowable VSAC codes for how counseling was provided." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group2" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/pregnancy-counseling> ;
+         fhir:reference [ fhir:v "StructureDefinition/pregnancy-counseling" ] ;
+         fhir:display [ fhir:v "PregnancyCounseling" ]
+       ] ;
+       fhir:name [ fhir:v "Pregnancy Counseling" ] ;
+       fhir:description [ fhir:v "Pregnancy Counseling was provided (DE#23)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group2" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/seeking-counseling> ;
+         fhir:reference [ fhir:v "StructureDefinition/seeking-counseling" ] ;
+         fhir:display [ fhir:v "SeekingCounseling" ]
+       ] ;
+       fhir:name [ fhir:v "Seeking Counseling" ] ;
+       fhir:description [ fhir:v "Observation to convey 'Do you want to talk about contraceptive or pregnancy prevention during your visit today?' (DE#41)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group2" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/household-income> ;
+         fhir:reference [ fhir:v "StructureDefinition/household-income" ] ;
+         fhir:display [ fhir:v "HouseholdIncome" ]
+       ] ;
+       fhir:name [ fhir:v "Household Income" ] ;
+       fhir:description [ fhir:v "Household income profile (DE#11)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group2" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/household-size> ;
+         fhir:reference [ fhir:v "StructureDefinition/household-size" ] ;
+         fhir:display [ fhir:v "HouseholdSize" ]
+       ] ;
+       fhir:name [ fhir:v "Household Size" ] ;
+       fhir:description [ fhir:v "Placeholder text for household size (DE#12)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group2" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result> ;
+         fhir:reference [ fhir:v "StructureDefinition/neisseria-gonorrhoeae-result" ] ;
+         fhir:display [ fhir:v "NeisseriaGonorrhoeaeResult" ]
+       ] ;
+       fhir:name [ fhir:v "Neisseria Gonorrhoeae Result" ] ;
+       fhir:description [ fhir:v "Neisseria Gonorrhoeae Result (DE#36). If a Neisseria Gonorrhoeae test was not performed at this visit (DE#35), the submission Bundle should not include an Observation (entry) representing this lab result." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group1" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result> ;
+         fhir:reference [ fhir:v "StructureDefinition/chlamydia-result" ] ;
+         fhir:display [ fhir:v "ChlamydiaTrachomatisResult" ]
+       ] ;
+       fhir:name [ fhir:v "Chlamydia Trachomatis Result" ] ;
+       fhir:description [ fhir:v "Chlamydia Trachomatis Result (DE#34). If a Chlamydia Trachomatis test was not performed in this visit (DE#33), the submission Bundle should not include an Observation (entry) representing this lab result." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group1" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result> ;
+         fhir:reference [ fhir:v "StructureDefinition/pap-smear-result" ] ;
+         fhir:display [ fhir:v "PapSmearResult" ]
+       ] ;
+       fhir:name [ fhir:v "Pap Smear Result" ] ;
+       fhir:description [ fhir:v "Pap Smear Result (DE#30). If a pap smear test was not performed in this visit (DE#29), the submission Bundle should not include an Observation (entry) representing this lab result." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group1" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result> ;
+         fhir:reference [ fhir:v "StructureDefinition/hiv-1-2-result" ] ;
+         fhir:display [ fhir:v "HIV1and2Result" ]
+       ] ;
+       fhir:name [ fhir:v "HIV 1&2 Result" ] ;
+       fhir:description [ fhir:v "HIV 1&2 Result (DE#32). If a HIV test was not performed in this visit (DE#31), the submission Bundle should not include an Observation (entry) representing this lab result." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group1" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result> ;
+         fhir:reference [ fhir:v "StructureDefinition/syphilis-result" ] ;
+         fhir:display [ fhir:v "SyphilisResult" ]
+       ] ;
+       fhir:name [ fhir:v "Syphilis Result" ] ;
+       fhir:description [ fhir:v "Syphilis Result (DE#40). If a Syphilis test was not performed in this visit (DE#39), the submission Bundle should not include an Observation (entry) representing this lab result." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group1" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/hpv-result> ;
+         fhir:reference [ fhir:v "StructureDefinition/hpv-result" ] ;
+         fhir:display [ fhir:v "HPVResult" ]
+       ] ;
+       fhir:name [ fhir:v "HPV Result" ] ;
+       fhir:description [ fhir:v "HPV Result (DE#32). If HPV test was not performed in this visit (DE#31), the submission Bundle should not include an Observation (entry) representing this lab result." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group1" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+         fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+       ] ;
+       fhir:name [ fhir:v "OPA Patient example" ] ;
+       fhir:description [ fhir:v "OPA Patient example" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/opa-patient>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group3" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Encounter/example-opa-encounter> ;
+         fhir:reference [ fhir:v "Encounter/example-opa-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "OPA Encounter example" ] ;
+       fhir:description [ fhir:v "OPA Encounter example" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group3" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PractitionerRole" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+         fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+       ] ;
+       fhir:name [ fhir:v "OPA PractitionerRole example" ] ;
+       fhir:description [ fhir:v "OPA PractitionerRole example" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner-role"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner-role>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group3" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Practitioner/example-opa-practitioner> ;
+         fhir:reference [ fhir:v "Practitioner/example-opa-practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner example (US Core)" ] ;
+       fhir:description [ fhir:v "US Core Practitioner example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group3" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Organization/example-opa-fp-provider-organization> ;
+         fhir:reference [ fhir:v "Organization/example-opa-fp-provider-organization" ] ;
+         fhir:display [ fhir:v "OPA Family Planning Clinic example" ]
+       ] ;
+       fhir:name [ fhir:v "OPA Family Planning Clinic example" ] ;
+       fhir:description [ fhir:v "OPA Family Planning Clinic example" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/core/StructureDefinition/fp-provider-organization"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/core/StructureDefinition/fp-provider-organization>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group3" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-blood-pressure> ;
+         fhir:reference [ fhir:v "Observation/example-opa-blood-pressure" ]
+       ] ;
+       fhir:name [ fhir:v "Blood Pressure example (US Core)" ] ;
+       fhir:description [ fhir:v "Blood Pressure example (US Core)" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group3" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-body-height> ;
+         fhir:reference [ fhir:v "Observation/example-opa-body-height" ]
+       ] ;
+       fhir:name [ fhir:v "Body Height example (US Core)" ] ;
+       fhir:description [ fhir:v "Body Height example (US Core)" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group3" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-body-weight> ;
+         fhir:reference [ fhir:v "Observation/example-opa-body-weight" ]
+       ] ;
+       fhir:name [ fhir:v "Body Weight example (US Core)" ] ;
+       fhir:description [ fhir:v "Body Weight example (US Core)" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group3" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-smoking-status> ;
+         fhir:reference [ fhir:v "Observation/example-opa-smoking-status" ]
+       ] ;
+       fhir:name [ fhir:v "Smoking Status example (US Core)" ] ;
+       fhir:description [ fhir:v "Smoking Status example (US Core)" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group3" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-sexual-orientation> ;
+         fhir:reference [ fhir:v "Observation/example-opa-sexual-orientation" ]
+       ] ;
+       fhir:name [ fhir:v "Sexual Orientation example (US Core)" ] ;
+       fhir:description [ fhir:v "Sexual Orientation example (DE#42). Pregnancy Status Observations shall conform to US Core Sexual Orientation profile" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group3" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-pregnancy-status> ;
+         fhir:reference [ fhir:v "Observation/example-opa-pregnancy-status" ] ;
+         fhir:display [ fhir:v "Pregnancy Status example" ]
+       ] ;
+       fhir:name [ fhir:v "Pregnancy Status example (US Core)" ] ;
+       fhir:description [ fhir:v "Pregnancy Status example (DE#15). Pregnancy Status Observations shall conform to US Core Pregnancy Status profile" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group3" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-pregnancy-intent> ;
+         fhir:reference [ fhir:v "Observation/example-opa-pregnancy-intent" ] ;
+         fhir:display [ fhir:v "Pregnancy Intention example" ]
+       ] ;
+       fhir:name [ fhir:v "Pregnancy Intention example (US Core)" ] ;
+       fhir:description [ fhir:v "Pregnancy intention example (DE#16). Pregnancy Intention Observations shall conform to US Core Pregnancy Intention profile" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group3" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-pap-smear-result-prelim> ;
+         fhir:reference [ fhir:v "Observation/example-opa-pap-smear-result-prelim" ]
+       ] ;
+       fhir:name [ fhir:v "Pap Smear Lab Result example - Preliminary" ] ;
+       fhir:description [ fhir:v "Pap Smear Lab Result example - Preliminary" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group9" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-chlamydia-result-prelim> ;
+         fhir:reference [ fhir:v "Observation/example-opa-chlamydia-result-prelim" ]
+       ] ;
+       fhir:name [ fhir:v "Chlamydia Lab Result example - Preliminary" ] ;
+       fhir:description [ fhir:v "Chlamydia Lab Result example - Preliminary" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group9" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-hpv-result-prelim> ;
+         fhir:reference [ fhir:v "Observation/example-opa-hpv-result-prelim" ]
+       ] ;
+       fhir:name [ fhir:v "HPV Lab Result example - Preliminary" ] ;
+       fhir:description [ fhir:v "HPV Lab Result example - Preliminary" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/hpv-result"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/hpv-result>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group9" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-neisseria-gonorrhoeae-result-prelim> ;
+         fhir:reference [ fhir:v "Observation/example-opa-neisseria-gonorrhoeae-result-prelim" ]
+       ] ;
+       fhir:name [ fhir:v "Neisseria Gonorrhoeae Lab Result example - Preliminary" ] ;
+       fhir:description [ fhir:v "Neisseria Gonorrhoeae Lab Result example - Preliminary" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group9" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-hiv-1-2-result-prelim> ;
+         fhir:reference [ fhir:v "Observation/example-opa-hiv-1-2-result-prelim" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Lab Result example - Preliminary" ] ;
+       fhir:description [ fhir:v "HIV Lab Result example - Preliminary" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group9" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-syphilis-result-prelim> ;
+         fhir:reference [ fhir:v "Observation/example-opa-syphilis-result-prelim" ]
+       ] ;
+       fhir:name [ fhir:v "Syphilis Lab Result example - Preliminary" ] ;
+       fhir:description [ fhir:v "Syphilis Lab Result example - Preliminary" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group9" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-pap-smear-result-final> ;
+         fhir:reference [ fhir:v "Observation/example-opa-pap-smear-result-final" ]
+       ] ;
+       fhir:name [ fhir:v "Pap Smear Lab Result example - Final" ] ;
+       fhir:description [ fhir:v "Pap Smear Lab Result example - Final" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group10" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-chlamydia-result-final> ;
+         fhir:reference [ fhir:v "Observation/example-opa-chlamydia-result-final" ]
+       ] ;
+       fhir:name [ fhir:v "Chlamydia Lab Result example - Final" ] ;
+       fhir:description [ fhir:v "Chlamydia Lab Result example - Final" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group10" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-hpv-result-final> ;
+         fhir:reference [ fhir:v "Observation/example-opa-hpv-result-final" ]
+       ] ;
+       fhir:name [ fhir:v "HPV Lab Result example - Final" ] ;
+       fhir:description [ fhir:v "HPV Lab Result example - Final" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/hpv-result"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/hpv-result>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group10" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-neisseria-gonorrhoeae-result-final> ;
+         fhir:reference [ fhir:v "Observation/example-opa-neisseria-gonorrhoeae-result-final" ]
+       ] ;
+       fhir:name [ fhir:v "Neisseria Gonorrhoeae Lab Result example - Final" ] ;
+       fhir:description [ fhir:v "Neisseria Gonorrhoeae Lab Result example - Final" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group10" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-hiv-1-2-result-final> ;
+         fhir:reference [ fhir:v "Observation/example-opa-hiv-1-2-result-final" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Lab Result example - Final" ] ;
+       fhir:description [ fhir:v "HIV Lab Result example - Final" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group10" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-syphilis-result-final> ;
+         fhir:reference [ fhir:v "Observation/example-opa-syphilis-result-final" ]
+       ] ;
+       fhir:name [ fhir:v "Syphilis Lab Result example - Final" ] ;
+       fhir:description [ fhir:v "Syphilis Lab Result example - Final" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group10" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-contraceptive-counseling> ;
+         fhir:reference [ fhir:v "Observation/example-opa-contraceptive-counseling" ] ;
+         fhir:display [ fhir:v "Contraceptive Counseling- Intake Observation example" ]
+       ] ;
+       fhir:name [ fhir:v "Contraceptive Counseling- Intake Observation example" ] ;
+       fhir:description [ fhir:v "Contraceptive Counseling- Intake Observation example" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group8" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-contraceptive-counseling-not-given> ;
+         fhir:reference [ fhir:v "Observation/example-opa-contraceptive-counseling-not-given" ] ;
+         fhir:display [ fhir:v "Contraceptive Counseling not given example" ]
+       ] ;
+       fhir:name [ fhir:v "Contraceptive Counseling not given example" ] ;
+       fhir:description [ fhir:v "Contraceptive Counseling not given example" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counciling"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counciling>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group8" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-contraceptive-method-intake> ;
+         fhir:reference [ fhir:v "Observation/example-opa-contraceptive-method-intake" ] ;
+         fhir:display [ fhir:v "Contraceptive Method - Intake Observation example" ]
+       ] ;
+       fhir:name [ fhir:v "Contraceptive Method - Intake Observation example" ] ;
+       fhir:description [ fhir:v "Contraceptive Method - Intake Observation example" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-intake"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-intake>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group8" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-contraceptive-method-exit> ;
+         fhir:reference [ fhir:v "Observation/example-opa-contraceptive-method-exit" ] ;
+         fhir:display [ fhir:v "Contraceptive Method - Exit Observation example" ]
+       ] ;
+       fhir:name [ fhir:v "Contraceptive Method - Exit Observation example" ] ;
+       fhir:description [ fhir:v "Contraceptive Method - Exit Observation example" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-exit"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-exit>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group8" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-no-contraceptive-method-intake> ;
+         fhir:reference [ fhir:v "Observation/example-opa-no-contraceptive-method-intake" ] ;
+         fhir:display [ fhir:v "No Contraceptive Method - Intake example" ]
+       ] ;
+       fhir:name [ fhir:v "No Contraceptive Method - Intake example" ] ;
+       fhir:description [ fhir:v "No Contraceptive Method - Intake example" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-intake"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-intake>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group8" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-no-contraceptive-method-exit> ;
+         fhir:reference [ fhir:v "Observation/example-opa-no-contraceptive-method-exit" ] ;
+         fhir:display [ fhir:v "No Contraceptive Method - Exit example" ]
+       ] ;
+       fhir:name [ fhir:v "No Contraceptive Method - Exit example" ] ;
+       fhir:description [ fhir:v "No Contraceptive Method - Exit example" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-exit"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-exit>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group8" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-pregnancy-counseling> ;
+         fhir:reference [ fhir:v "Observation/example-opa-pregnancy-counseling" ] ;
+         fhir:display [ fhir:v "Pregnancy Counseling example" ]
+       ] ;
+       fhir:name [ fhir:v "Pregnancy Counseling example" ] ;
+       fhir:description [ fhir:v "Pregnancy Counseling example" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/pregnancy-counseling"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/pregnancy-counseling>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group8" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-seeking-counseling> ;
+         fhir:reference [ fhir:v "Observation/example-opa-seeking-counseling" ] ;
+         fhir:display [ fhir:v "Seeking Counseling example" ]
+       ] ;
+       fhir:name [ fhir:v "Seeking Counseling example" ] ;
+       fhir:description [ fhir:v "Seeking Counseling example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group8" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-household-income> ;
+         fhir:reference [ fhir:v "Observation/example-opa-household-income" ] ;
+         fhir:display [ fhir:v "Household Income example" ]
+       ] ;
+       fhir:name [ fhir:v "Household Income example" ] ;
+       fhir:description [ fhir:v "Household Income example" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/household-income"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/household-income>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group8" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Observation/example-opa-household-size> ;
+         fhir:reference [ fhir:v "Observation/example-opa-household-size" ] ;
+         fhir:display [ fhir:v "Household Size example" ]
+       ] ;
+       fhir:name [ fhir:v "Household Size example" ] ;
+       fhir:description [ fhir:v "Household Size example" ] ;
+       fhir:example [
+         fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/household-size"^^xsd:anyURI ;
+         fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/household-size>
+       ] ;
+       fhir:groupingId [ fhir:v "new-group8" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Parameters" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Parameters/expansion-parameters-opa> ;
+         fhir:reference [ fhir:v "Parameters/expansion-parameters-opa" ]
+       ] ;
+       fhir:name [ fhir:v "US Edition of Snomed" ] ;
+       fhir:description [ fhir:v "US Edition of Snomed" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group4" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Bundle/example-opa-full-encounter-submission-bundle-1> ;
+         fhir:reference [ fhir:v "Bundle/example-opa-full-encounter-submission-bundle-1" ]
+       ] ;
+       fhir:name [ fhir:v "Encounter Submission Full Report Example" ] ;
+       fhir:description [ fhir:v "This Bundle exemplifies a scenario of an encounter where the Patient reported using an oral contraceptive at intake, had a contraceptive provision method of a procedure during the encounter, and at exit, reported contraceptive method of an IUD.\n\nThe following information was documented: patient, provider and encounter details, vital signs for blood pressure, height and weight, smoking status, sexual orientation, pregnancy status and intent, contraceptive method at intake and exit, reason for no contraceptive use at intake, contraceptive and pregnancy counseling provided, and five possible STI lab tests (pending pap-smear, HPV, Chlamydia, Gonorrhoaea, and HIV).\n\nNote the pap smear Observation exemplifies a pending/preliminary result (Observation.status=preliminary and .value is omitted). No test for syphilis was ordered as part of this example encounter and therefore, no Observation pertaining to Syphilis is included in this Bundle.\n\nBecause contraceptive methods at intake and exit were provided, reasons for no contraceptive method (at intake and exit) are omitted from this Bundle." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group11" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Bundle/example-opa-full-encounter-submission-bundle-2> ;
+         fhir:reference [ fhir:v "Bundle/example-opa-full-encounter-submission-bundle-2" ]
+       ] ;
+       fhir:name [ fhir:v "Encounter Submission Full Report Example 2" ] ;
+       fhir:description [ fhir:v "This Bundle example exemplifies a scenario of an encounter where the Patient reported no contraceptive use because she wants to become pregnant, and has responded ‘true’ in response to ‘Counseling to achieve pregnancy was provided’ (Observation.code=86655-8). This Patient therefore does not have contraceptive counseling provided (i.e. Contraceptive Counseling Observation is omitted). This Patient also has a pregnancy status of ‘not pregnant’ and a pregnancy intent of ‘wants to become pregnant’.\n\nThis Patient is also an ex-smoker, has a heterosexual sexual orientation. This example does not include any STI tests/results." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group11" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Bundle/example-opa-full-encounter-submission-bundle-3> ;
+         fhir:reference [ fhir:v "Bundle/example-opa-full-encounter-submission-bundle-3" ]
+       ] ;
+       fhir:name [ fhir:v "Encounter Submission Full Report Example 3" ] ;
+       fhir:description [ fhir:v "This Bundle exemplifies a scenario of multiple encounters where the Patient is seeking lab testing for chlamydia and has required multiple STI tests for diagnosis and treatment. The following information was documented: patient, provider and encounter details, vital signs for blood pressure, height and weight, smoking status, sexual orientation, and three chlamydia lab tests; one lab test that was deemed inconclusive, a second test that was taken a month later and was found to be positive, and a third preliminary test to retest the patient after treatment. Because contraceptive methods at intake and exit were provided, reasons for no contraceptive method (at intake and exit) are omitted from this Bundle." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group11" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://oash.org/fhir/us/opa/Bundle/example-opa-subsequent-lab-result-submission-bundle> ;
+         fhir:reference [ fhir:v "Bundle/example-opa-subsequent-lab-result-submission-bundle" ]
+       ] ;
+       fhir:name [ fhir:v "Subsequent Lab Result Submission Bundle" ] ;
+       fhir:description [ fhir:v "This Bundle exemplifies the finalization of a the pap-smear Lab Result Observation. Subsequent Lab Result Bundle.identifier SHALL match (system and value) the Bundle.identifier of the Bundle to which it is associated." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "new-group11" ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
+       ] ) ;
+       fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Home Page" ] ;
+       fhir:generation [ fhir:v "markdown" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "overview.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "overview.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Overview" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "data_elements.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "data_elements.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Data Elements" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "reuse_of_external_profiles.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "reuse_of_external_profiles.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Reuse of External Profiles" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "downloads.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [ fhir:v "path-tx-cache" ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -12,4 +12,7 @@ OPA has created this FHIR implementation guide to collect a set of standardized 
 * 	Reduce the burden of annual reporting requirements on the Title X network; 
 * 	Align with data modernization efforts sponsored by the Department of Health and Human Services;
 * 	Make the FHIR standard publicly available to all reproductive health providers outside of the Title X network so they can collect standardized family planning data and calculate performance metrics on their own.
+
 The Implementation Guide (IG) uses US Core profiles where possible, and may also leverage profiles in the HL7 FHIR Quality Improvement (QI) IG Cores well as base FHIR resources. The initial version of this IG contemplates a workflow mainly focused on Title X grantees submitting data to OPA.
+
+Note: DataAbsentReason is not required, and will not be stored by the FPAR system

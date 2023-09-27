@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-opa-practitioner-role"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "5" ] ;
+     fhir:lastUpdated [ fhir:v "2023-07-20T15:34:50.233Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"example-opa-practitioner-role\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;example-opa-practitioner-role&quot; Version &quot;5&quot; Updated &quot;2023-07-20 15:34:50+0000&quot; </p></div><p><b>identifier</b>: id: 23</p><p><b>active</b>: true</p><p><b>period</b>: 2012-01-01 --&gt; (ongoing)</p><p><b>practitioner</b>: <a href=\"Practitioner-example-opa-practitioner.html\">Practitioner/example-opa-practitioner: Dr Adam Careful</a> &quot; CAREFUL&quot;</p><p><b>code</b>: Healthcare professional (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#223366009)</span></p><p><b>specialty</b>: Healthcare professional (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#223366009)</span></p><p><b>telecom</b>: ph: 555-555-5555</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://www.acme.org/practitioners"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "23" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2012-01-01"^^xsd:date ]
+  ] ; # 
+  fhir:practitioner [
+     fhir:link <http://oash.org/fhir/us/opa/Practitioner/example-opa-practitioner> ;
+     fhir:reference [ fhir:v "Practitioner/example-opa-practitioner" ] ;
+     fhir:display [ fhir:v "Dr Adam Careful" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       a sct:223366009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "223366009" ] ;
+       fhir:display [ fhir:v "Healthcare professional (occupation)" ]
+     ] )
+  ] ) ; # 
+  fhir:specialty ( [
+     fhir:coding ( [
+       a sct:223366009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "223366009" ] ;
+       fhir:display [ fhir:v "Healthcare professional (occupation)" ]
+     ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "555-555-5555" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

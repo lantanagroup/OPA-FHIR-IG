@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="example-opa-no-contraceptive-method-exit"/>
+  <meta>
+    <versionId value="7"/>
+    <lastUpdated value="2023-07-20T15:34:12.895Z"/>
+    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-exit"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="example-opa-no-contraceptive-method-exit"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;example-opa-no-contraceptive-method-exit&quot; Version &quot;7&quot; Updated &quot;2023-07-20 15:34:12+0000&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-no-contraceptive-reason-exit.html">No Contraceptive Reason Exit</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Survey <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#survey)</span></p><p><b>code</b>: Reason no birth control at exit Reported <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#86653-3)</span></p><p><b>subject</b>: <a href="Patient-example-opa-patient.html">Patient/example-opa-patient</a> &quot; WOODROW&quot;</p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href="PractitionerRole-example-opa-practitioner-role.html">PractitionerRole/example-opa-practitioner-role</a></p><p><b>value</b>: Wants to become pregnant <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#454411000124108)</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="survey"/>
+      <display value="Survey"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="86653-3"/>
+      <display value="Reason no birth control at exit Reported"/>
+    </coding>
+    <text value="Reason no birth control at exit Reported"/>
+  </code>
+  <subject>
+    <reference value="Patient/example-opa-patient"/>
+  </subject>
+  <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
+  <performer>
+    <reference value="PractitionerRole/example-opa-practitioner-role"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="454411000124108"/>
+      <display value="Wants to become pregnant"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

@@ -343,7 +343,8 @@
                 <reference value="PractitionerRole/example-opa-practitioner-role"/></reference>
             <name value="OPA PractitionerRole example"/>
             <description value="OPA PractitionerRole example"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner-role"/>
             <groupingId value="new-group3"/>
         </resource>
         <resource>

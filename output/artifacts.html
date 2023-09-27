@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - Family Planning Annual Report (FPAR) Implementation Guide v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/fhir-opa.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Family Planning Annual Report (FPAR) Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - CI Build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="overview.html">Overview</a></li>
+
+  <li><a href="data_elements.html">Data Elements</a></li>
+
+  <li><a href="reuse_of_external_profiles.html">Reuse of External Profiles</a></li>
+
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Family Planning Annual Report (FPAR) Implementation Guide - Local Development build (v1.0.0). See the <a href="http://oash.org/fhir/us/opa/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Submission Bundles Profiles</a>
+      </li>
+      <li>
+         <a href="#2">OPA General Profiles</a>
+      </li>
+      <li>
+         <a href="#3">OPA Extensions</a>
+      </li>
+      <li>
+         <a href="#4">Family Planning Observation Profiles</a>
+      </li>
+      <li>
+         <a href="#5">Lab Testing Profiles</a>
+      </li>
+      <li>
+         <a href="#6">Submission Bundle Examples</a>
+      </li>
+      <li>
+         <a href="#7">OPA General Examples</a>
+      </li>
+      <li>
+         <a href="#8">Family Planning Observation Examples</a>
+      </li>
+      <li>
+         <a href="#9">Lab Testing Examples - Preliminary</a>
+      </li>
+      <li>
+         <a href="#10">Lab Testing Examples - Final</a>
+      </li>
+      <li>
+         <a href="#11">Terminology</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Submission Bundles Profiles </h3>
+   <p>
+    
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-encounter-submission-full-report.html"
+                     title="StructureDefinition/encounter-submission-full-report">Encounter Submission Full Report</a>
+               </td>
+               <td>
+<p>The Bundle Profile defines how all encounter data (DEs #1-43) are to be submitted as a FHIR Bundle. Note- subsequent lab result reports should not use this profile (see Subsequent Lab Result Submission Bundle profile).</p>
+
+<p>Only ordered STI tests, regardless of result availability, should be included in submission Bundles. For example, if a Patient has Chlamydia, HIV, Syphilis and HPV tests ordered (i.e. no Gonorrhoeae or Pap Smear tests ordered), this Patient’s full Encounter Submission Bundle would include four STI Lab Observation Bundle entries (one pertaining to each ordered test). The submission Bundle will never contain any data pertaining to not-ordered lab tests. In the above example scenario, this Patient’s full submission Bundle would not contain Observation entries pertaining to Gonorrhoeae or Pap Smear).</p>
+
+<p>STI Lab Observations that have been ordered but do not have a result available for any reason are expected to contain an Observation.status=preliminary. If/When the result becomes available, a Subsequent Lab Result Submission Bundle should be compiled and submitted.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-subsequent-lab-results-submission.html"
+                     title="StructureDefinition/subsequent-lab-results-submission">Subsequent Lab Result Submission</a>
+               </td>
+               <td>
+<p>Subsequent Lab Result Submission Profile defines a subsequent lab results Bundle for submission. Submission Bundles conforming to this profile are only expected subsequently to an initial Encounter Submission Full Report. Subsequent Lab Result Bundles SHALL contain an ‘originalBundleReference’ extension which includes a valueIdentifier pertaining to the Bundle.identifier of the original Encounter Submission Full Report Bundle.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>OPA General Profiles </h3>
+   <p>
+    
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-opa-patient.html"
+                     title="StructureDefinition/opa-patient">OPA Patient</a>
+               </td>
+               <td>
+<p>OPA Patient conforms to US Core Patient and requires birthDate (DE#4, #6, #7, #8, #9, #10, #43)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-opa-encounter.html"
+                     title="StructureDefinition/opa-encounter">OPA Encounter</a>
+               </td>
+               <td>
+<p>US Core Encounter with .period required (DE#5)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-opa-practitioner-role.html"
+                     title="StructureDefinition/opa-practitioner-role">OPA Provider Role</a>
+               </td>
+               <td>
+<p>PractitionerRole profile bound to an allowable subset of PractitionerRole codes (DE#2, #3)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-fp-provider-organization.html"
+                     title="StructureDefinition/fp-provider-organization">OPA Family Planning Provider Organization</a>
+               </td>
+               <td>
+<p>Family Planning Provider Organization (DE#1)</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>OPA Extensions </h3>
+   <p>
+    
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-payer-for-visit.html"
+                     title="StructureDefinition/payer-for-visit">Payer For Visit</a>
+               </td>
+               <td>
+<p>Extension for Payer For Visit (DE#14)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-insurance-type.html"
+                     title="StructureDefinition/insurance-type">Insurance Coverage Type</a>
+               </td>
+               <td>
+<p>Extension for Insurance Coverage Type (DE#13)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-english-proficiency.html"
+                     title="StructureDefinition/english-proficiency">English Proficiency</a>
+               </td>
+               <td>
+<p>Extension to convey Limited English Proficiency (DE#8). This extension is expected to extend Patient.communication.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-client-asserted-sex.html"
+                     title="StructureDefinition/client-asserted-sex">Client Asserted Sex</a>
+               </td>
+               <td>
+<p>‘Sex’ as asserted by the Patient (client)</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Family Planning Observation Profiles </h3>
+   <p>
+    
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-contraceptive-method-intake.html"
+                     title="StructureDefinition/contraceptive-method-intake">Contraceptive Method - Intake</a>
+               </td>
+               <td>
+<p>Contraceptive method at intake (DE#17)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-contraceptive-method-exit.html"
+                     title="StructureDefinition/contraceptive-method-exit">Contraceptive Method - Exit</a>
+               </td>
+               <td>
+<p>Contraceptive method at exit (DE#19)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-no-contraceptive-reason-intake.html"
+                     title="StructureDefinition/no-contraceptive-reason-intake">Reason For No Contraceptive - Intake</a>
+               </td>
+               <td>
+<p>Reason for no contraceptive method use at intake (DE#18)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-no-contraceptive-reason-exit.html"
+                     title="StructureDefinition/no-contraceptive-reason-exit">Reason For No Contraceptive - Exit</a>
+               </td>
+               <td>
+<p>Reason for no contraceptive method use at exit (DE#20)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-contraceptive-counseling.html"
+                     title="StructureDefinition/contraceptive-counseling">Contraceptive Counseling</a>
+               </td>
+               <td>
+<p>How contraceptive counseling was provided (DE #21). If counseling was not provided, use Observation.dataAbsentReason (DE#22). Observation.valueCodeableConcept should contain one of the allowable VSAC codes for how counseling was provided.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-pregnancy-counseling.html"
+                     title="StructureDefinition/pregnancy-counseling">Pregnancy Counseling</a>
+               </td>
+               <td>
+<p>Pregnancy Counseling was provided (DE#23)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-seeking-counseling.html"
+                     title="StructureDefinition/seeking-counseling">Seeking Counseling</a>
+               </td>
+               <td>
+<p>Observation to convey ‘Do you want to talk about contraceptive or pregnancy prevention during your visit today?’ (DE#41)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-household-income.html"
+                     title="StructureDefinition/household-income">Household Income</a>
+               </td>
+               <td>
+<p>Household income profile (DE#11)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-household-size.html"
+                     title="StructureDefinition/household-size">Household Size</a>
+               </td>
+               <td>
+<p>Placeholder text for household size (DE#12)</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Lab Testing Profiles </h3>
+   <p>
+    
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-neisseria-gonorrhoeae-result.html"
+                     title="StructureDefinition/neisseria-gonorrhoeae-result">Neisseria Gonorrhoeae Result</a>
+               </td>
+               <td>
+<p>Neisseria Gonorrhoeae Result (DE#36). If a Neisseria Gonorrhoeae test was not performed at this visit (DE#35), the submission Bundle should not include an Observation (entry) representing this lab result.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-chlamydia-result.html"
+                     title="StructureDefinition/chlamydia-result">Chlamydia Trachomatis Result</a>
+               </td>
+               <td>
+<p>Chlamydia Trachomatis Result (DE#34). If a Chlamydia Trachomatis test was not performed in this visit (DE#33), the submission Bundle should not include an Observation (entry) representing this lab result.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-pap-smear-result.html"
+                     title="StructureDefinition/pap-smear-result">Pap Smear Result</a>
+               </td>
+               <td>
+<p>Pap Smear Result (DE#30). If a pap smear test was not performed in this visit (DE#29), the submission Bundle should not include an Observation (entry) representing this lab result.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-1-2-result.html"
+                     title="StructureDefinition/hiv-1-2-result">HIV 1&amp;2 Result</a>
+               </td>
+               <td>
+<p>HIV 1&amp;2 Result (DE#32). If a HIV test was not performed in this visit (DE#31), the submission Bundle should not include an Observation (entry) representing this lab result.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-syphilis-result.html"
+                     title="StructureDefinition/syphilis-result">Syphilis Result</a>
+               </td>
+               <td>
+<p>Syphilis Result (DE#40). If a Syphilis test was not performed in this visit (DE#39), the submission Bundle should not include an Observation (entry) representing this lab result.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hpv-result.html"
+                     title="StructureDefinition/hpv-result">HPV Result</a>
+               </td>
+               <td>
+<p>HPV Result (DE#32). If HPV test was not performed in this visit (DE#31), the submission Bundle should not include an Observation (entry) representing this lab result.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="6"> </a>
+   <h3>Submission Bundle Examples </h3>
+   <p>
+    
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-example-opa-full-encounter-submission-bundle-1.html"
+                     title="Bundle/example-opa-full-encounter-submission-bundle-1">Encounter Submission Full Report Example</a>
+               </td>
+               <td>
+<p>This Bundle exemplifies a scenario of an encounter where the Patient reported using an oral contraceptive at intake, had a contraceptive provision method of a procedure during the encounter, and at exit, reported contraceptive method of an IUD.</p>
+
+<p>The following information was documented: patient, provider and encounter details, vital signs for blood pressure, height and weight, smoking status, sexual orientation, pregnancy status and intent, contraceptive method at intake and exit, reason for no contraceptive use at intake, contraceptive and pregnancy counseling provided, and five possible STI lab tests (pending pap-smear, HPV, Chlamydia, Gonorrhoaea, and HIV).</p>
+
+<p>Note the pap smear Observation exemplifies a pending/preliminary result (Observation.status=preliminary and .value is omitted). No test for syphilis was ordered as part of this example encounter and therefore, no Observation pertaining to Syphilis is included in this Bundle.</p>
+
+<p>Because contraceptive methods at intake and exit were provided, reasons for no contraceptive method (at intake and exit) are omitted from this Bundle.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-example-opa-full-encounter-submission-bundle-2.html"
+                     title="Bundle/example-opa-full-encounter-submission-bundle-2">Encounter Submission Full Report Example 2</a>
+               </td>
+               <td>
+<p>This Bundle example exemplifies a scenario of an encounter where the Patient reported no contraceptive use because she wants to become pregnant, and has responded ‘true’ in response to ‘Counseling to achieve pregnancy was provided’ (Observation.code=86655-8). This Patient therefore does not have contraceptive counseling provided (i.e. Contraceptive Counseling Observation is omitted). This Patient also has a pregnancy status of ‘not pregnant’ and a pregnancy intent of ‘wants to become pregnant’.</p>
+
+<p>This Patient is also an ex-smoker, has a heterosexual sexual orientation. This example does not include any STI tests/results.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-example-opa-full-encounter-submission-bundle-3.html"
+                     title="Bundle/example-opa-full-encounter-submission-bundle-3">Encounter Submission Full Report Example 3</a>
+               </td>
+               <td>
+<p>This Bundle exemplifies a scenario of multiple encounters where the Patient is seeking lab testing for chlamydia and has required multiple STI tests for diagnosis and treatment. The following information was documented: patient, provider and encounter details, vital signs for blood pressure, height and weight, smoking status, sexual orientation, and three chlamydia lab tests; one lab test that was deemed inconclusive, a second test that was taken a month later and was found to be positive, and a third preliminary test to retest the patient after treatment. Because contraceptive methods at intake and exit were provided, reasons for no contraceptive method (at intake and exit) are omitted from this Bundle.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-example-opa-subsequent-lab-result-submission-bundle.html"
+                     title="Bundle/example-opa-subsequent-lab-result-submission-bundle">Subsequent Lab Result Submission Bundle</a>
+               </td>
+               <td>
+<p>This Bundle exemplifies the finalization of a the pap-smear Lab Result Observation. Subsequent Lab Result Bundle.identifier SHALL match (system and value) the Bundle.identifier of the Bundle to which it is associated.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="7"> </a>
+   <h3>OPA General Examples </h3>
+   <p>
+    
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-example-opa-patient.html"
+                     title="Patient/example-opa-patient">OPA Patient example</a>
+               </td>
+               <td>
+<p>OPA Patient example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-example-opa-encounter.html"
+                     title="Encounter/example-opa-encounter">OPA Encounter example</a>
+               </td>
+               <td>
+<p>OPA Encounter example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-example-opa-practitioner-role.html"
+                     title="PractitionerRole/example-opa-practitioner-role">OPA PractitionerRole example</a>
+               </td>
+               <td>
+<p>OPA PractitionerRole example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-example-opa-practitioner.html"
+                     title="Practitioner/example-opa-practitioner">Practitioner example (US Core)</a>
+               </td>
+               <td>
+<p>US Core Practitioner example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-example-opa-fp-provider-organization.html"
+                     title="Organization/example-opa-fp-provider-organization">OPA Family Planning Clinic example</a>
+               </td>
+               <td>
+<p>OPA Family Planning Clinic example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-blood-pressure.html"
+                     title="Observation/example-opa-blood-pressure">Blood Pressure example (US Core)</a>
+               </td>
+               <td>
+<p>Blood Pressure example (US Core)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-body-height.html"
+                     title="Observation/example-opa-body-height">Body Height example (US Core)</a>
+               </td>
+               <td>
+<p>Body Height example (US Core)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-body-weight.html"
+                     title="Observation/example-opa-body-weight">Body Weight example (US Core)</a>
+               </td>
+               <td>
+<p>Body Weight example (US Core)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-smoking-status.html"
+                     title="Observation/example-opa-smoking-status">Smoking Status example (US Core)</a>
+               </td>
+               <td>
+<p>Smoking Status example (US Core)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-sexual-orientation.html"
+                     title="Observation/example-opa-sexual-orientation">Sexual Orientation example (US Core)</a>
+               </td>
+               <td>
+<p>Sexual Orientation example (DE#42). Pregnancy Status Observations shall conform to US Core Sexual Orientation profile</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-pregnancy-status.html"
+                     title="Observation/example-opa-pregnancy-status">Pregnancy Status example (US Core)</a>
+               </td>
+               <td>
+<p>Pregnancy Status example (DE#15). Pregnancy Status Observations shall conform to US Core Pregnancy Status profile</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-pregnancy-intent.html"
+                     title="Observation/example-opa-pregnancy-intent">Pregnancy Intention example (US Core)</a>
+               </td>
+               <td>
+<p>Pregnancy intention example (DE#16). Pregnancy Intention Observations shall conform to US Core Pregnancy Intention profile</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="8"> </a>
+   <h3>Family Planning Observation Examples </h3>
+   <p>
+    
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-contraceptive-counseling.html"
+                     title="Observation/example-opa-contraceptive-counseling">Contraceptive Counseling- Intake Observation example</a>
+               </td>
+               <td>
+<p>Contraceptive Counseling- Intake Observation example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-contraceptive-counseling-not-given.html"
+                     title="Observation/example-opa-contraceptive-counseling-not-given">Contraceptive Counseling not given example</a>
+               </td>
+               <td>
+<p>Contraceptive Counseling not given example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-contraceptive-method-intake.html"
+                     title="Observation/example-opa-contraceptive-method-intake">Contraceptive Method - Intake Observation example</a>
+               </td>
+               <td>
+<p>Contraceptive Method - Intake Observation example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-contraceptive-method-exit.html"
+                     title="Observation/example-opa-contraceptive-method-exit">Contraceptive Method - Exit Observation example</a>
+               </td>
+               <td>
+<p>Contraceptive Method - Exit Observation example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-no-contraceptive-method-intake.html"
+                     title="Observation/example-opa-no-contraceptive-method-intake">No Contraceptive Method - Intake example</a>
+               </td>
+               <td>
+<p>No Contraceptive Method - Intake example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-no-contraceptive-method-exit.html"
+                     title="Observation/example-opa-no-contraceptive-method-exit">No Contraceptive Method - Exit example</a>
+               </td>
+               <td>
+<p>No Contraceptive Method - Exit example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-pregnancy-counseling.html"
+                     title="Observation/example-opa-pregnancy-counseling">Pregnancy Counseling example</a>
+               </td>
+               <td>
+<p>Pregnancy Counseling example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-seeking-counseling.html"
+                     title="Observation/example-opa-seeking-counseling">Seeking Counseling example</a>
+               </td>
+               <td>
+<p>Seeking Counseling example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-household-income.html"
+                     title="Observation/example-opa-household-income">Household Income example</a>
+               </td>
+               <td>
+<p>Household Income example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-household-size.html"
+                     title="Observation/example-opa-household-size">Household Size example</a>
+               </td>
+               <td>
+<p>Household Size example</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="9"> </a>
+   <h3>Lab Testing Examples - Preliminary </h3>
+   <p>
+    
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-pap-smear-result-prelim.html"
+                     title="Observation/example-opa-pap-smear-result-prelim">Pap Smear Lab Result example - Preliminary</a>
+               </td>
+               <td>
+<p>Pap Smear Lab Result example - Preliminary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-chlamydia-result-prelim.html"
+                     title="Observation/example-opa-chlamydia-result-prelim">Chlamydia Lab Result example - Preliminary</a>
+               </td>
+               <td>
+<p>Chlamydia Lab Result example - Preliminary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-hpv-result-prelim.html"
+                     title="Observation/example-opa-hpv-result-prelim">HPV Lab Result example - Preliminary</a>
+               </td>
+               <td>
+<p>HPV Lab Result example - Preliminary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-neisseria-gonorrhoeae-result-prelim.html"
+                     title="Observation/example-opa-neisseria-gonorrhoeae-result-prelim">Neisseria Gonorrhoeae Lab Result example - Preliminary</a>
+               </td>
+               <td>
+<p>Neisseria Gonorrhoeae Lab Result example - Preliminary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-hiv-1-2-result-prelim.html"
+                     title="Observation/example-opa-hiv-1-2-result-prelim">HIV Lab Result example - Preliminary</a>
+               </td>
+               <td>
+<p>HIV Lab Result example - Preliminary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-syphilis-result-prelim.html"
+                     title="Observation/example-opa-syphilis-result-prelim">Syphilis Lab Result example - Preliminary</a>
+               </td>
+               <td>
+<p>Syphilis Lab Result example - Preliminary</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="10"> </a>
+   <h3>Lab Testing Examples - Final </h3>
+   <p>
+    
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-pap-smear-result-final.html"
+                     title="Observation/example-opa-pap-smear-result-final">Pap Smear Lab Result example - Final</a>
+               </td>
+               <td>
+<p>Pap Smear Lab Result example - Final</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-chlamydia-result-final.html"
+                     title="Observation/example-opa-chlamydia-result-final">Chlamydia Lab Result example - Final</a>
+               </td>
+               <td>
+<p>Chlamydia Lab Result example - Final</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-hpv-result-final.html"
+                     title="Observation/example-opa-hpv-result-final">HPV Lab Result example - Final</a>
+               </td>
+               <td>
+<p>HPV Lab Result example - Final</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-neisseria-gonorrhoeae-result-final.html"
+                     title="Observation/example-opa-neisseria-gonorrhoeae-result-final">Neisseria Gonorrhoeae Lab Result example - Final</a>
+               </td>
+               <td>
+<p>Neisseria Gonorrhoeae Lab Result example - Final</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-hiv-1-2-result-final.html"
+                     title="Observation/example-opa-hiv-1-2-result-final">HIV Lab Result example - Final</a>
+               </td>
+               <td>
+<p>HIV Lab Result example - Final</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-opa-syphilis-result-final.html"
+                     title="Observation/example-opa-syphilis-result-final">Syphilis Lab Result example - Final</a>
+               </td>
+               <td>
+<p>Syphilis Lab Result example - Final</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="11"> </a>
+   <h3>Terminology </h3>
+   <p>
+    
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Parameters-expansion-parameters-opa.html"
+                     title="Parameters/expansion-parameters-opa">US Edition of Snomed</a>
+               </td>
+               <td>
+<p>US Edition of Snomed</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package oash.fhir.us.opa#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 27, 2023 11:10-0600">2023-09-27</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

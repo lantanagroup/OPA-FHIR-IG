@@ -1,0 +1,184 @@
+[
+  {
+    "id" : "oash.fhir.us.opa",
+    "type" : "ImplementationGuide",
+    "url" : "http://oash.org/fhir/us/opa/ImplementationGuide/oash.fhir.us.opa",
+    "version" : "1.0.0",
+    "name" : "FamilyPlanningAnnualReport"
+  },
+  {
+    "id" : "chlamydia-result",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result",
+    "version" : "1.0.0",
+    "name" : "Chlamydia Trachomatis Result"
+  },
+  {
+    "id" : "client-asserted-sex",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/client-asserted-sex",
+    "version" : "1.0.0",
+    "name" : "Client-Asserted Sex"
+  },
+  {
+    "id" : "contraceptive-counseling",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling",
+    "version" : "1.0.0",
+    "name" : "Contraceptive Counseling"
+  },
+  {
+    "id" : "contraceptive-method-exit",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-exit",
+    "version" : "1.0.0",
+    "name" : "Contraceptive Method - Exit"
+  },
+  {
+    "id" : "contraceptive-method-intake",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-intake",
+    "version" : "1.0.0",
+    "name" : "Contraceptive Method - Intake"
+  },
+  {
+    "id" : "encounter-submission-full-report",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/encounter-submission-full-report",
+    "version" : "1.0.0",
+    "name" : "OPAEncounterSubmissionFullReport"
+  },
+  {
+    "id" : "english-proficiency",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/english-proficiency",
+    "version" : "1.0.0",
+    "name" : "English Proficiency Extension"
+  },
+  {
+    "id" : "fp-provider-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/fp-provider-organization",
+    "version" : "1.0.0",
+    "name" : "OPA Family Planning Provider Organization"
+  },
+  {
+    "id" : "hiv-1-2-result",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result",
+    "version" : "1.0.0",
+    "name" : "HIV 1 and 2 Result"
+  },
+  {
+    "id" : "household-income",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/household-income",
+    "version" : "1.0.0",
+    "name" : "Household Income"
+  },
+  {
+    "id" : "household-size",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/household-size",
+    "version" : "1.0.0",
+    "name" : "Household Size"
+  },
+  {
+    "id" : "hpv-result",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/hpv-result",
+    "version" : "1.0.0",
+    "name" : "HPV Result"
+  },
+  {
+    "id" : "insurance-type",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/insurance-type",
+    "version" : "1.0.0",
+    "name" : "OPA Insurance Coverage Type"
+  },
+  {
+    "id" : "neisseria-gonorrhoeae-result",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result",
+    "version" : "1.0.0",
+    "name" : "Neisseria Gonorrhoeae Result"
+  },
+  {
+    "id" : "no-contraceptive-reason-exit",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-exit",
+    "version" : "1.0.0",
+    "name" : "No Contraceptive Reason - Exit"
+  },
+  {
+    "id" : "no-contraceptive-reason-intake",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-intake",
+    "version" : "1.0.0",
+    "name" : "No Contraceptive Reason - Intake"
+  },
+  {
+    "id" : "opa-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter",
+    "version" : "1.0.0",
+    "name" : "OPA Encounter"
+  },
+  {
+    "id" : "opa-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/opa-patient",
+    "version" : "1.0.0",
+    "name" : "OPA Patient"
+  },
+  {
+    "id" : "opa-practitioner-role",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner-role",
+    "version" : "1.0.0",
+    "name" : "OPA Practitioner Role"
+  },
+  {
+    "id" : "pap-smear-result",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result",
+    "version" : "1.0.0",
+    "name" : "Pap Smear Result"
+  },
+  {
+    "id" : "payer-for-visit",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/payer-for-visit",
+    "version" : "1.0.0",
+    "name" : "OPA Payer For Visit"
+  },
+  {
+    "id" : "pregnancy-counseling",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/pregnancy-counseling",
+    "version" : "1.0.0",
+    "name" : "Pregnancy Counseling"
+  },
+  {
+    "id" : "seeking-counseling",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/seeking-counseling",
+    "version" : "1.0.0",
+    "name" : "Seeking Counseling"
+  },
+  {
+    "id" : "subsequent-lab-results-submission",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/subsequent-lab-results-submission",
+    "version" : "1.0.0",
+    "name" : "OPASubsequentLabResultSubmission"
+  },
+  {
+    "id" : "syphilis-result",
+    "type" : "StructureDefinition",
+    "url" : "http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result",
+    "version" : "1.0.0",
+    "name" : "Syphilis Result"
+  }
+]

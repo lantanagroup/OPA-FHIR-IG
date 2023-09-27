@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="example-opa-seeking-counseling"/>
+  <meta>
+    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/seeking-counseling"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="example-opa-seeking-counseling"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;example-opa-seeking-counseling&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-seeking-counseling.html">Seeking Counseling</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Do you want to talk about contraception or pregnancy prevention during your visit today <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#98076-3)</span></p><p><b>subject</b>: <a href="Patient-example-opa-patient.html">Patient/example-opa-patient</a> &quot; WOODROW&quot;</p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href="PractitionerRole-example-opa-practitioner-role.html">PractitionerRole/example-opa-practitioner-role</a></p><p><b>value</b>: Yes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#LA33-6)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="98076-3"/>
+      <display value="Do you want to talk about contraception or pregnancy prevention during your visit today"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example-opa-patient"/>
+  </subject>
+  <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
+  <performer>
+    <reference value="PractitionerRole/example-opa-practitioner-role"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA33-6"/>
+      <display value="Yes"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

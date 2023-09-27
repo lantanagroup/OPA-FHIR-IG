@@ -1,0 +1,24 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://oash.org/fhir/us/opa/Parameters/expansion-parameters-opa> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "expansion-parameters-opa"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "2" ] ;
+     fhir:lastUpdated [ fhir:v "2023-07-20T15:34:31.028Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "profile-url" ] ;
+     fhir:value [ fhir:v "dc8fd4bc-091a-424a-8a3b-6198ef146891" ]
+  ] [
+     fhir:name [ fhir:v "system-version" ] ;
+     fhir:value [ fhir:v "http://snomed.info/sct|http://snomed.info/sct/731000124108" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,139 @@
+﻿FamilyPlanningAnnualReport : Validation Results
+=========================================
+
+err = 0, warn = 0, info = 0
+IG Publisher Version: 1.4.8
+Generated Wed Sep 27 11:13:37 MDT 2023. FHIR version 4.0.1 for oash.fhir.us.opa#1.0.0 (canonical = http://oash.org/fhir/us/opa)
+ Build Errors : 0 / 0 / 0
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\oash.fhir.us.opa : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\bundle\example-opa-full-encounter-submission-bundle-1 : 0 / 4 / 83
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\bundle\example-opa-full-encounter-submission-bundle-2 : 0 / 4 / 59
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\bundle\example-opa-full-encounter-submission-bundle-3 : 0 / 2 / 70
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\bundle\example-opa-subsequent-lab-result-submission-bundle : 0 / 1 / 29
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\encounter\example-opa-encounter : 0 / 0 / 3
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-blood-pressure : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-body-height : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-body-weight : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-chlamydia-result-final : 0 / 0 / 2
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-chlamydia-result-prelim : 0 / 0 / 2
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-contraceptive-counseling : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-contraceptive-counseling-not-given : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-contraceptive-method-exit : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-contraceptive-method-intake : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-hiv-1-2-result-final : 0 / 0 / 2
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-hiv-1-2-result-prelim : 0 / 0 / 2
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-household-income : 0 / 0 / 2
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-household-size : 0 / 0 / 2
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-hpv-result-final : 0 / 0 / 2
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-hpv-result-prelim : 0 / 0 / 2
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-neisseria-gonorrhoeae-result-final : 0 / 0 / 2
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-neisseria-gonorrhoeae-result-prelim : 0 / 0 / 2
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-no-contraceptive-method-exit : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-no-contraceptive-method-intake : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-pap-smear-result-final : 0 / 1 / 2
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-pap-smear-result-prelim : 0 / 0 / 2
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-pregnancy-counseling : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-pregnancy-intent : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-pregnancy-status : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-seeking-counseling : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-sexual-orientation : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-smoking-status : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-syphilis-result-final : 0 / 0 / 2
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\observation\example-opa-syphilis-result-prelim : 0 / 0 / 2
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\organization\example-opa-fp-provider-organization : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\parameters\expansion-parameters-opa : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\patient\example-opa-patient : 0 / 0 / 10
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\practitioner\example-opa-practitioner : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\practitionerrole\example-opa-practitioner-role : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\chlamydia-result : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\client-asserted-sex : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\contraceptive-counseling : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\contraceptive-method-exit : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\contraceptive-method-intake : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\encounter-submission-full-report : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\english-proficiency : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\fp-provider-organization : 0 / 1 / 4
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\hiv-1-2-result : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\household-income : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\household-size : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\hpv-result : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\insurance-type : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\neisseria-gonorrhoeae-result : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\no-contraceptive-reason-exit : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\no-contraceptive-reason-intake : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\opa-encounter : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\opa-patient : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\opa-practitioner-role : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\pap-smear-result : 0 / 3 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\payer-for-visit : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\pregnancy-counseling : 0 / 1 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\seeking-counseling : 0 / 3 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\subsequent-lab-results-submission : 0 / 0 / 1
+ C:\SourceControl\Git\lantanagroup\OPA-FHIR-IG\input\resources\structuredefinition\syphilis-result : 0 / 1 / 1
+</table>
+== n/a ==
+== input\oash.fhir.us.opa.xml ==
+== input\resources\bundle\example-opa-full-encounter-submission-bundle-1.xml ==
+== input\resources\bundle\example-opa-full-encounter-submission-bundle-2.xml ==
+== input\resources\bundle\example-opa-full-encounter-submission-bundle-3.xml ==
+== input\resources\bundle\example-opa-subsequent-lab-result-submission-bundle.xml ==
+== input\resources\encounter\example-opa-encounter.xml ==
+== input\resources\observation\example-opa-blood-pressure.xml ==
+== input\resources\observation\example-opa-body-height.xml ==
+== input\resources\observation\example-opa-body-weight.xml ==
+== input\resources\observation\example-opa-chlamydia-result-final.xml ==
+== input\resources\observation\example-opa-chlamydia-result-prelim.xml ==
+== input\resources\observation\example-opa-contraceptive-counseling.xml ==
+== input\resources\observation\example-opa-contraceptive-counseling-not-given.xml ==
+== input\resources\observation\example-opa-contraceptive-method-exit.xml ==
+== input\resources\observation\example-opa-contraceptive-method-intake.xml ==
+== input\resources\observation\example-opa-hiv-1-2-result-final.xml ==
+== input\resources\observation\example-opa-hiv-1-2-result-prelim.xml ==
+== input\resources\observation\example-opa-household-income.xml ==
+== input\resources\observation\example-opa-household-size.xml ==
+== input\resources\observation\example-opa-hpv-result-final.xml ==
+== input\resources\observation\example-opa-hpv-result-prelim.xml ==
+== input\resources\observation\example-opa-neisseria-gonorrhoeae-result-final.xml ==
+== input\resources\observation\example-opa-neisseria-gonorrhoeae-result-prelim.xml ==
+== input\resources\observation\example-opa-no-contraceptive-method-exit.xml ==
+== input\resources\observation\example-opa-no-contraceptive-method-intake.xml ==
+== input\resources\observation\example-opa-pap-smear-result-final.xml ==
+== input\resources\observation\example-opa-pap-smear-result-prelim.xml ==
+== input\resources\observation\example-opa-pregnancy-counseling.xml ==
+== input\resources\observation\example-opa-pregnancy-intent.xml ==
+== input\resources\observation\example-opa-pregnancy-status.xml ==
+== input\resources\observation\example-opa-seeking-counseling.xml ==
+== input\resources\observation\example-opa-sexual-orientation.xml ==
+== input\resources\observation\example-opa-smoking-status.xml ==
+== input\resources\observation\example-opa-syphilis-result-final.xml ==
+== input\resources\observation\example-opa-syphilis-result-prelim.xml ==
+== input\resources\organization\example-opa-fp-provider-organization.xml ==
+== input\resources\parameters\expansion-parameters-opa.xml ==
+== input\resources\patient\example-opa-patient.xml ==
+== input\resources\practitioner\example-opa-practitioner.xml ==
+== input\resources\practitionerrole\example-opa-practitioner-role.xml ==
+== input\resources\structuredefinition\chlamydia-result.xml ==
+== input\resources\structuredefinition\client-asserted-sex.xml ==
+== input\resources\structuredefinition\contraceptive-counseling.xml ==
+== input\resources\structuredefinition\contraceptive-method-exit.xml ==
+== input\resources\structuredefinition\contraceptive-method-intake.xml ==
+== input\resources\structuredefinition\encounter-submission-full-report.xml ==
+== input\resources\structuredefinition\english-proficiency.xml ==
+== input\resources\structuredefinition\fp-provider-organization.xml ==
+== input\resources\structuredefinition\hiv-1-2-result.xml ==
+== input\resources\structuredefinition\household-income.xml ==
+== input\resources\structuredefinition\household-size.xml ==
+== input\resources\structuredefinition\hpv-result.xml ==
+== input\resources\structuredefinition\insurance-type.xml ==
+== input\resources\structuredefinition\neisseria-gonorrhoeae-result.xml ==
+== input\resources\structuredefinition\no-contraceptive-reason-exit.xml ==
+== input\resources\structuredefinition\no-contraceptive-reason-intake.xml ==
+== input\resources\structuredefinition\opa-encounter.xml ==
+== input\resources\structuredefinition\opa-patient.xml ==
+== input\resources\structuredefinition\opa-practitioner-role.xml ==
+== input\resources\structuredefinition\pap-smear-result.xml ==
+== input\resources\structuredefinition\payer-for-visit.xml ==
+== input\resources\structuredefinition\pregnancy-counseling.xml ==
+== input\resources\structuredefinition\seeking-counseling.xml ==
+== input\resources\structuredefinition\subsequent-lab-results-submission.xml ==
+== input\resources\structuredefinition\syphilis-result.xml ==

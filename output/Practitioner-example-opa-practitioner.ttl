@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://oash.org/fhir/us/opa/Practitioner/example-opa-practitioner> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-opa-practitioner"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "4" ] ;
+     fhir:lastUpdated [ fhir:v "2023-07-20T15:34:44.434Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"example-opa-practitioner\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;example-opa-practitioner&quot; Version &quot;4&quot; Updated &quot;2023-07-20 15:34:44+0000&quot; </p></div><p><b>identifier</b>: id: 23</p><p><b>active</b>: true</p><p><b>name</b>: Adam Careful </p><p><b>address</b>: 534 Erewhon St PleasantVille Vic 3999 (HOME)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td style=\"display: none\">*</td><td>id: 12345</td><td>Bachelor of Science <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0360.html\">degreeLicenseCertificate</a>#BS)</span></td><td>1995 --&gt; (ongoing)</td><td><span>: Example University</span></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://www.acme.org/practitioners"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "23" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Careful" ] ;
+     fhir:given ( [ fhir:v "Adam" ] ) ;
+     fhir:prefix ( [ fhir:v "Dr" ] )
+  ] ) ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "home" ] ;
+     fhir:line ( [ fhir:v "534 Erewhon St" ] ) ;
+     fhir:city [ fhir:v "PleasantVille" ] ;
+     fhir:state [ fhir:v "Vic" ] ;
+     fhir:postalCode [ fhir:v "3999" ]
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:identifier ( [
+       fhir:system [ fhir:v "http://example.org/UniversityIdentifier"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "12345" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0360"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "BS" ] ;
+         fhir:display [ fhir:v "Bachelor of Science" ]
+       ] ) ;
+       fhir:text [ fhir:v "Bachelor of Science" ]
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "1995"^^xsd:gYear ]
+     ] ;
+     fhir:issuer [
+       fhir:display [ fhir:v "Example University" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://oash.org/fhir/us/opa/Encounter/example-opa-encounter> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-opa-encounter"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "14" ] ;
+     fhir:lastUpdated [ fhir:v "2023-08-24T15:21:44.206Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"example-opa-encounter\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;example-opa-encounter&quot; Version &quot;14&quot; Updated &quot;2023-08-24 15:21:44+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-opa-encounter.html\">OPA Encounter</a></p></div><p><b>OPA Insurance Coverage Type</b>: PRIVATE HEALTH INSURANCE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-SOPT.html\">Source of Payment Typology</a>#5)</span></p><p><b>OPA Payer for Visit</b>: Medicare HMO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-SOPT.html\">Source of Payment Typology</a>#111)</span></p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'ambulatory')</p><p><b>type</b>: Office Visit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT®)</a>#99202)</span></p><p><b>subject</b>: <a href=\"Patient-example-opa-patient.html\">Patient/example-opa-patient</a> &quot; WOODROW&quot;</p><p><b>period</b>: 2023-04-13 17:00:14-0500 --&gt; 2023-04-13 18:00:14-0500</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/insurance-type"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nahdo.org/sopt"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "5" ] ;
+         fhir:display [ fhir:v "PRIVATE HEALTH INSURANCE" ]
+       ] ) ;
+       fhir:text [ fhir:v "PRIVATE HEALTH INSURANCE" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/payer-for-visit"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nahdo.org/sopt"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "111" ] ;
+         fhir:display [ fhir:v "Medicare HMO" ]
+       ] ) ;
+       fhir:text [ fhir:v "Medicare HMO" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "AMB" ] ;
+     fhir:display [ fhir:v "ambulatory" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.ama-assn.org/go/cpt"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "99202" ]
+     ] ) ;
+     fhir:text [ fhir:v "Office Visit" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2023-04-13T17:00:14-05:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

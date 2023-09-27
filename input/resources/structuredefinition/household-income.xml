@@ -45,9 +45,5 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Observation.dataAbsentReason">
-            <path value="Observation.dataAbsentReason"/>
-            <mustSupport value="true"/>
-        </element>
     </differential>
 </StructureDefinition>

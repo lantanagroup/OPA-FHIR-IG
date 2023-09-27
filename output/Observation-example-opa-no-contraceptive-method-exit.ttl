@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://oash.org/fhir/us/opa/Observation/example-opa-no-contraceptive-method-exit> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-opa-no-contraceptive-method-exit"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "7" ] ;
+     fhir:lastUpdated [ fhir:v "2023-07-20T15:34:12.895Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-exit"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-exit>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-no-contraceptive-method-exit\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-no-contraceptive-method-exit&quot; Version &quot;7&quot; Updated &quot;2023-07-20 15:34:12+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-no-contraceptive-reason-exit.html\">No Contraceptive Reason Exit</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p><p><b>code</b>: Reason no birth control at exit Reported <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#86653-3)</span></p><p><b>subject</b>: <a href=\"Patient-example-opa-patient.html\">Patient/example-opa-patient</a> &quot; WOODROW&quot;</p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"PractitionerRole-example-opa-practitioner-role.html\">PractitionerRole/example-opa-practitioner-role</a></p><p><b>value</b>: Wants to become pregnant <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#454411000124108)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "survey" ] ;
+       fhir:display [ fhir:v "Survey" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:86653-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "86653-3" ] ;
+       fhir:display [ fhir:v "Reason no birth control at exit Reported" ]
+     ] ) ;
+     fhir:text [ fhir:v "Reason no birth control at exit Reported" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:454411000124108 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "454411000124108" ] ;
+       fhir:display [ fhir:v "Wants to become pregnant" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

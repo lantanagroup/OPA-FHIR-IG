@@ -1,0 +1,1195 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://oash.org/fhir/us/opa/Bundle/example-opa-full-encounter-submission-bundle-1> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-opa-full-encounter-submission-bundle-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/encounter-submission-full-report"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/encounter-submission-full-report>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "http://example.org/fhir/Patient/example-opa-patient"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "dd3fa897-5b5a-43ee-9617-bf5fe46b9e94" ]
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2023-08-25T10:06:42.482-04:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Patient/example-opa-patient"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Patient/example-opa-patient> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Encounter/example-opa-encounter"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Encounter/example-opa-encounter> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Organization/example-opa-fp-provider-organization"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Organization/example-opa-fp-provider-organization> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/PractitionerRole/example-opa-practitioner-role"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/PractitionerRole/example-opa-practitioner-role> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-blood-pressure"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-blood-pressure> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-body-height"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-body-height> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-body-weight"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-body-weight> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-smoking-status"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-smoking-status> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-sexual-orientation"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-sexual-orientation> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-pregnancy-status"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-pregnancy-status> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-pregnancy-intent"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-pregnancy-intent> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-contraceptive-method-intake"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-contraceptive-method-intake> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-contraceptive-method-exit"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-contraceptive-method-exit> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-contraceptive-counseling"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-contraceptive-counseling> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-pregnancy-counseling"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-pregnancy-counseling> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-seeking-counseling"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-seeking-counseling> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-pap-smear-result-prelim"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-pap-smear-result-prelim> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-hpv-result-final"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-hpv-result-final> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-chlamydia-result-final"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-chlamydia-result-final> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-neisseria-gonorrhoeae-result-final"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-neisseria-gonorrhoeae-result-final> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/example-opa-hiv-1-2-result-final"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Observation/example-opa-hiv-1-2-result-final> )
+  ] ) . # 
+
+<http://example.org/fhir/Patient/example-opa-patient> a fhir:Patient ;
+  fhir:id [ fhir:v "example-opa-patient"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "10" ] ;
+     fhir:lastUpdated [ fhir:v "2023-08-09T17:01:13.300Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
+     ] [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/opa-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"example-opa-patient\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;example-opa-patient&quot; Version &quot;10&quot; Updated &quot;2023-08-09 17:01:13+0000&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html\">US Core Patient Profile</a>, <a href=\"StructureDefinition-opa-patient.html\">OPA Patient</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = '2106-3', stated as 'White')</p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: American Indian or Alaska Native (Details: urn:oid:2.16.840.1.113883.6.238 code 1002-5 = '1002-5', stated as 'American Indian or Alaska Native')</p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Asian (Details: urn:oid:2.16.840.1.113883.6.238 code 2028-9 = '2028-9', stated as 'Asian')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Mixed</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2135-2 = '2135-2', stated as 'Hispanic or Latino')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>US Core Birth Sex Extension</b>: F</p><p><b>US Core Gender Identity Extension</b>: asked but unknown <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-NullFlavor.html\">NullFlavor</a>#ASKU)</span></p><p><b>Client Asserted Sex</b>: female</p><p><b>English Proficiency Extension</b>: Not proficient in English (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#455961000124100)</span></p><p><b>identifier</b>: Medical Record Number: M00002232 (use: USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Alisha Woodrow </p><p><b>telecom</b>: ph: 555-555-5555(HOME), <a href=\"mailto:alisha.woodrow@example.com\">alisha.woodrow@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1990-07-22</p><p><b>address</b>: 555 Paul Rigal Blvd Dublin OH 43017 US </p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2106-3" ] ;
+         fhir:display [ fhir:v "White" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1002-5" ] ;
+         fhir:display [ fhir:v "American Indian or Alaska Native" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2028-9" ] ;
+         fhir:display [ fhir:v "Asian" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Mixed" ]
+     ] )
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2135-2" ] ;
+         fhir:display [ fhir:v "Hispanic or Latino" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Hispanic or Latino" ]
+     ] )
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "F" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ASKU" ] ;
+         fhir:display [ fhir:v "asked but unknown" ]
+       ] ) ;
+       fhir:text [ fhir:v "asked but unknown" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/client-asserted-sex"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "female" ]
+  ] [
+     fhir:url [ fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/english-proficiency"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:455961000124100 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "455961000124100" ] ;
+         fhir:display [ fhir:v "Not proficient in English (finding)" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ] ;
+         fhir:display [ fhir:v "Medical Record Number" ]
+       ] ) ;
+       fhir:text [ fhir:v "Medical Record Number" ]
+     ] ;
+     fhir:system [ fhir:v "http://hospital.smarthealthit.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "M00002232" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Woodrow" ] ;
+     fhir:given ( [ fhir:v "Alisha" ] ) ;
+     fhir:period [
+       fhir:start [ fhir:v "1990-07-22"^^xsd:date ]
+     ]
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "555-555-5555" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "alisha.woodrow@example.com" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1990-07-22"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "555 Paul Rigal Blvd" ] ) ;
+     fhir:city [ fhir:v "Dublin" ] ;
+     fhir:state [ fhir:v "OH" ] ;
+     fhir:postalCode [ fhir:v "43017" ] ;
+     fhir:country [ fhir:v "US" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2020-07-22"^^xsd:date ]
+     ]
+  ] ) . # 
+
+<http://example.org/fhir/Encounter/example-opa-encounter> a fhir:Encounter ;
+  fhir:id [ fhir:v "example-opa-encounter"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "14" ] ;
+     fhir:lastUpdated [ fhir:v "2023-08-24T15:21:44.206Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"example-opa-encounter\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;example-opa-encounter&quot; Version &quot;14&quot; Updated &quot;2023-08-24 15:21:44+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-opa-encounter.html\">OPA Encounter</a></p></div><p><b>OPA Insurance Coverage Type</b>: PRIVATE HEALTH INSURANCE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-SOPT.html\">Source of Payment Typology</a>#5)</span></p><p><b>OPA Payer for Visit</b>: Medicare HMO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-SOPT.html\">Source of Payment Typology</a>#111)</span></p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'ambulatory')</p><p><b>type</b>: Office Visit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT®)</a>#99202)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>period</b>: 2023-04-05 17:00:14-0500 --&gt; 2023-04-13 18:00:14-0500</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/insurance-type"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nahdo.org/sopt"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "5" ] ;
+         fhir:display [ fhir:v "PRIVATE HEALTH INSURANCE" ]
+       ] ) ;
+       fhir:text [ fhir:v "PRIVATE HEALTH INSURANCE" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/payer-for-visit"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nahdo.org/sopt"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "111" ] ;
+         fhir:display [ fhir:v "Medicare HMO" ]
+       ] ) ;
+       fhir:text [ fhir:v "Medicare HMO" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "AMB" ] ;
+     fhir:display [ fhir:v "ambulatory" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.ama-assn.org/go/cpt"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "99202" ]
+     ] ) ;
+     fhir:text [ fhir:v "Office Visit" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2023-04-05T17:00:14-05:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime ]
+  ] . # 
+
+<http://example.org/fhir/Organization/example-opa-fp-provider-organization> a fhir:Organization ;
+  fhir:id [ fhir:v "example-opa-fp-provider-organization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/fp-provider-organization"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/fp-provider-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"example-opa-fp-provider-organization\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;example-opa-fp-provider-organization&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fp-provider-organization.html\">OPA Family Planning Provider Organization</a></p></div><p><b>identifier</b>: id: 1407071236</p><p><b>active</b>: true</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-organization-type.html\">Organization type</a>#prov)</span></p><p><b>name</b>: Acme Clinic</p><p><b>telecom</b>: ph: (+1) 734-677-7777, <a href=\"mailto:customer-service@acme-clinic.org\">customer-service@acme-clinic.org</a></p><p><b>address</b>: 3300 Washtenaw Avenue, Suite 227 Amherst MA 01002 USA </p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1407071236" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "prov" ] ;
+       fhir:display [ fhir:v "Healthcare Provider" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Acme Clinic"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "(+1) 734-677-7777" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "customer-service@acme-clinic.org" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "3300 Washtenaw Avenue, Suite 227" ] ) ;
+     fhir:city [ fhir:v "Amherst" ] ;
+     fhir:state [ fhir:v "MA" ] ;
+     fhir:postalCode [ fhir:v "01002" ] ;
+     fhir:country [ fhir:v "USA" ]
+  ] ) . # 
+
+<http://example.org/fhir/PractitionerRole/example-opa-practitioner-role> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "example-opa-practitioner-role"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner-role"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner-role>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"example-opa-practitioner-role\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;example-opa-practitioner-role&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-opa-practitioner-role.html\">OPA Practitioner Role profile</a></p></div><p><b>identifier</b>: id: 23</p><p><b>active</b>: true</p><p><b>period</b>: 2012-01-01 --&gt; (ongoing)</p><p><b>practitioner</b>: <a href=\"Practitioner-example-opa-practitioner.html\">Practitioner/example-opa-practitioner: Dr Adam Careful</a> &quot; CAREFUL&quot;</p><p><b>code</b>: 223366009 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#223366009)</span></p><p><b>specialty</b>: Healthcare professional (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#223366009)</span></p><p><b>telecom</b>: ph: 555-555-5555</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://www.acme.org/practitioners"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "23" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2012-01-01"^^xsd:date ]
+  ] ; # 
+  fhir:practitioner [
+     fhir:link <http://oash.org/fhir/us/opa/Practitioner/example-opa-practitioner> ;
+     fhir:reference [ fhir:v "Practitioner/example-opa-practitioner" ] ;
+     fhir:display [ fhir:v "Dr Adam Careful" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       a sct:223366009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "223366009" ]
+     ] )
+  ] ) ; # 
+  fhir:specialty ( [
+     fhir:coding ( [
+       a sct:223366009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "223366009" ] ;
+       fhir:display [ fhir:v "Healthcare professional (occupation)" ]
+     ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "555-555-5555" ]
+  ] ) . # 
+
+<http://example.org/fhir/Observation/example-opa-blood-pressure> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-blood-pressure"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-08-04T15:27:07.103Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-blood-pressure\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-blood-pressure&quot; Version &quot;1&quot; Updated &quot;2023-08-04 15:27:07+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-blood-pressure.html\">US Core Blood Pressure Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Blood pressure systolic and diastolic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85354-9 &quot;Blood pressure panel with all children optional&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Systolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8480-6)</span></p><p><b>value</b>: 109 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8462-4)</span></p><p><b>value</b>: 44 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] ) ;
+     fhir:text [ fhir:v "Vital Signs" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:85354-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85354-9" ] ;
+       fhir:display [ fhir:v "Blood pressure panel with all children optional" ]
+     ] ) ;
+     fhir:text [ fhir:v "Blood pressure systolic and diastolic" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8480-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8480-6" ] ;
+         fhir:display [ fhir:v "Systolic blood pressure" ]
+       ] ) ;
+       fhir:text [ fhir:v "Systolic blood pressure" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "109"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmHg" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8462-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8462-4" ] ;
+         fhir:display [ fhir:v "Diastolic blood pressure" ]
+       ] ) ;
+       fhir:text [ fhir:v "Diastolic blood pressure" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "44"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmHg" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ]
+  ] ) . # 
+
+<http://example.org/fhir/Observation/example-opa-body-height> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-body-height"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-08-04T15:32:18.865Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-body-height\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-body-height&quot; Version &quot;1&quot; Updated &quot;2023-08-04 15:32:18+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-body-height.html\">US Core Body Height Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: height <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8302-2 &quot;Body height&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><p><b>value</b>: 111.506 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cm = 'cm')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] ) ;
+     fhir:text [ fhir:v "Vital Signs" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8302-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8302-2" ] ;
+       fhir:display [ fhir:v "Body height" ]
+     ] ) ;
+     fhir:text [ fhir:v "height" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "111.506"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "cm" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "cm" ]
+  ] . # 
+
+<http://example.org/fhir/Observation/example-opa-body-weight> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-body-weight"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-08-04T15:32:19.040Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-body-weight\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-body-weight&quot; Version &quot;1&quot; Updated &quot;2023-08-04 15:32:19+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-body-weight.html\">US Core Body Weight Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7 &quot;Body Weight&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><p><b>value</b>: 20.09414 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg = 'kg')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] ) ;
+     fhir:text [ fhir:v "Vital Signs" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:29463-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "29463-7" ] ;
+       fhir:display [ fhir:v "Body Weight" ]
+     ] ) ;
+     fhir:text [ fhir:v "weight" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "20.09414"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "kg" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "kg" ]
+  ] . # 
+
+<http://example.org/fhir/Observation/example-opa-smoking-status> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-smoking-status"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-smoking-status\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-smoking-status&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-smokingstatus.html\">US Core Smoking Status Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: Tobacco smoking status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#72166-2)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><p><b>value</b>: Current some day smoker <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#428041000124106)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] ) ;
+     fhir:text [ fhir:v "Social History" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:72166-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "72166-2" ] ;
+       fhir:display [ fhir:v "Tobacco smoking status" ]
+     ] ) ;
+     fhir:text [ fhir:v "Tobacco smoking status" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:428041000124106 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "428041000124106" ]
+     ] ) ;
+     fhir:text [ fhir:v "Current some day smoker" ]
+  ] . # 
+
+<http://example.org/fhir/Observation/example-opa-sexual-orientation> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-sexual-orientation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-sexual-orientation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-sexual-orientation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-sexual-orientation.html\">US Core Observation Sexual Orientation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: Sexual orientation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#76690-7)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><p><b>value</b>: Bisexual <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#42035005)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:76690-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "76690-7" ] ;
+       fhir:display [ fhir:v "Sexual orientation" ]
+     ] ) ;
+     fhir:text [ fhir:v "Sexual orientation" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:42035005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "42035005" ] ;
+       fhir:display [ fhir:v "Bisexual" ]
+     ] ) ;
+     fhir:text [ fhir:v "Bisexual" ]
+  ] . # 
+
+<http://example.org/fhir/Observation/example-opa-pregnancy-status> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-pregnancy-status"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Pregnancy Status Observation Example" ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-pregnancy-status\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-pregnancy-status&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-pregnancystatus.html\">US Core Observation Pregnancy Status Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: Pregnancy Status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#82810-3 &quot;Pregnancy status&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><p><b>value</b>: Not pregnant <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#60001007 &quot;Not pregnant (finding)&quot;)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] ) ;
+     fhir:text [ fhir:v "Social History" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:82810-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "82810-3" ] ;
+       fhir:display [ fhir:v "Pregnancy status" ]
+     ] ) ;
+     fhir:text [ fhir:v "Pregnancy Status" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:60001007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60001007" ] ;
+       fhir:display [ fhir:v "Not pregnant (finding)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Not pregnant" ]
+  ] . # 
+
+<http://example.org/fhir/Observation/example-opa-pregnancy-intent> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-pregnancy-intent"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-pregnancy-intent\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-pregnancy-intent&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-pregnancyintent.html\">US Core Observation Pregnancy Intent Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: Pregnancy Intent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#86645-9 &quot;Pregnancy intention in the next year - Reported&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><p><b>value</b>: Not sure of desire to become pregnant <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#454381000124105 &quot;Not sure of desire to become pregnant (finding)&quot;)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] ) ;
+     fhir:text [ fhir:v "Social History" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:86645-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "86645-9" ] ;
+       fhir:display [ fhir:v "Pregnancy intention in the next year - Reported" ]
+     ] ) ;
+     fhir:text [ fhir:v "Pregnancy Intent" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:454381000124105 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "454381000124105" ] ;
+       fhir:display [ fhir:v "Not sure of desire to become pregnant (finding)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Not sure of desire to become pregnant" ]
+  ] . # 
+
+<http://example.org/fhir/Observation/example-opa-contraceptive-method-intake> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-contraceptive-method-intake"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-intake"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-intake>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-contraceptive-method-intake\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-contraceptive-method-intake&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-contraceptive-method-intake.html\">Contraceptive Method - Intake</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p><p><b>code</b>: Birth control method at intake Reported <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#86649-1)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><p><b>value</b>: Uses combined oral contraception (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#268458002)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "survey" ] ;
+       fhir:display [ fhir:v "Survey" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:86649-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "86649-1" ] ;
+       fhir:display [ fhir:v "Birth control method at intake Reported" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:268458002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "268458002" ] ;
+       fhir:display [ fhir:v "Uses combined oral contraception (finding)" ]
+     ] )
+  ] . # 
+
+<http://example.org/fhir/Observation/example-opa-contraceptive-method-exit> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-contraceptive-method-exit"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-exit"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-exit>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-contraceptive-method-exit\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-contraceptive-method-exit&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-contraceptive-method-exit.html\">Contraceptive Method - Exit</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p><p><b>code</b>: Birth control method at exit Reported <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#86651-7)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><p><b>value</b>: Uses intrauterine device contraception (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#312081001)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "survey" ] ;
+       fhir:display [ fhir:v "Survey" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:86651-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "86651-7" ] ;
+       fhir:display [ fhir:v "Birth control method at exit Reported" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:312081001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "312081001" ] ;
+       fhir:display [ fhir:v "Uses intrauterine device contraception (finding)" ]
+     ] )
+  ] . # 
+
+<http://example.org/fhir/Observation/example-opa-contraceptive-counseling> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-contraceptive-counseling"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-contraceptive-counseling\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-contraceptive-counseling&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-contraceptive-counseling.html\">Contraceptive Counseling</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p><p><b>code</b>: How birth control method was provided <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#86652-5)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><p><b>value</b>: Patient encounter procedure (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#308335008)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "survey" ] ;
+       fhir:display [ fhir:v "Survey" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:86652-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "86652-5" ] ;
+       fhir:display [ fhir:v "How birth control method was provided" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:308335008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "308335008" ] ;
+       fhir:display [ fhir:v "Patient encounter procedure (procedure)" ]
+     ] )
+  ] . # 
+
+<http://example.org/fhir/Observation/example-opa-pregnancy-counseling> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-pregnancy-counseling"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/pregnancy-counseling"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/pregnancy-counseling>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-pregnancy-counseling\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-pregnancy-counseling&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-pregnancy-counseling.html\">Pregnancy Counseling</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Counseling to achieve pregnancy was provided <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#86655-8)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><p><b>value</b>: true</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:86655-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "86655-8" ] ;
+       fhir:display [ fhir:v "Counseling to achieve pregnancy was provided" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "true"^^xsd:boolean] . # 
+
+<http://example.org/fhir/Observation/example-opa-seeking-counseling> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-seeking-counseling"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/seeking-counseling"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/seeking-counseling>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-seeking-counseling\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-seeking-counseling&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-seeking-counseling.html\">Seeking Counseling</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Do you want to talk about contraception or pregnancy prevention during your visit today <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#98076-3)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA33-6)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:98076-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "98076-3" ] ;
+       fhir:display [ fhir:v "Do you want to talk about contraception or pregnancy prevention during your visit today" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a loinc:LA33-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "LA33-6" ] ;
+       fhir:display [ fhir:v "Yes" ]
+     ] )
+  ] . # 
+
+<http://example.org/fhir/Observation/example-opa-pap-smear-result-prelim> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-pap-smear-result-prelim"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-pap-smear-result-prelim\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-pap-smear-result-prelim&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-pap-smear-result.html\">Pap Smear Result</a></p></div><p><b>status</b>: preliminary</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#19765-7)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><p><b>dataAbsentReason</b>: Unknown <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-data-absent-reason.html\">DataAbsentReason</a>#unknown)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ] ;
+       fhir:display [ fhir:v "Laboratory" ]
+     ] ) ;
+     fhir:text [ fhir:v "Laboratory" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:19765-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "19765-7" ] ;
+       fhir:display [ fhir:v "Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:dataAbsentReason [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "unknown" ] ;
+       fhir:display [ fhir:v "Unknown" ]
+     ] )
+  ] . # 
+
+<http://example.org/fhir/Observation/example-opa-hpv-result-final> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-hpv-result-final"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/hpv-result"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/hpv-result>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-hpv-result-final\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-hpv-result-final&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hpv-result.html\">HPV Result</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Human papilloma virus rRNA [Presence] in Specimen by NAA with probe detection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#6516-9)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><p><b>value</b>: Not detected <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#260415000)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ] ;
+       fhir:display [ fhir:v "Laboratory" ]
+     ] ) ;
+     fhir:text [ fhir:v "Laboratory" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:6516-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "6516-9" ] ;
+       fhir:display [ fhir:v "Human papilloma virus rRNA [Presence] in Specimen by NAA with probe detection" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:260415000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "260415000" ] ;
+       fhir:display [ fhir:v "Not detected" ]
+     ] )
+  ] . # 
+
+<http://example.org/fhir/Observation/example-opa-chlamydia-result-final> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-chlamydia-result-final"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-chlamydia-result-final\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-chlamydia-result-final&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-chlamydia-result.html\">Chlamydia Trachomatis Result</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Chlamydia trachomatis rRNA [Presence] in Cervix by NAA with probe detection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#50387-0)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><p><b>value</b>: Positive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#10828004)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ] ;
+       fhir:display [ fhir:v "Laboratory" ]
+     ] ) ;
+     fhir:text [ fhir:v "Laboratory" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:50387-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "50387-0" ] ;
+       fhir:display [ fhir:v "Chlamydia trachomatis rRNA [Presence] in Cervix by NAA with probe detection" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:10828004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10828004" ] ;
+       fhir:display [ fhir:v "Positive" ]
+     ] )
+  ] . # 
+
+<http://example.org/fhir/Observation/example-opa-neisseria-gonorrhoeae-result-final> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-neisseria-gonorrhoeae-result-final"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-neisseria-gonorrhoeae-result-final\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-neisseria-gonorrhoeae-result-final&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-neisseria-gonorrhoeae-result.html\">Neisseria Gonorrhoeae Result</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Neisseria gonorrhoeae DNA [Presence] in Cervical mucus by NAA with probe detection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21414-8)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><p><b>value</b>: Indeterminate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#82334004)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ] ;
+       fhir:display [ fhir:v "Laboratory" ]
+     ] ) ;
+     fhir:text [ fhir:v "Laboratory" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:21414-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "21414-8" ] ;
+       fhir:display [ fhir:v "Neisseria gonorrhoeae DNA [Presence] in Cervical mucus by NAA with probe detection" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:82334004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "82334004" ] ;
+       fhir:display [ fhir:v "Indeterminate" ]
+     ] )
+  ] . # 
+
+<http://example.org/fhir/Observation/example-opa-hiv-1-2-result-final> a fhir:Observation ;
+  fhir:id [ fhir:v "example-opa-hiv-1-2-result-final"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result"^^xsd:anyURI ;
+       fhir:link <http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-opa-hiv-1-2-result-final\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-opa-hiv-1-2-result-final&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-1-2-result.html\">HIV 1 and 2 Result</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: HIV 1+2 Ab [Presence] in Serum or Plasma by Immunoassay <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#31201-7)</span></p><p><b>subject</b>: <a href=\"#Patient_example-opa-patient\">See above (Patient/example-opa-patient)</a></p><p><b>effective</b>: 2023-04-13 18:00:14-0500</p><p><b>performer</b>: <a href=\"#PractitionerRole_example-opa-practitioner-role\">See above (PractitionerRole/example-opa-practitioner-role)</a></p><p><b>value</b>: Not detected <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#260415000)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ] ;
+       fhir:display [ fhir:v "Laboratory" ]
+     ] ) ;
+     fhir:text [ fhir:v "Laboratory" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:31201-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "31201-7" ] ;
+       fhir:display [ fhir:v "HIV 1+2 Ab [Presence] in Serum or Plasma by Immunoassay" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://oash.org/fhir/us/opa/Patient/example-opa-patient> ;
+     fhir:reference [ fhir:v "Patient/example-opa-patient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-04-13T18:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://oash.org/fhir/us/opa/PractitionerRole/example-opa-practitioner-role> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-opa-practitioner-role" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:260415000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "260415000" ] ;
+       fhir:display [ fhir:v "Not detected" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

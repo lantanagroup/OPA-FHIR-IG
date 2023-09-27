@@ -1,0 +1,2446 @@
+{
+  "date" : "Wed, 27 Sep, 2023 11:10:26 -0600",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "\\input\\oash.fhir.us.opa.xml",
+      "size" : 40878,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 102
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 86,
+          "length" : 8
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 86,
+          "length" : 103
+        },
+        {
+          "activity" : "validate",
+          "start" : 103,
+          "length" : 767
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 113,
+          "length" : 210
+        },
+        {
+          "activity" : "generate2",
+          "start" : 128,
+          "length" : 116
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 267,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\encounter-submission-full-report.xml",
+      "size" : 13718,
+      "processes" : [
+        {
+          "activity" : "load-configure",
+          "start" : 80,
+          "length" : 1
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 80,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 35
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 80,
+          "length" : 2152
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 86,
+          "length" : 1172
+        },
+        {
+          "activity" : "validate",
+          "start" : 93,
+          "length" : 4324
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 104,
+          "length" : 2
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 114,
+          "length" : 3256
+        },
+        {
+          "activity" : "generate2",
+          "start" : 128,
+          "length" : 7679
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 67
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 267,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 267,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\subsequent-lab-results-submission.xml",
+      "size" : 6613,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 12
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 83,
+          "length" : 809
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 87,
+          "length" : 604
+        },
+        {
+          "activity" : "validate",
+          "start" : 97,
+          "length" : 1323
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 117,
+          "length" : 1558
+        },
+        {
+          "activity" : "generate2",
+          "start" : 136,
+          "length" : 1582
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 207,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 26
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 267,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 267,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\opa-patient.xml",
+      "size" : 3554,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 13
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 83,
+          "length" : 193
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 88,
+          "length" : 261
+        },
+        {
+          "activity" : "validate",
+          "start" : 98,
+          "length" : 445
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 118,
+          "length" : 505
+        },
+        {
+          "activity" : "generate2",
+          "start" : 137,
+          "length" : 808
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 267,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\opa-encounter.xml",
+      "size" : 6296,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 14
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 84,
+          "length" : 175
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 88,
+          "length" : 144
+        },
+        {
+          "activity" : "validate",
+          "start" : 99,
+          "length" : 416
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 119,
+          "length" : 424
+        },
+        {
+          "activity" : "generate2",
+          "start" : 138,
+          "length" : 767
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 10
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 267,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\opa-practitioner-role.xml",
+      "size" : 1557,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 84,
+          "length" : 116
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 88,
+          "length" : 64
+        },
+        {
+          "activity" : "validate",
+          "start" : 99,
+          "length" : 155
+        },
+        {
+          "activity" : "generate1",
+          "start" : 119,
+          "length" : 228
+        },
+        {
+          "activity" : "generate2",
+          "start" : 139,
+          "length" : 367
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 267,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\fp-provider-organization.xml",
+      "size" : 1583,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 84,
+          "length" : 161
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 88,
+          "length" : 125
+        },
+        {
+          "activity" : "validate",
+          "start" : 99,
+          "length" : 235
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 120,
+          "length" : 252
+        },
+        {
+          "activity" : "generate2",
+          "start" : 139,
+          "length" : 447
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\payer-for-visit.xml",
+      "size" : 1577,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 84,
+          "length" : 14
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 89,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 28
+        },
+        {
+          "activity" : "generate1",
+          "start" : 120,
+          "length" : 61
+        },
+        {
+          "activity" : "generate2",
+          "start" : 140,
+          "length" : 185
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\insurance-type.xml",
+      "size" : 1839,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 84,
+          "length" : 22
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 89,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 34
+        },
+        {
+          "activity" : "generate1",
+          "start" : 120,
+          "length" : 57
+        },
+        {
+          "activity" : "generate2",
+          "start" : 140,
+          "length" : 200
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\english-proficiency.xml",
+      "size" : 1948,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 84,
+          "length" : 24
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 89,
+          "length" : 20
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 34
+        },
+        {
+          "activity" : "generate1",
+          "start" : 120,
+          "length" : 49
+        },
+        {
+          "activity" : "generate2",
+          "start" : 140,
+          "length" : 167
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\client-asserted-sex.xml",
+      "size" : 1561,
+      "processes" : [
+        {
+          "activity" : "load-configure",
+          "start" : 80,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 84,
+          "length" : 19
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 89,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 35
+        },
+        {
+          "activity" : "generate1",
+          "start" : 120,
+          "length" : 55
+        },
+        {
+          "activity" : "generate2",
+          "start" : 140,
+          "length" : 162
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 208,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\contraceptive-method-intake.xml",
+      "size" : 2131,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 13
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 84,
+          "length" : 118
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 89,
+          "length" : 113
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 245
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 120,
+          "length" : 307
+        },
+        {
+          "activity" : "generate2",
+          "start" : 141,
+          "length" : 468
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 6
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 267,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 267,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\contraceptive-method-exit.xml",
+      "size" : 2121,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 84,
+          "length" : 138
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 89,
+          "length" : 100
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 239
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 120,
+          "length" : 257
+        },
+        {
+          "activity" : "generate2",
+          "start" : 141,
+          "length" : 402
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\no-contraceptive-reason-intake.xml",
+      "size" : 2101,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 84,
+          "length" : 129
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 89,
+          "length" : 126
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 244
+        },
+        {
+          "activity" : "generate1",
+          "start" : 121,
+          "length" : 301
+        },
+        {
+          "activity" : "generate2",
+          "start" : 141,
+          "length" : 408
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 158,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 267,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\no-contraceptive-reason-exit.xml",
+      "size" : 2265,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 84,
+          "length" : 112
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 89,
+          "length" : 118
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 269
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 121,
+          "length" : 327
+        },
+        {
+          "activity" : "generate2",
+          "start" : 142,
+          "length" : 399
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 208,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\contraceptive-counseling.xml",
+      "size" : 2452,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 16
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 85,
+          "length" : 120
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 89,
+          "length" : 105
+        },
+        {
+          "activity" : "validate",
+          "start" : 101,
+          "length" : 201
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 121,
+          "length" : 312
+        },
+        {
+          "activity" : "generate2",
+          "start" : 142,
+          "length" : 391
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 8
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 267,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\pregnancy-counseling.xml",
+      "size" : 1853,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 85,
+          "length" : 98
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 89,
+          "length" : 102
+        },
+        {
+          "activity" : "validate",
+          "start" : 101,
+          "length" : 211
+        },
+        {
+          "activity" : "generate1",
+          "start" : 122,
+          "length" : 306
+        },
+        {
+          "activity" : "generate2",
+          "start" : 143,
+          "length" : 413
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\seeking-counseling.xml",
+      "size" : 2236,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 85,
+          "length" : 163
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 89,
+          "length" : 106
+        },
+        {
+          "activity" : "validate",
+          "start" : 101,
+          "length" : 203
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 122,
+          "length" : 290
+        },
+        {
+          "activity" : "generate2",
+          "start" : 143,
+          "length" : 410
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 8
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 267,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\household-income.xml",
+      "size" : 1950,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 85,
+          "length" : 169
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 89,
+          "length" : 160
+        },
+        {
+          "activity" : "validate",
+          "start" : 101,
+          "length" : 205
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 122,
+          "length" : 317
+        },
+        {
+          "activity" : "generate2",
+          "start" : 143,
+          "length" : 509
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 267,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\household-size.xml",
+      "size" : 1880,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 10
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 85,
+          "length" : 165
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 90,
+          "length" : 110
+        },
+        {
+          "activity" : "validate",
+          "start" : 102,
+          "length" : 194
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 123,
+          "length" : 354
+        },
+        {
+          "activity" : "generate2",
+          "start" : 144,
+          "length" : 498
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\neisseria-gonorrhoeae-result.xml",
+      "size" : 2142,
+      "processes" : [
+        {
+          "activity" : "load-configure",
+          "start" : 80,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 12
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 85,
+          "length" : 133
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 90,
+          "length" : 169
+        },
+        {
+          "activity" : "validate",
+          "start" : 102,
+          "length" : 245
+        },
+        {
+          "activity" : "generate1",
+          "start" : 123,
+          "length" : 322
+        },
+        {
+          "activity" : "generate2",
+          "start" : 144,
+          "length" : 451
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 5
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 267,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 267,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\chlamydia-result.xml",
+      "size" : 1812,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 85,
+          "length" : 142
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 90,
+          "length" : 141
+        },
+        {
+          "activity" : "validate",
+          "start" : 102,
+          "length" : 275
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 123,
+          "length" : 316
+        },
+        {
+          "activity" : "generate2",
+          "start" : 145,
+          "length" : 431
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\pap-smear-result.xml",
+      "size" : 2071,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 86,
+          "length" : 142
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 90,
+          "length" : 107
+        },
+        {
+          "activity" : "validate",
+          "start" : 102,
+          "length" : 257
+        },
+        {
+          "activity" : "generate1",
+          "start" : 124,
+          "length" : 303
+        },
+        {
+          "activity" : "generate2",
+          "start" : 145,
+          "length" : 440
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 267,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\hiv-1-2-result.xml",
+      "size" : 2054,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 86,
+          "length" : 130
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 90,
+          "length" : 93
+        },
+        {
+          "activity" : "validate",
+          "start" : 102,
+          "length" : 253
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 124,
+          "length" : 332
+        },
+        {
+          "activity" : "generate2",
+          "start" : 146,
+          "length" : 452
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 9
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 267,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\syphilis-result.xml",
+      "size" : 1967,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 86,
+          "length" : 115
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 90,
+          "length" : 113
+        },
+        {
+          "activity" : "validate",
+          "start" : 103,
+          "length" : 186
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 124,
+          "length" : 284
+        },
+        {
+          "activity" : "generate2",
+          "start" : 146,
+          "length" : 429
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 9
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 267,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\structuredefinition\\hpv-result.xml",
+      "size" : 2030,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 10
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 86,
+          "length" : 102
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 90,
+          "length" : 109
+        },
+        {
+          "activity" : "validate",
+          "start" : 103,
+          "length" : 226
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 124,
+          "length" : 288
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 425
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 209,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\patient\\example-opa-patient.xml",
+      "size" : 4338,
+      "processes" : [
+        {
+          "activity" : "checkR4R4B",
+          "start" : 86,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 90,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 104,
+          "length" : 3915
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 79
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 42
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\encounter\\example-opa-encounter.xml",
+      "size" : 1787,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 90,
+          "length" : 190
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 37
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 23
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\practitionerrole\\example-opa-practitioner-role.xml",
+      "size" : 1210,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 63
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 34
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 22
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\practitioner\\example-opa-practitioner.xml",
+      "size" : 1398,
+      "processes" : [
+        {
+          "activity" : "load-configure",
+          "start" : 80,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 35
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 22
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\organization\\example-opa-fp-provider-organization.xml",
+      "size" : 1254,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 29
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 20
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 207,
+          "length" : 1
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 208,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-blood-pressure.xml",
+      "size" : 2284,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 19
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 38
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 29
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 22
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-body-height.xml",
+      "size" : 1335,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 16
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 20
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 39
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 22
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 208,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-body-weight.xml",
+      "size" : 1337,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 25
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 21
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-smoking-status.xml",
+      "size" : 1433,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 103,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 25
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 37
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 25
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-sexual-orientation.xml",
+      "size" : 1425,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 19
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 25
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 208,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-pregnancy-status.xml",
+      "size" : 1456,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 16
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 34
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-pregnancy-intent.xml",
+      "size" : 1533,
+      "processes" : [
+        {
+          "activity" : "load-configure",
+          "start" : 80,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 86,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 18
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 21
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-pap-smear-result-prelim.xml",
+      "size" : 1461,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 19
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 19
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 26
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 26
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-chlamydia-result-prelim.xml",
+      "size" : 1445,
+      "processes" : [
+        {
+          "activity" : "scan",
+          "start" : 80,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 17
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 22
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-hpv-result-prelim.xml",
+      "size" : 1451,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 16
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 24
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 22
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 21
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-neisseria-gonorrhoeae-result-prelim.xml",
+      "size" : 1476,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 18
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 20
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 27
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 27
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-hiv-1-2-result-prelim.xml",
+      "size" : 1421,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 23
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 28
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 21
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-syphilis-result-prelim.xml",
+      "size" : 1394,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 16
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 25
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-pap-smear-result-final.xml",
+      "size" : 1459,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 17
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 22
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-chlamydia-result-final.xml",
+      "size" : 1414,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 15
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 28
+        },
+        {
+          "activity" : "generate2",
+          "start" : 147,
+          "length" : 21
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-hpv-result-final.xml",
+      "size" : 1408,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 22
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 18
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-neisseria-gonorrhoeae-result-final.xml",
+      "size" : 1450,
+      "processes" : [
+        {
+          "activity" : "load-configure",
+          "start" : 80,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 22
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 23
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-hiv-1-2-result-final.xml",
+      "size" : 1413,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 25
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 22
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 208,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-syphilis-result-final.xml",
+      "size" : 1368,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 12
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 36
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 18
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-contraceptive-counseling.xml",
+      "size" : 1374,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 15
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 49
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-contraceptive-counseling-not-given.xml",
+      "size" : 1376,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 125,
+          "length" : 33
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 23
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 208,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-contraceptive-method-intake.xml",
+      "size" : 1446,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 14
+        },
+        {
+          "activity" : "generate1",
+          "start" : 126,
+          "length" : 22
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-contraceptive-method-exit.xml",
+      "size" : 1438,
+      "processes" : [
+        {
+          "activity" : "checkR4R4B",
+          "start" : 86,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 126,
+          "length" : 41
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-no-contraceptive-method-intake.xml",
+      "size" : 1432,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 16
+        },
+        {
+          "activity" : "generate1",
+          "start" : 126,
+          "length" : 26
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 21
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-no-contraceptive-method-exit.xml",
+      "size" : 1442,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 16
+        },
+        {
+          "activity" : "generate1",
+          "start" : 126,
+          "length" : 31
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 18
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-pregnancy-counseling.xml",
+      "size" : 913,
+      "processes" : [
+        {
+          "activity" : "load-configure",
+          "start" : 80,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 126,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-seeking-counseling.xml",
+      "size" : 1052,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 11
+        },
+        {
+          "activity" : "generate1",
+          "start" : 126,
+          "length" : 30
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 21
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-household-income.xml",
+      "size" : 1220,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 11
+        },
+        {
+          "activity" : "generate1",
+          "start" : 126,
+          "length" : 30
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 21
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 207,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\observation\\example-opa-household-size.xml",
+      "size" : 1151,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 13
+        },
+        {
+          "activity" : "generate1",
+          "start" : 126,
+          "length" : 26
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 22
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\parameters\\expansion-parameters-opa.xml",
+      "size" : 565,
+      "processes" : [
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 126,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 22
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\bundle\\example-opa-full-encounter-submission-bundle-1.xml",
+      "size" : 45976,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 46
+        },
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 86,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 91,
+          "length" : 637
+        },
+        {
+          "activity" : "validate",
+          "start" : 108,
+          "length" : 2098
+        },
+        {
+          "activity" : "generate1",
+          "start" : 126,
+          "length" : 217
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 69
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 267,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\bundle\\example-opa-full-encounter-submission-bundle-2.xml",
+      "size" : 34063,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 17
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 86,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 92,
+          "length" : 357
+        },
+        {
+          "activity" : "validate",
+          "start" : 111,
+          "length" : 1255
+        },
+        {
+          "activity" : "generate1",
+          "start" : 126,
+          "length" : 172
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 47
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\bundle\\example-opa-full-encounter-submission-bundle-3.xml",
+      "size" : 35231,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 18
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 86,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 92,
+          "length" : 355
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 112,
+          "length" : 1060
+        },
+        {
+          "activity" : "generate1",
+          "start" : 126,
+          "length" : 193
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 50
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\resources\\bundle\\example-opa-subsequent-lab-result-submission-bundle.xml",
+      "size" : 10231,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 80,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 86,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 92,
+          "length" : 330
+        },
+        {
+          "activity" : "validate",
+          "start" : 113,
+          "length" : 236
+        },
+        {
+          "activity" : "generate1",
+          "start" : 126,
+          "length" : 80
+        },
+        {
+          "activity" : "generate2",
+          "start" : 148,
+          "length" : 32
+        }
+      ]
+    }
+  ]
+}
