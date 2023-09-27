@@ -29,11 +29,4 @@
     <performer>
         <reference value="PractitionerRole/example-opa-practitioner-role"/>
     </performer>
-    <dataAbsentReason>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
-            <code value="unknown"/>
-            <display value="Unknown"/>
-        </coding>
-    </dataAbsentReason>
 </Observation>
