@@ -1,4 +1,4 @@
-This page contains artifacts for technical actors (Data sources/Family Planning EHR developers, Data recipients/validators, etc.) who may desire to download and use the FHIR conformance artifacts and examples defined within this guide for development, implementation and validation activities within a specified environment. 
+This page contains artifacts for technical actors (data sources/family Planning EHR developers, data recipients/validators, etc.) who may desire to download and use the FHIR conformance artifacts and examples defined within this guide for development, implementation and validation activities within a specified environment. 
 
 **Full Implementation Guide**
 
@@ -10,7 +10,7 @@ In addition there are format specific definitions files.
 * [JSON](definitions.json.zip)
 * [TTL](definitions.ttl.zip)
 
-**Examples:** all the examples that are used in this Implementation Guide available for download:
+**Examples:** all the examples that are used in this implementation guide available for download:
 
 * [XML](examples.xml.zip)
 * [JSON](examples.json.zip)

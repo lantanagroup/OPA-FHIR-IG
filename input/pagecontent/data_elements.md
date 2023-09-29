@@ -1,20 +1,19 @@
 ### Overview of Data Elements
 
-The FPAR 2.0 Data Elements contains the data elements grantees submit to OPA. The 43 OPA-identified data elements are accompanied by their respective standard terminology code and supporting value set, if available. The list provides the standard codes that electronic health record (EHR) vendors and staff in grantees’ information technology (IT) need to support precise data identification and reporting.
+Grantees should use the FPAR 2.0 Data Elements to submit to the Office of Population Affairs (OPA). The 43 OPA-identified data elements are accompanied by their respective standard terminology code and supporting value set, if available. The list provides the standard codes that electronic health record (EHR) vendors and staff in grantees’ information technology (IT) need to support precise data identification and reporting.
 
 OPA expects grantees to only collect data elements relevant to the care provided in an encounter. In other words, OPA does not expect collection of each data element (such as chlamydia) during every encounter.
 
-However, the system will require certain data elements on each record necessary to uniquely identify an encounter (for example, facility identifier and visit date). Please review the data element requirements in this Implementation Guide for  further information about which elements are required and optional to report for an encounter.
+However, the system will require certain data elements on each record necessary to uniquely identify an encounter (for example, facility identifier and visit date). Please review the data element requirements in this implementation guide (IG) for  further information about which elements are required and optional to report for an encounter.
 
 ### Value Sets
 
-Value sets contain the allowable responses for each data element. The value sets developed for each data element are available in the FPAR to FHIR Crosswalk, and can be accessed by selecting the hyperlink in the 'Value Sets' column.  Additionally, the value sets for this implementation guide can also be accessed in the [Artifacts](artifacts.html) tab.
+Value sets contain the allowable responses for each data element. The value sets developed for each data element are available in the FPAR to FHIR Crosswalk, and can be accessed by selecting the hyperlink in the 'Value Sets' column.  Additionally, the value sets for this IG can also be accessed in the [Artifacts](artifacts.html) tab.
 
 ### FPAR to FHIR Crosswalk
 
-This guide defines the following profiles to be used to meet the FPAR reporting data elements. Note: For lab observations, the path for the date of the lab is Observation.effective[x], the path for the result of the lab is Observation.value[x], and the path for the LOINC code is Observation.code.
+This guide defines the following profiles associated with the FPAR reporting data elements. Note: For lab observations, the path for the date of the lab is Observation.effective[x], the path for the result of the lab is Observation.value[x], and the path for the LOINC code is Observation.code.
 
-The dataAbsentReason element is not required, and will not be stored by the FPAR system.
 
 <style>
 table, th, td 
