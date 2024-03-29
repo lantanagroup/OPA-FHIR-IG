@@ -30,3 +30,4 @@ The entry resource matched more than one of the allowed profiles (http://hl7.org
 Found multiple matching profiles among 2 choices: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus, http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus
 Found multiple matching profiles among 2 choices: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation, http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus
 Found multiple matching profiles among 2 choices: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent, http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus
+test
