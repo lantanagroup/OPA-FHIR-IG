@@ -62,19 +62,6 @@
         <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
           <valueCode value="F"/>
         </extension>
-        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity">
-          <valueCodeableConcept>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
-              <code value="ASKU"/>
-              <display value="asked but unknown"/>
-            </coding>
-            <text value="asked but unknown"/>
-          </valueCodeableConcept>
-        </extension>
-        <extension url="http://oash.org/fhir/us/opa/StructureDefinition/client-asserted-sex">
-          <valueCode value="female"/>
-        </extension>
         <extension url="http://oash.org/fhir/us/opa/StructureDefinition/english-proficiency">
           <valueCodeableConcept>
             <coding>

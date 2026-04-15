@@ -10,7 +10,7 @@
     <name value="OPAEncounterSubmissionFullReport"/>
     <title value="OPA Encounter Submission Full Report"/>
     <status value="active"/>
-    <description value="The Bundle Profile represents all encounter data (DEs #1-43) to be submitted to OPA compiled into a FHIR Bundle initially. Note- subsequent lab result reports should not use this profile (see subsequent lab submission Bundle profile)."/>
+    <description value="The Bundle Profile represents all encounter data (DEs #1-41) to be submitted to OPA compiled into a FHIR Bundle initially. Note- subsequent lab result reports should not use this profile (see subsequent lab submission Bundle profile)."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -145,7 +145,6 @@
             <type>
                 <code value="Resource"/>
                 <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"/>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation"/>
                 <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus"/>
                 <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent"/>
             </type>

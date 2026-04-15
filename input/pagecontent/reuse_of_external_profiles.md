@@ -4,7 +4,6 @@ This guide is dependent on US Core FHIR IG and as such uses the following US Cor
 * Smoking Status Observation (DE#28)
 * Pregnancy Status Observation (DE#15)
 * Pregnancy Intent Observation (DE#16)
-* Sexual Orientation Observation (DE#42)
 
 Data falling into resources listed above are expected to conform to their appropriate US Core profile and should be included in a Bundle from a Title X grantee and sent to OPA.
 

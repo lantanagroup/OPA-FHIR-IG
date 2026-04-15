@@ -52,29 +52,6 @@
                 <strength value="required"/>
             </binding>
         </element>
-        <element id="Patient.extension:genderIdentity">
-            <path value="Patient.extension"/>
-            <sliceName value="genderIdentity"/>
-            <min value="0"/>
-        </element>
-        <element id="Patient.extension:genderIdentity.url">
-            <path value="Patient.extension.url"/>
-        </element>
-        <element id="Patient.extension:genderIdentity.value[x]">
-            <path value="Patient.extension.value[x]"/>
-            <min value="1"/>
-            <max value="1"/>
-        </element>
-        <element id="Patient.extension:clientAssertedSex">
-            <path value="Patient.extension"/>
-            <sliceName value="clientAssertedSex"/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://oash.org/fhir/us/opa/StructureDefinition/client-asserted-sex"/>
-            </type>
-        </element>
         <element id="Patient.extension:englishProficiency">
             <path value="Patient.extension"/>
             <sliceName value="englishProficiency"/>

@@ -63,20 +63,6 @@
                 <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
                     <valueCode value="F"/>
                 </extension>
-                <extension
-                    url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity">
-                    <valueCodeableConcept>
-                        <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
-                            <code value="ASKU"/>
-                            <display value="asked but unknown"/>
-                        </coding>
-                        <text value="asked but unknown"/>
-                    </valueCodeableConcept>
-                </extension>
-                <extension url="http://oash.org/fhir/us/opa/StructureDefinition/client-asserted-sex">
-                    <valueCode value="female"/>
-                </extension>
                 <extension url="http://oash.org/fhir/us/opa/StructureDefinition/english-proficiency">
                     <valueCodeableConcept>
                         <coding>
@@ -472,51 +458,7 @@
             </Observation>
         </resource>
     </entry>
-    <entry>
-        <fullUrl value="http://example.org/fhir/Observation/example-opa-sexual-orientation"/>
-        <resource>
-            <Observation xmlns="http://hl7.org/fhir">
-                <id value="example-opa-sexual-orientation"/>
-                <meta>
-                    <profile
-                        value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation"
-                    />
-                </meta>
-                <status value="final"/>
-                <category>
-                    <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-                        <code value="social-history"/>
-                        <display value="Social History"/>
-                    </coding>
-                </category>
-                <code>
-                    <coding>
-                        <system value="http://loinc.org"/>
-                        <code value="76690-7"/>
-                        <display value="Sexual orientation"/>
-                    </coding>
-                    <text value="Sexual orientation"/>
-                </code>
-                <subject>
-                    <reference value="Patient/example-opa-patient"/>
-                </subject>
-                <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
-                <performer>
-                    <reference value="PractitionerRole/example-opa-practitioner-role"/>
-                </performer>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="42035005"/>
-                        <display value="Bisexual"/>
-                    </coding>
-                    <text value="Bisexual"/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
+     <entry>
         <fullUrl value="http://example.org/fhir/Observation/example-opa-pregnancy-status"/>
         <resource>
             <Observation xmlns="http://hl7.org/fhir">

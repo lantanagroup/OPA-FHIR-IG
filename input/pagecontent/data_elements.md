@@ -1,6 +1,6 @@
 ### Overview of Data Elements
 
-Grantees should use the FPAR 2.0 Data Elements to submit to the Office of Population Affairs (OPA). The 43 OPA-identified data elements are accompanied by their respective standard terminology code and supporting value set, if available. The list provides the standard codes that electronic health record (EHR) vendors and staff in grantees’ information technology (IT) need to support precise data identification and reporting.
+Grantees should use the FPAR 2.0 Data Elements to submit to the Office of Population Affairs (OPA). The 41 OPA-identified data elements are accompanied by their respective standard terminology code and supporting value set, if available. The list provides the standard codes that electronic health record (EHR) vendors and staff in grantees’ information technology (IT) need to support precise data identification and reporting.
 
 OPA expects grantees to only collect data elements relevant to the care provided in an encounter. In other words, OPA does not expect collection of each data element (such as chlamydia) during every encounter.
 
@@ -72,5 +72,3 @@ th {
 |39| Syphilis test performed at this visit |  [Syphilis Result Observation](StructureDefinition-syphilis-result.html)|Observation.code |LOINC | [2.16.840.1.113762.1.4.1166.117 ](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1166.117 /expansion/Latest) |
 |40| Syphilis Test Result |  [Syphilis Result Observation](StructureDefinition-syphilis-result.html)|Observation.valueCodeableConcept  | SNOMED CT | [2.16.840.1.113762.1.4.1166.3](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1166.3/expansion/Latest)|
 |41| Do you want to talk about contraception or pregnancy prevention during your visit today? | [Seeking Counseling Observation](StructureDefinition-seeking-counseling.html) | Observation.valueCodeableConcept |LOINC| [2.16.840.1.113762.1.4.1166.211](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1166.211/expansion/Latest)|
-|42| Sexual orientation |  [US Core Sexual Orientation Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-observation-sexual-orientation.html)| Patient.extension (sexual orientation)|SNOMED CT / HL7 | [US Core Sexual Orientation Value Set](http://hl7.org/fhir/us/core/ValueSet-us-core-sexual-orientation.html)|
-|43| Gender identity |  [OPA Patient](StructureDefinition-opa-patient.html)| Patient.extension (gender identity)| SNOMED CT / HL7| [2.16.840.1.113762.1.4.1021.32](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.32/expansion) |
