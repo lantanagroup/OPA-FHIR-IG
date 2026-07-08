@@ -285,6 +285,9 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
                 <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>
@@ -356,6 +359,9 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
                 <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>
@@ -401,6 +407,9 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
                 <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>
@@ -444,6 +453,9 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
                 <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>
@@ -491,6 +503,9 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
                 <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>
@@ -536,6 +551,9 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
                 <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>
@@ -579,6 +597,9 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
                 <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>
@@ -621,6 +642,9 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
                 <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>
@@ -663,6 +687,9 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
                 <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>
@@ -698,6 +725,9 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
                 <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>
@@ -728,6 +758,9 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
                 <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>
@@ -772,6 +805,9 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
                 <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>
@@ -815,6 +851,9 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
                 <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>
@@ -859,6 +898,9 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
                 <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>
@@ -905,6 +947,9 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
                 <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>
@@ -947,6 +992,9 @@
                 <subject>
                     <reference value="Patient/example-opa-patient"/>
                 </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
                 <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>

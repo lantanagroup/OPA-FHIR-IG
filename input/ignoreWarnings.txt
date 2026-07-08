@@ -29,3 +29,9 @@ The entry resource matched more than one of the allowed profiles (http://hl7.org
 Found multiple matching profiles among 2 choices: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus, http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus
 Found multiple matching profiles among 2 choices: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent, http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus
 test
+
+# Example Code Systems not defined
+WARNING: Bundle/example-opa-full-encounter-submission-bundle-2: Bundle.entry[0].resource/*Patient/example-opa-patient*/.identifier[0].system: No definition could be found for URL value 'http://hospital.smarthealthit.org'
+WARNING: Bundle/example-opa-full-encounter-submission-bundle-3: Bundle.entry[0].resource/*Patient/example-opa-patient*/.identifier[0].system: No definition could be found for URL value 'http://hospital.smarthealthit.org'
+WARNING: Bundle/example-opa-subsequent-lab-result-submission-bundle: Bundle.entry[0].resource/*Patient/example-opa-patient*/.identifier[0].system: No definition could be found for URL value 'http://hospital.smarthealthit.org'
+WARNING: Patient/example-opa-patient: Patient.identifier[0].system: No definition could be found for URL value 'http://hospital.smarthealthit.org'

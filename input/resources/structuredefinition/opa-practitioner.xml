@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="opa-practitioner"/>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner"/>
+    <name value="OPAPractitioner"/>
+    <title value="OPA Practitioner"/>
+    <status value="active"/>
+    <description value="OPA Practitioner conforms to US Core Practitioner"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Practitioner"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Practitioner">
+            <path value="Practitioner"/>
+        </element>
+    </differential>
+</StructureDefinition>

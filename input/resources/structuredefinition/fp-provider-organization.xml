@@ -7,7 +7,7 @@
         <lastUpdated value="2023-08-03T17:17:26.842Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/fp-provider-organization"/>
-    <name value="OPA Family Planning Provider Organization"/>
+    <name value="OPAFamilyPlanningProviderOrganization"/>
     <title value="OPA Family Planning Provider Organization"/>
     <status value="active"/>
     <fhirVersion value="4.0.1"/>
@@ -35,6 +35,11 @@
             <path value="Organization.identifier"/>
             <sliceName value="NPI"/>
             <short value="National Provider Identifier (NPI)"/>
+            <min value="1"/>
+        </element>
+        <element id="Organization.identifier:NPI.value">
+            <path value="Organization.identifier.value"/>
+            <short value="10-digit NPI value"/>
             <min value="1"/>
         </element>
     </differential>

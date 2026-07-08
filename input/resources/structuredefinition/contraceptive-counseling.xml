@@ -7,7 +7,7 @@
         <lastUpdated value="2023-08-21T15:07:18.003Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling"/>
-    <name value="Contraceptive Counseling"/>
+    <name value="ContraceptiveCounseling"/>
     <title value="Contraceptive Counseling"/>
     <status value="active"/>
     <description value="DE21 and DE22 both always able to be inferred from Observation with .code=86652-5.
@@ -35,11 +35,19 @@
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
+            <min value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
             </type>
-            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.encounter">
+            <path value="Observation.encounter"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
+            </type>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>

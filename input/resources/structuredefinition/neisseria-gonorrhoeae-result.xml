@@ -30,9 +30,18 @@
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
+            <min value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+            </type>
+        </element>
+        <element id="Observation.encounter">
+            <path value="Observation.encounter"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
             </type>
         </element>
         <element id="Observation.value[x]">

@@ -7,7 +7,7 @@
         <lastUpdated value="2023-08-14T22:19:09.504Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result"/>
-    <name value="Pap Smear Result"/>
+    <name value="PapSmearResult"/>
     <title value="Pap Smear Result"/>
     <status value="active"/>
     <fhirVersion value="4.0.1"/>
@@ -30,9 +30,18 @@
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
+            <min value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+            </type>
+        </element>
+        <element id="Observation.encounter">
+            <path value="Observation.encounter"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
             </type>
         </element>
         <element id="Observation.value[x]">

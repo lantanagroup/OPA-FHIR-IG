@@ -7,7 +7,7 @@
         <lastUpdated value="2023-08-14T22:45:16.231Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
-    <name value="Chlamydia Trachomatis Result"/>
+    <name value="ChlamydiaTrachomatisResult"/>
     <title value="Chlamydia Trachomatis Result"/>
     <status value="active"/>
     <fhirVersion value="4.0.1"/>
@@ -27,6 +27,22 @@
                 <description value="Chlamydia Trachomatis Tests, FPAR"/>
                 <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.13"/>
             </binding>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+            </type>
+        </element>
+        <element id="Observation.encounter">
+            <path value="Observation.encounter"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
+            </type>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>

@@ -7,7 +7,7 @@
         <lastUpdated value="2023-07-20T15:35:01.436Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/household-size"/>
-    <name value="Household Size"/>
+    <name value="HouseholdSize"/>
     <title value="Household Size"/>
     <status value="active"/>
     <description value="Household size [integer]"/>
@@ -37,6 +37,14 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
+            </type>
+        </element>
+        <element id="Observation.encounter">
+            <path value="Observation.encounter"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
             </type>
         </element>
         <element id="Observation.value[x]">
