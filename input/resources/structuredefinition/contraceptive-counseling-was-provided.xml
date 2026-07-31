@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="seeking-counseling"/>
+    <id value="contraceptive-counseling-was-provided"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2023-08-21T15:16:21.575Z"/>
+        <versionId value="16"/>
+        <lastUpdated value="2023-08-21T15:07:18.003Z"/>
     </meta>
-    <url value="http://oash.org/fhir/us/opa/StructureDefinition/seeking-counseling"/>
-    <name value="SeekingCounseling"/>
-    <title value="Seeking Counseling"/>
+    <url value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling-was-provided"/>
+    <name value="ContraceptiveCounselingWasProvided"/>
+    <title value="Contraceptive Counseling Was Provided"/>
     <status value="active"/>
-    <description value="DE41: Observation to convey 'Do you want to talk about contraception or pregnancy prevention during your visit today?'"/>
+    <description value="DE22: 'Contraceptive Counseling was provided' is represented in Observation.code with LOINC code '86654-1' with the answer in Observation.valueCodeableConcept from the ValueSet 'Yes and No Answers'."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -26,8 +26,8 @@
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
-                    <code value="98076-3"/>
-                    <display value="Do you want to talk about contraception or pregnancy prevention during your visit today"/>
+                    <code value="86654-1"/>
+                    <display value="Contraceptive counseling was provided"/>
                 </coding>
             </patternCodeableConcept>
         </element>
@@ -49,14 +49,14 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <min value="1"/>
             <type>
                 <code value="CodeableConcept"/>
             </type>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.211"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.209"/>
             </binding>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

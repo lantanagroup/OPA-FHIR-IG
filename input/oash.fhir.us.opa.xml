@@ -200,11 +200,21 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/contraceptive-counseling"/>
-                <display value="ContraceptiveCounseling"/>
+                <reference value="StructureDefinition/contraceptive-provision"/>
+                <display value="ContraceptiveProvision"/>
             </reference>
-            <name value="Contraceptive Counseling"/>
-            <description value="How contraceptive counseling was provided (DE #21). If counseling was not provided, use Observation.dataAbsentReason (DE#22). Observation.valueCodeableConcept should contain one of the allowable VSAC codes for how counseling was provided."/>
+            <name value="Contraceptive Provision"/>
+            <description value="How contraceptive counseling was provided (DE #21)."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="new-group2"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/contraceptive-counseling-was-provided"/>
+                <display value="ContraceptiveCounselingWasProvided"/>
+            </reference>
+            <name value="Contraceptive Counseling Was Provided"/>
+            <description value="Contraceptive counseling was provided (DE #22)."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group2"/>
         </resource>
@@ -313,7 +323,7 @@
                 <reference value="Patient/example-opa-patient"/></reference>
             <name value="OPA Patient example"/>
             <description value="OPA Patient example"/>
-            <exampleBoolean value="false"/>
+            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -522,24 +532,24 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/example-opa-contraceptive-counseling"/>
-                <display value="Contraceptive Counseling- Intake Observation example"/>
-            </reference>
-            <name value="Contraceptive Counseling- Intake Observation example"/>
-            <description value="Contraceptive Counseling- Intake Observation example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Observation/example-opa-contraceptive-counseling-not-given"/>
                 <display value="Contraceptive Counseling not given example"/>
             </reference>
             <name value="Contraceptive Counseling not given example"/>
             <description value="Contraceptive Counseling not given example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling"/>
+            <exampleBoolean value="true"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling-was-provided"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/example-opa-contraceptive-counseling-given"/>
+                <display value="Contraceptive Counseling given example"/>
+            </reference>
+            <name value="Contraceptive Counseling given example"/>
+            <description value="Contraceptive Counseling given example"/>
+            <exampleBoolean value="true"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling-was-provided"/>
             <groupingId value="new-group8"/>
         </resource>
         <resource>
@@ -549,7 +559,7 @@
             </reference>
             <name value="Contraceptive Method - Intake Observation example"/>
             <description value="Contraceptive Method - Intake Observation example"/>
-            <exampleBoolean value="false"/>
+            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-intake"/>
             <groupingId value="new-group8"/>
         </resource>
@@ -560,7 +570,7 @@
             </reference>
             <name value="Contraceptive Method - Exit Observation example"/>
             <description value="Contraceptive Method - Exit Observation example"/>
-            <exampleBoolean value="false"/>
+            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-exit"/>
             <groupingId value="new-group8"/>
         </resource>
@@ -571,7 +581,7 @@
             </reference>
             <name value="No Contraceptive Method - Intake example"/>
             <description value="No Contraceptive Method - Intake example"/>
-            <exampleBoolean value="false"/>
+            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-intake"/>
             <groupingId value="new-group8"/>
         </resource>
@@ -582,7 +592,7 @@
             </reference>
             <name value="No Contraceptive Method - Exit example"/>
             <description value="No Contraceptive Method - Exit example"/>
-            <exampleBoolean value="false"/>
+            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-exit"/>
             <groupingId value="new-group8"/>
         </resource>
@@ -605,6 +615,7 @@
             <name value="Seeking Counseling example"/>
             <description value="Seeking Counseling example"/>
             <exampleBoolean value="true"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/seeking-counseling"/>
             <groupingId value="new-group8"/>
         </resource>
         <resource>
@@ -614,7 +625,7 @@
             </reference>
             <name value="Household Income example"/>
             <description value="Household Income example"/>
-            <exampleBoolean value="false"/>
+            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/household-income"/>
             <groupingId value="new-group8"/>
         </resource>
@@ -625,7 +636,7 @@
             </reference>
             <name value="Household Size example"/>
             <description value="Household Size example"/>
-            <exampleBoolean value="false"/>
+            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/household-size"/>
             <groupingId value="new-group8"/>
         </resource>
@@ -643,6 +654,7 @@
             <name value="Encounter Submission Full Report Example"/>
             <description value="This Bundle exemplifies a scenario of an encounter where the Patient reported using an oral contraceptive at intake, had a contraceptive provision method of a procedure during the encounter, and at exit, reported contraceptive method of an IUD.&#xA;&#xA;The following information was documented: patient, provider and encounter details, vital signs for blood pressure, height and weight, smoking status, pregnancy status and intent, contraceptive method at intake and exit, reason for no contraceptive use at intake, contraceptive and pregnancy counseling provided, and five possible STI lab tests (pending Pap smear, HPV, chlamydia, gonorrhoaea, and HIV).&#xA;&#xA;Note the Pap smear Observation exemplifies a pending/preliminary result (Observation.status=preliminary and .value is omitted). No test for syphilis was ordered as part of this example encounter and therefore, no Observation pertaining to syphilis is included in this Bundle.&#xA;&#xA;Because contraceptive methods at intake and exit were provided, reasons for no contraceptive method (at intake and exit) are omitted from this Bundle."/>
             <exampleBoolean value="true"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/encounter-submission-full-report"/>
             <groupingId value="new-group11"/>
         </resource>
         <resource>
@@ -651,6 +663,7 @@
             <name value="Encounter Submission Full Report Example 2"/>
             <description value="This Bundle example exemplifies a scenario of an encounter where the Patient reported no contraceptive use because the patient wants to become pregnant, and has responded ‘true’ in response to ‘Counseling to achieve pregnancy was provided’ (Observation.code=86655-8). This Patient therefore does not have contraceptive counseling provided (i.e., Contraceptive Counseling Observation is omitted). This Patient also has a pregnancy status of ‘not pregnant’ and a pregnancy intent of ‘wants to become pregnant’.&#xA;&#xA;This Patient is also an ex-smoker. This example does not include any STI tests/results."/>
             <exampleBoolean value="true"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/encounter-submission-full-report"/>
             <groupingId value="new-group11"/>
         </resource>
         <resource>
@@ -659,6 +672,7 @@
             <name value="Encounter Submission Full Report Example 3"/>
             <description value="This Bundle exemplifies a scenario of multiple encounters where the Patient is seeking lab testing for chlamydia and has required multiple STI tests for diagnosis and treatment. The following information was documented: patient, provider and encounter details, vital signs for blood pressure, height and weight, smoking status, and three chlamydia lab tests; one lab test that was deemed inconclusive, a second test that was taken a month later and was found to be positive, and a third preliminary test to retest the patient after treatment. Because contraceptive methods at intake and exit were provided, reasons for no contraceptive method (at intake and exit) are omitted from this Bundle."/>
             <exampleBoolean value="true"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/encounter-submission-full-report"/>
             <groupingId value="new-group11"/>
         </resource>
         <resource>
@@ -668,7 +682,8 @@
             </reference>
             <name value="OPA Practitioner"/>
             <description value="Family Planning Provider"/>
-            <exampleBoolean value="false"/>
+            <exampleBoolean value="true"/>
+            <exampleCanonical value=""/>
             <groupingId value="new-group5"/>
         </resource>
         <resource>
@@ -677,6 +692,7 @@
             <name value="Subsequent Lab Result Submission Bundle"/>
             <description value="This Bundle exemplifies the finalization of a Pap smear Lab Result Observation. Subsequent Lab Result Bundle.identifier SHALL match (system and value) the Bundle.identifier of the Bundle to which it is associated."/>
             <exampleBoolean value="true"/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner"/>
             <groupingId value="new-group11"/>
         </resource>
         <page>

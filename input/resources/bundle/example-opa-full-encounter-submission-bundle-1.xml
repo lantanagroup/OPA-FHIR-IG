@@ -660,13 +660,59 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/example-opa-contraceptive-counseling"/>
+        <fullUrl value="http://example.org/fhir/Observation/example-opa-contraceptive-counseling-given"/>
+        <resource>
+            <Observation
+                xmlns="http://hl7.org/fhir">
+                <id value="example-opa-contraceptive-counseling-given"/>
+                <meta>
+                    <versionId value="6"/>
+                    <lastUpdated value="2023-07-20T15:34:13.574Z"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling-was-provided"/>
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="survey"/>
+                        <display value="Survey"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="86654-1"/>
+                        <display value="Contraceptive counseling was provided"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/example-opa-patient"/>
+                </subject>
+                <encounter>
+                    <reference value="Encounter/example-opa-encounter"/>
+                </encounter>
+                <effectiveDateTime value="2023-04-13T18:00:14-05:00"/>
+                <performer>
+                    <reference value="PractitionerRole/example-opa-practitioner-role"/>
+                </performer>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="373066001"/>
+                        <display value="Yes (qualifier value)"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+              </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/example-opa-contraceptive-provision"/>
         <resource>
             <Observation xmlns="http://hl7.org/fhir">
-                <id value="example-opa-contraceptive-counseling"/>
+                <id value="example-opa-contraceptive-provision"/>
                 <meta>
                     <profile
-                        value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling"
+                        value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-provision"
                     />
                 </meta>
                 <status value="final"/>

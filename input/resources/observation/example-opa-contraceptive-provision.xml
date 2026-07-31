@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="example-opa-contraceptive-counseling-not-given"/>
+    <id value="example-opa-contraceptive-provision"/>
     <meta>
         <versionId value="6"/>
-        <lastUpdated value="2023-07-20T15:34:13.574Z"/>
-        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling-was-provided"/>
+        <lastUpdated value="2023-07-20T15:34:13.505Z"/>
+        <profile value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-provision"/>
     </meta>
     <status value="final"/>
     <category>
@@ -18,8 +18,8 @@
     <code>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="86654-1"/>
-            <display value="Contraceptive counseling was provided"/>
+            <code value="86652-5"/>
+            <display value="How birth control method was provided"/>
         </coding>
     </code>
     <subject>
@@ -35,8 +35,8 @@
     <valueCodeableConcept>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="373067005"/>
-            <display value="No (qualifier value)"/>
+            <code value="308335008"/>
+            <display value="Patient encounter procedure (procedure)"/>
         </coding>
     </valueCodeableConcept>
 </Observation>
