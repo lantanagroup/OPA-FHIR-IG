@@ -26,7 +26,7 @@
    <name value="FamilyPlanningAnnualReport"/>
    <title value="Family Planning Annual Report (FPAR) Implementation Guide"/>
    <status value="active"/>
-   <date value="2026-08-11T12:21:32-06:00"/>
+   <date value="2026-08-19T10:32:07-06:00"/>
    <contact>
       <name value="Lantana Consulting Group"/>
    </contact>
@@ -102,6 +102,22 @@
       </extension>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
          <extension url="code">
+            <valueString value="auto-oid-root"/>
+         </extension>
+         <extension url="value">
+            <valueString value="2.16.840.1.113762.1.4.1166.100"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="pin-canonicals"/>
+         </extension>
+         <extension url="value">
+            <valueString value="pin-all"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
             <valueString value="autoload-resources"/>
          </extension>
          <extension url="value">
@@ -110,7 +126,7 @@
       </extension>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
          <extension url="code">
-            <valueString value="path-liquid"/>
+            <valueString value="path-liquid-template"/>
          </extension>
          <extension url="value">
             <valueString value="template/liquid"/>
@@ -118,7 +134,7 @@
       </extension>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
          <extension url="code">
-            <valueString value="path-liquid"/>
+            <valueString value="path-liquid-template"/>
          </extension>
          <extension url="value">
             <valueString value="input/liquid"/>
@@ -1301,7 +1317,7 @@
          </reference>
          <name value="Blood Pressure example (US Core)"/>
          <description value="Blood Pressure example (US Core)"/>
-         <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|6.1.0"/>
          <groupingId value="new-group3"/>
       </resource>
       <resource>
@@ -1319,7 +1335,7 @@
          </reference>
          <name value="Body Height example (US Core)"/>
          <description value="Body Height example (US Core)"/>
-         <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height|6.1.0"/>
          <groupingId value="new-group3"/>
       </resource>
       <resource>
@@ -1337,7 +1353,7 @@
          </reference>
          <name value="Body Weight example (US Core)"/>
          <description value="Body Weight example (US Core)"/>
-         <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight|6.1.0"/>
          <groupingId value="new-group3"/>
       </resource>
       <resource>
@@ -1355,7 +1371,7 @@
          </reference>
          <name value="Smoking Status example (US Core)"/>
          <description value="Smoking Status example (US Core)"/>
-         <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus|6.1.0"/>
          <groupingId value="new-group3"/>
       </resource>
       <resource>
@@ -1374,7 +1390,7 @@
          </reference>
          <name value="Pregnancy Status example (US Core)"/>
          <description value="Pregnancy Status example (DE#15). Pregnancy Status Observations shall conform to US Core Pregnancy Status profile"/>
-         <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus|6.1.0"/>
          <groupingId value="new-group3"/>
       </resource>
       <resource>
@@ -1393,7 +1409,7 @@
          </reference>
          <name value="Pregnancy Intention example (US Core)"/>
          <description value="Pregnancy intention example (DE#16). Pregnancy Intention Observations shall conform to US Core Pregnancy Intention profile"/>
-         <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent"/>
+         <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent|6.1.0"/>
          <groupingId value="new-group3"/>
       </resource>
       <resource>
@@ -1879,25 +1895,6 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-opa-practitioner.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/opa-practitioner"/>
-            <display value="OPA Practitioner"/>
-         </reference>
-         <name value="OPA Practitioner"/>
-         <description value="Family Planning Provider"/>
-         <exampleBoolean value="true"/>
-         <groupingId value="new-group5"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Bundle"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -1910,6 +1907,25 @@
          <description value="This Bundle exemplifies the finalization of a Pap smear Lab Result Observation. Subsequent Lab Result Bundle.identifier SHALL match (system and value) the Bundle.identifier of the Bundle to which it is associated."/>
          <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner"/>
          <groupingId value="new-group11"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-opa-practitioner.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/opa-practitioner"/>
+            <display value="OPA Practitioner"/>
+         </reference>
+         <name value="OPA Practitioner"/>
+         <description value="Family Planning Provider"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="new-group5"/>
       </resource>
       <page>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -2032,15 +2048,23 @@
          <value value="Release 2"/>
       </parameter>
       <parameter>
+         <code value="auto-oid-root"/>
+         <value value="2.16.840.1.113762.1.4.1166.100"/>
+      </parameter>
+      <parameter>
+         <code value="pin-canonicals"/>
+         <value value="pin-all"/>
+      </parameter>
+      <parameter>
          <code value="autoload-resources"/>
          <value value="true"/>
       </parameter>
       <parameter>
-         <code value="path-liquid"/>
+         <code value="path-liquid-template"/>
          <value value="template/liquid"/>
       </parameter>
       <parameter>
-         <code value="path-liquid"/>
+         <code value="path-liquid-template"/>
          <value value="input/liquid"/>
       </parameter>
       <parameter>
