@@ -323,7 +323,6 @@
                 <reference value="Patient/example-opa-patient"/></reference>
             <name value="OPA Patient example"/>
             <description value="OPA Patient example"/>
-            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -332,7 +331,6 @@
                 <reference value="Encounter/example-opa-encounter"/></reference>
             <name value="OPA Encounter example"/>
             <description value="OPA Encounter example"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -341,7 +339,6 @@
                 <reference value="PractitionerRole/example-opa-practitioner-role"/></reference>
             <name value="OPA PractitionerRole example"/>
             <description value="OPA PractitionerRole example"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner-role"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -360,7 +357,6 @@
             </reference>
             <name value="OPA Family Planning Clinic example"/>
             <description value="OPA Family Planning Clinic example"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fp-provider-organization"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -369,7 +365,6 @@
                 <reference value="Observation/example-opa-blood-pressure"/></reference>
             <name value="Blood Pressure example (US Core)"/>
             <description value="Blood Pressure example (US Core)"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -378,7 +373,6 @@
                 <reference value="Observation/example-opa-body-height"/></reference>
             <name value="Body Height example (US Core)"/>
             <description value="Body Height example (US Core)"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -387,7 +381,6 @@
                 <reference value="Observation/example-opa-body-weight"/></reference>
             <name value="Body Weight example (US Core)"/>
             <description value="Body Weight example (US Core)"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -396,7 +389,6 @@
                 <reference value="Observation/example-opa-smoking-status"/></reference>
             <name value="Smoking Status example (US Core)"/>
             <description value="Smoking Status example (US Core)"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -407,7 +399,6 @@
             </reference>
             <name value="Pregnancy Status example (US Core)"/>
             <description value="Pregnancy Status example (DE#15). Pregnancy Status Observations shall conform to US Core Pregnancy Status profile"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -418,7 +409,6 @@
             </reference>
             <name value="Pregnancy Intention example (US Core)"/>
             <description value="Pregnancy intention example (DE#16). Pregnancy Intention Observations shall conform to US Core Pregnancy Intention profile"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -427,7 +417,6 @@
                 <reference value="Observation/example-opa-pap-smear-result-prelim"/></reference>
             <name value="Pap Smear Lab Result example - Preliminary"/>
             <description value="Pap Smear Lab Result example - Preliminary"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result"/>
             <groupingId value="new-group9"/>
         </resource>
@@ -436,7 +425,6 @@
                 <reference value="Observation/example-opa-chlamydia-result-prelim"/></reference>
             <name value="Chlamydia Lab Result example - Preliminary"/>
             <description value="Chlamydia Lab Result example - Preliminary"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
             <groupingId value="new-group9"/>
         </resource>
@@ -445,7 +433,6 @@
                 <reference value="Observation/example-opa-hpv-result-prelim"/></reference>
             <name value="HPV Lab Result example - Preliminary"/>
             <description value="HPV Lab Result example - Preliminary"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/hpv-result"/>
             <groupingId value="new-group9"/>
         </resource>
@@ -454,7 +441,6 @@
                 <reference value="Observation/example-opa-neisseria-gonorrhoeae-result-prelim"/></reference>
             <name value="Neisseria Gonorrhoeae Lab Result example - Preliminary"/>
             <description value="Neisseria Gonorrhoeae Lab Result example - Preliminary"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result"/>
             <groupingId value="new-group9"/>
         </resource>
@@ -463,7 +449,6 @@
                 <reference value="Observation/example-opa-hiv-1-2-result-prelim"/></reference>
             <name value="HIV Lab Result example - Preliminary"/>
             <description value="HIV Lab Result example - Preliminary"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result"/>
             <groupingId value="new-group9"/>
         </resource>
@@ -472,7 +457,6 @@
                 <reference value="Observation/example-opa-syphilis-result-prelim"/></reference>
             <name value="Syphilis Lab Result example - Preliminary"/>
             <description value="Syphilis Lab Result example - Preliminary"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result"/>
             <groupingId value="new-group9"/>
         </resource>
@@ -481,7 +465,6 @@
                 <reference value="Observation/example-opa-pap-smear-result-final"/></reference>
             <name value="Pap Smear Lab Result example - Final"/>
             <description value="Pap Smear Lab Result example - Final"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result"/>
             <groupingId value="new-group10"/>
         </resource>
@@ -490,7 +473,6 @@
                 <reference value="Observation/example-opa-chlamydia-result-final"/></reference>
             <name value="Chlamydia Lab Result example - Final"/>
             <description value="Chlamydia Lab Result example - Final"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
             <groupingId value="new-group10"/>
         </resource>
@@ -499,7 +481,6 @@
                 <reference value="Observation/example-opa-hpv-result-final"/></reference>
             <name value="HPV Lab Result example - Final"/>
             <description value="HPV Lab Result example - Final"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/hpv-result"/>
             <groupingId value="new-group10"/>
         </resource>
@@ -508,7 +489,6 @@
                 <reference value="Observation/example-opa-neisseria-gonorrhoeae-result-final"/></reference>
             <name value="Neisseria Gonorrhoeae Lab Result example - Final"/>
             <description value="Neisseria Gonorrhoeae Lab Result example - Final"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result"/>
             <groupingId value="new-group10"/>
         </resource>
@@ -517,7 +497,6 @@
                 <reference value="Observation/example-opa-hiv-1-2-result-final"/></reference>
             <name value="HIV Lab Result example - Final"/>
             <description value="HIV Lab Result example - Final"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result"/>
             <groupingId value="new-group10"/>
         </resource>
@@ -526,7 +505,6 @@
                 <reference value="Observation/example-opa-syphilis-result-final"/></reference>
             <name value="Syphilis Lab Result example - Final"/>
             <description value="Syphilis Lab Result example - Final"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result"/>
             <groupingId value="new-group10"/>
         </resource>
@@ -537,7 +515,6 @@
             </reference>
             <name value="Contraceptive Counseling not given example"/>
             <description value="Contraceptive Counseling not given example"/>
-            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling-was-provided"/>
             <groupingId value="new-group8"/>
         </resource>
@@ -548,7 +525,6 @@
             </reference>
             <name value="Contraceptive Counseling given example"/>
             <description value="Contraceptive Counseling given example"/>
-            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-counseling-was-provided"/>
             <groupingId value="new-group8"/>
         </resource>
@@ -559,7 +535,6 @@
             </reference>
             <name value="Contraceptive Method - Intake Observation example"/>
             <description value="Contraceptive Method - Intake Observation example"/>
-            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-intake"/>
             <groupingId value="new-group8"/>
         </resource>
@@ -570,7 +545,6 @@
             </reference>
             <name value="Contraceptive Method - Exit Observation example"/>
             <description value="Contraceptive Method - Exit Observation example"/>
-            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-exit"/>
             <groupingId value="new-group8"/>
         </resource>
@@ -581,7 +555,6 @@
             </reference>
             <name value="No Contraceptive Method - Intake example"/>
             <description value="No Contraceptive Method - Intake example"/>
-            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-intake"/>
             <groupingId value="new-group8"/>
         </resource>
@@ -592,7 +565,6 @@
             </reference>
             <name value="No Contraceptive Method - Exit example"/>
             <description value="No Contraceptive Method - Exit example"/>
-            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-exit"/>
             <groupingId value="new-group8"/>
         </resource>
@@ -603,7 +575,6 @@
             </reference>
             <name value="Pregnancy Counseling example"/>
             <description value="Pregnancy Counseling example"/>
-            <exampleBoolean value="false"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/pregnancy-counseling"/>
             <groupingId value="new-group8"/>
         </resource>
@@ -614,7 +585,6 @@
             </reference>
             <name value="Seeking Counseling example"/>
             <description value="Seeking Counseling example"/>
-            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/seeking-counseling"/>
             <groupingId value="new-group8"/>
         </resource>
@@ -625,7 +595,6 @@
             </reference>
             <name value="Household Income example"/>
             <description value="Household Income example"/>
-            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/household-income"/>
             <groupingId value="new-group8"/>
         </resource>
@@ -636,7 +605,6 @@
             </reference>
             <name value="Household Size example"/>
             <description value="Household Size example"/>
-            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/household-size"/>
             <groupingId value="new-group8"/>
         </resource>
@@ -653,7 +621,6 @@
                 <reference value="Bundle/example-opa-full-encounter-submission-bundle-1"/></reference>
             <name value="Encounter Submission Full Report Example"/>
             <description value="This Bundle exemplifies a scenario of an encounter where the Patient reported using an oral contraceptive at intake, had a contraceptive provision method of a procedure during the encounter, and at exit, reported contraceptive method of an IUD.&#xA;&#xA;The following information was documented: patient, provider and encounter details, vital signs for blood pressure, height and weight, smoking status, pregnancy status and intent, contraceptive method at intake and exit, reason for no contraceptive use at intake, contraceptive and pregnancy counseling provided, and five possible STI lab tests (pending Pap smear, HPV, chlamydia, gonorrhoaea, and HIV).&#xA;&#xA;Note the Pap smear Observation exemplifies a pending/preliminary result (Observation.status=preliminary and .value is omitted). No test for syphilis was ordered as part of this example encounter and therefore, no Observation pertaining to syphilis is included in this Bundle.&#xA;&#xA;Because contraceptive methods at intake and exit were provided, reasons for no contraceptive method (at intake and exit) are omitted from this Bundle."/>
-            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/encounter-submission-full-report"/>
             <groupingId value="new-group11"/>
         </resource>
@@ -662,7 +629,6 @@
                 <reference value="Bundle/example-opa-full-encounter-submission-bundle-2"/></reference>
             <name value="Encounter Submission Full Report Example 2"/>
             <description value="This Bundle example exemplifies a scenario of an encounter where the Patient reported no contraceptive use because the patient wants to become pregnant, and has responded ‘true’ in response to ‘Counseling to achieve pregnancy was provided’ (Observation.code=86655-8). This Patient therefore does not have contraceptive counseling provided (i.e., Contraceptive Counseling Observation is omitted). This Patient also has a pregnancy status of ‘not pregnant’ and a pregnancy intent of ‘wants to become pregnant’.&#xA;&#xA;This Patient is also an ex-smoker. This example does not include any STI tests/results."/>
-            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/encounter-submission-full-report"/>
             <groupingId value="new-group11"/>
         </resource>
@@ -671,8 +637,15 @@
                 <reference value="Bundle/example-opa-full-encounter-submission-bundle-3"/></reference>
             <name value="Encounter Submission Full Report Example 3"/>
             <description value="This Bundle exemplifies a scenario of multiple encounters where the Patient is seeking lab testing for chlamydia and has required multiple STI tests for diagnosis and treatment. The following information was documented: patient, provider and encounter details, vital signs for blood pressure, height and weight, smoking status, and three chlamydia lab tests; one lab test that was deemed inconclusive, a second test that was taken a month later and was found to be positive, and a third preliminary test to retest the patient after treatment. Because contraceptive methods at intake and exit were provided, reasons for no contraceptive method (at intake and exit) are omitted from this Bundle."/>
-            <exampleBoolean value="true"/>
             <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/encounter-submission-full-report"/>
+            <groupingId value="new-group11"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/example-opa-subsequent-lab-result-submission-bundle"/></reference>
+            <name value="Subsequent Lab Result Submission Bundle"/>
+            <description value="This Bundle exemplifies the finalization of a Pap smear Lab Result Observation. Subsequent Lab Result Bundle.identifier SHALL match (system and value) the Bundle.identifier of the Bundle to which it is associated."/>
+            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner"/>
             <groupingId value="new-group11"/>
         </resource>
         <resource>
@@ -682,18 +655,8 @@
             </reference>
             <name value="OPA Practitioner"/>
             <description value="Family Planning Provider"/>
-            <exampleBoolean value="true"/>
-            <exampleCanonical value=""/>
+            <exampleBoolean value="false"/>
             <groupingId value="new-group5"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/example-opa-subsequent-lab-result-submission-bundle"/></reference>
-            <name value="Subsequent Lab Result Submission Bundle"/>
-            <description value="This Bundle exemplifies the finalization of a Pap smear Lab Result Observation. Subsequent Lab Result Bundle.identifier SHALL match (system and value) the Bundle.identifier of the Bundle to which it is associated."/>
-            <exampleBoolean value="true"/>
-            <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner"/>
-            <groupingId value="new-group11"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
@@ -735,6 +698,14 @@
         <parameter>
             <code value="releaselabel"/>
             <value value="Release 2"/>
+        </parameter>
+        <parameter>
+            <code value="auto-oid-root"/>
+            <value value="2.16.840.1.113762.1.4.1166.100"/>
+        </parameter>
+        <parameter>
+            <code value="pin-canonicals"/>
+            <value value="pin-all"/>
         </parameter>
     </definition>
 </ImplementationGuide>

@@ -7,7 +7,7 @@
         <lastUpdated value="2023-07-20T15:35:00.823Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/contraceptive-method-intake"/>
-    <name value="ContraceptiveMethod-Intake"/>
+    <name value="ContraceptiveMethodIntake"/>
     <title value="Contraceptive Method - Intake"/>
     <status value="active"/>
     <description value="Contraceptive method at intake (DE#17)"/>

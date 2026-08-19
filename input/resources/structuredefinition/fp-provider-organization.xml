@@ -30,6 +30,7 @@
                 <rules value="open"/>
             </slicing>
             <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Organization.identifier:NPI">
             <path value="Organization.identifier"/>

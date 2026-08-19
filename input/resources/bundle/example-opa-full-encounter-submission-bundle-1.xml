@@ -82,7 +82,7 @@
                         </coding>
                         <text value="Medical Record Number"/>
                     </type>
-                    <system value="http://hospital.smarthealthit.org"/>
+                    <system value="http://example.org"/>
                     <value value="M00002232"/>
                 </identifier>
                 <active value="true"/>
@@ -753,12 +753,13 @@
     <entry>
         <fullUrl value="http://example.org/fhir/Observation/example-opa-pregnancy-counseling"/>
         <resource>
-            <Observation xmlns="http://hl7.org/fhir">
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="example-opa-pregnancy-counseling"/>
                 <meta>
-                    <profile
-                        value="http://oash.org/fhir/us/opa/StructureDefinition/pregnancy-counseling"
-                    />
+                    <versionId value="1"/>
+                    <lastUpdated value="2023-08-21T13:10:37.333Z"/>
+                    <profile value="http://oash.org/fhir/us/opa/StructureDefinition/pregnancy-counseling"/>
                 </meta>
                 <status value="final"/>
                 <code>
@@ -778,7 +779,13 @@
                 <performer>
                     <reference value="PractitionerRole/example-opa-practitioner-role"/>
                 </performer>
-                <valueBoolean value="true"/>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="373066001"/>
+                        <display value="Yes"/>
+                    </coding>
+                </valueCodeableConcept>
             </Observation>
         </resource>
     </entry>

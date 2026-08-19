@@ -7,7 +7,7 @@
         <lastUpdated value="2023-07-20T15:35:01.898Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-exit"/>
-    <name value="NoContraceptiveReason-Exit"/>
+    <name value="NoContraceptiveReasonExit"/>
     <title value="No Contraceptive Reason Exit"/>
     <status value="active"/>
     <description value="Reason for no contraceptive method use at exit (DE#20)"/>

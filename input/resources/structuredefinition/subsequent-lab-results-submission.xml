@@ -51,7 +51,7 @@
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>
-                <code value="Resource"/>
+                <code value="Patient"/>
                 <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
             </type>
         </element>
@@ -65,7 +65,7 @@
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>
-                <code value="Resource"/>
+                <code value="Encounter"/>
                 <profile value="http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
             </type>
         </element>
@@ -79,7 +79,7 @@
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>
-                <code value="Resource"/>
+                <code value="Organization"/>
                 <profile value="http://oash.org/fhir/us/opa/StructureDefinition/fp-provider-organization"/>
             </type>
         </element>
@@ -91,7 +91,7 @@
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>
-                <code value="Resource"/>
+                <code value="Observation"/>
                 <profile value="http://oash.org/fhir/us/opa/StructureDefinition/pap-smear-result"/>
             </type>
         </element>
@@ -103,7 +103,7 @@
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>
-                <code value="Resource"/>
+                <code value="Observation"/>
                 <profile value="http://oash.org/fhir/us/opa/StructureDefinition/hpv-result"/>
             </type>
         </element>
@@ -115,7 +115,7 @@
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>
-                <code value="Resource"/>
+                <code value="Observation"/>
                 <profile value="http://oash.org/fhir/us/opa/StructureDefinition/chlamydia-result"/>
             </type>
         </element>
@@ -127,7 +127,7 @@
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>
-                <code value="Resource"/>
+                <code value="Observation"/>
                 <profile value="http://oash.org/fhir/us/opa/StructureDefinition/neisseria-gonorrhoeae-result"/>
             </type>
         </element>
@@ -139,7 +139,7 @@
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>
-                <code value="Resource"/>
+                <code value="Observation"/>
                 <profile value="http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result"/>
             </type>
         </element>
@@ -151,7 +151,7 @@
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>
-                <code value="Resource"/>
+                <code value="Observation"/>
                 <profile value="http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result"/>
             </type>
         </element>

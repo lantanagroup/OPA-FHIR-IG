@@ -7,7 +7,7 @@
         <lastUpdated value="2023-07-20T15:35:01.977Z"/>
     </meta>
     <url value="http://oash.org/fhir/us/opa/StructureDefinition/no-contraceptive-reason-intake"/>
-    <name value="NoContraceptiveReason-Intake"/>
+    <name value="NoContraceptiveReasonIntake"/>
     <title value="No Contraceptive Reason Intake"/>
     <status value="active"/>
     <description value="Reason for no contraceptive method use at intake (DE#18)"/>
