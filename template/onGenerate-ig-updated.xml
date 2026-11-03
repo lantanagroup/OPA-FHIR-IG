@@ -459,39 +459,7 @@
       
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+<<<<<<< HEAD
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
             <valueInteger value="999999999"/>
@@ -500,9 +468,502 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-encounter-submission-full-report.html"/>
+            <valueUri value="StructureDefinition-fpar-encounter.html"/>
          </extension>
          <reference>
+            <reference value="StructureDefinition/fpar-encounter"/>
+         </reference>
+         <name value="FPAR Encounter"/>
+         <description value="US Core Encounter with .period required (DE#5)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-encounter-submission-full-report.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-encounter-submission-full-report"/>
+         </reference>
+         <name value="FPAR Encounter Submission Full Report"/>
+         <description value="The Bundle Profile defines how all encounter data (DEs #1-41) are to be submitted as a FHIR Bundle. Note- subsequent lab result reports should not use this profile (see Subsequent Lab Result Submission Bundle profile).&#xD;&#xA;&#xD;&#xA;Only ordered sexually transmitted infection (STI) tests, regardless of result availability, should be included in submission Bundles. For example, if a Patient has chlamydia, HIV, syphilis and HPV tests ordered (i.e. no gonorrhea or Pap smear tests ordered), this Patient’s full Encounter Submission Bundle would include four STI Lab Observation Bundle entries (one pertaining to each ordered test). The submission Bundle will never contain any data pertaining to not-ordered lab tests. In the above example scenario, this Patient’s full submission Bundle would not contain Observation entries pertaining to gonorrhea or Pap smear).&#xD;&#xA;&#xD;&#xA;STI Lab Observations that have been ordered but do not have a result available for any reason are expected to contain an Observation.status=preliminary. If/When the result becomes available, a Subsequent Lab Result Submission Bundle should be compiled and submitted."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-fp-provider-organization.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-fp-provider-organization"/>
+         </reference>
+         <name value="FPAR Family Planning Provider Organization"/>
+         <description value="Family Planning Provider Organization (DE#1)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-chlamydia-result.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-chlamydia-result"/>
+         </reference>
+         <name value="FPAR Lab Observation Chlamydia Trachomatis Result"/>
+         <description value="Chlamydia Trachomatis Result (DE#34). If a chlamydia trachomatis test was not performed in this visit (DE#33), the submission Bundle should not include an Observation (entry) representing this lab result."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-hiv-1-2-result.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-hiv-1-2-result"/>
+         </reference>
+         <name value="FPAR Lab Observation HIV 1 and 2 Result"/>
+         <description value="HIV 1&amp;2 Result (DE#32). If a HIV test was not performed in this visit (DE#31), the submission Bundle should not include an Observation (entry) representing this lab result."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-hpv-result.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-hpv-result"/>
+         </reference>
+         <name value="FPAR Lab Observation HPV Result"/>
+         <description value="HPV Result (DE#32). If an HPV test was not performed in this visit (DE#31), the submission Bundle should not include an Observation (entry) representing this lab result."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-neisseria-gonorrhoeae-result.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-neisseria-gonorrhoeae-result"/>
+         </reference>
+         <name value="FPAR Lab Observation Neisseria Gonorrhoeae Result"/>
+         <description value="Neisseria Gonorrhoeae Result (DE#36). If a neisseria gonorrhoeae test was not performed at this visit (DE#35), the submission Bundle should not include an Observation (entry) representing this lab result."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-pap-smear-result.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-pap-smear-result"/>
+         </reference>
+         <name value="FPAR Lab Observation Pap Smear Result"/>
+         <description value="Pap Smear Result (DE#30). If a Pap smear test was not performed in this visit (DE#29), the submission Bundle should not include an Observation (entry) representing this lab result."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-syphilis-result.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-syphilis-result"/>
+         </reference>
+         <name value="FPAR Lab Observation Syphilis Result"/>
+         <description value="Syphilis Result (DE#40). If a syphilis test was not performed in this visit (DE#39), the submission Bundle should not include an Observation (entry) representing this lab result."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-blood-pressure.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-blood-pressure"/>
+         </reference>
+         <name value="FPAR Observation Blood Pressure"/>
+         <description value="DE24 and DE25: 'Blood pressure' is represented in Observation.code with LOINC code '55284-4' with the answer in Observation.component from the ValueSet 'Blood Pressure'."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-body-height.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-body-height"/>
+         </reference>
+         <name value="FPAR Observation Body Height"/>
+         <description value="DE26 and DE26a: 'Body height' is represented in Observation.code with LOINC code '8302-2' with the answer in Observation.valueQuantity from the ValueSet 'Body Height'."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-body-weight.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-body-weight"/>
+         </reference>
+         <name value="FPAR Observation Body Weight"/>
+         <description value="DE27 and DE27a: 'Body weight' is represented in Observation.code with LOINC code '29463-7' with the answer in Observation.valueQuantity from the ValueSet 'Body Weight'."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-contraceptive-counseling-was-provided.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-contraceptive-counseling-was-provided"/>
+         </reference>
+         <name value="FPAR Observation Contraceptive Counseling Was Provided"/>
+         <description value="Contraceptive counseling was provided (DE #22)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-contraceptive-method-exit.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-contraceptive-method-exit"/>
+         </reference>
+         <name value="FPAR Observation Contraceptive Method - Exit"/>
+         <description value="Contraceptive method at exit (DE#19)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-contraceptive-method-intake.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-contraceptive-method-intake"/>
+         </reference>
+         <name value="FPAR Observation Contraceptive Method - Intake"/>
+         <description value="Contraceptive method at intake (DE#17)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-contraceptive-provision.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-contraceptive-provision"/>
+         </reference>
+         <name value="FPAR Observation Contraceptive Provision"/>
+         <description value="How contraceptive counseling was provided (DE#21)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-household-income.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-household-income"/>
+         </reference>
+         <name value="FPAR Observation Household Income"/>
+         <description value="Household Income (DE#11)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-household-size.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-household-size"/>
+         </reference>
+         <name value="FPAR Observation Household Size"/>
+         <description value="household Size (DE#12)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-no-contraceptive-reason-exit.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-no-contraceptive-reason-exit"/>
+         </reference>
+         <name value="FPAR Observation No Contraceptive Reason Exit"/>
+         <description value="Reason for no contraceptive method use at exit (DE#20)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-no-contraceptive-reason-intake.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-no-contraceptive-reason-intake"/>
+         </reference>
+         <name value="FPAR Observation No Contraceptive Reason Intake"/>
+         <description value="Reason for no contraceptive method use at intake (DE#18)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-pregnancy-counseling.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-pregnancy-counseling"/>
+         </reference>
+         <name value="FPAR Observation Pregnancy Counseling"/>
+         <description value="Pregnancy Counseling was provided (DE#23)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+=======
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-pregnancy-intent.html"/>
+         </extension>
+         <reference>
+<<<<<<< HEAD
+            <reference value="StructureDefinition/fpar-pregnancy-intent"/>
+         </reference>
+         <name value="FPAR Observation Pregnancy Intent"/>
+         <description value="Intent to becoming pregnant (DE#14)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-pregnancy-status.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-pregnancy-status"/>
+         </reference>
+         <name value="FPAR Observation Pregnancy Status"/>
+         <description value="Pregnancy status (DE#15)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-seeking-counseling.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-seeking-counseling"/>
+         </reference>
+         <name value="FPAR Observation Seeking Counseling"/>
+         <description value="Family Planning Counseling was offered (DE#41)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-patient.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-patient"/>
+         </reference>
+         <name value="FPAR Patient"/>
+         <description value="FPAR Patient conforms to US Core Patient and requires birthDate"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-practitioner.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-practitioner"/>
+         </reference>
+         <name value="FPAR Practitioner"/>
+         <description value="Family Planning Provider"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+=======
             <reference value="StructureDefinition/encounter-submission-full-report"/>
             <display value="EncounterSubmissionFullReport"/>
          </reference>
@@ -510,6 +971,7 @@
          <description value="The Bundle Profile defines how all encounter data (DEs #1-41) are to be submitted as a FHIR Bundle. Note- subsequent lab result reports should not use this profile (see Subsequent Lab Result Submission Bundle profile).&#xA;&#xA;Only ordered sexually transmitted infection (STI) tests, regardless of result availability, should be included in submission Bundles. For example, if a Patient has chlamydia, HIV, syphilis and HPV tests ordered (i.e. no gonorrhea or Pap smear tests ordered), this Patient’s full Encounter Submission Bundle would include four STI Lab Observation Bundle entries (one pertaining to each ordered test). The submission Bundle will never contain any data pertaining to not-ordered lab tests. In the above example scenario, this Patient’s full submission Bundle would not contain Observation entries pertaining to gonorrhea or Pap smear).&#xA;&#xA;STI Lab Observations that have been ordered but do not have a result available for any reason are expected to contain an Observation.status=preliminary. If/When the result becomes available, a Subsequent Lab Result Submission Bundle should be compiled and submitted."/>
          <exampleBoolean value="false"/>
          <groupingId value="new-group6"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -519,14 +981,20 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-subsequent-lab-results-submission.html"/>
+            <valueUri value="StructureDefinition-fpar-practitioner-role.html"/>
          </extension>
          <reference>
+<<<<<<< HEAD
+            <reference value="StructureDefinition/fpar-practitioner-role"/>
+         </reference>
+         <name value="FPAR Practitioner Role"/>
+=======
             <reference value="StructureDefinition/subsequent-lab-results-submission"/>
             <display value="SubsequentLabResultSubmission"/>
          </reference>
          <name value="Subsequent Lab Result Submission"/>
          <description value="Subsequent Lab Result Submission Profile defines a subsequent lab results Bundle for submission. Submission Bundles conforming to this profile are only expected subsequently to an initial Encounter Submission Full Report. Subsequent Lab Result Bundles SHALL contain an 'originalBundleReference' extension which includes a valueIdentifier pertaining to the Bundle.identifier of the original Encounter Submission Full Report Bundle."/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
          <exampleBoolean value="false"/>
          <groupingId value="new-group6"/>
       </resource>
@@ -538,6 +1006,14 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+<<<<<<< HEAD
+            <valueUri value="StructureDefinition-fpar-subsequent-lab-results-submission.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-subsequent-lab-results-submission"/>
+         </reference>
+         <name value="FPAR Subsequent Lab Result Submission"/>
+=======
             <valueUri value="StructureDefinition-opa-patient.html"/>
          </extension>
          <reference>
@@ -603,6 +1079,7 @@
          </reference>
          <name value="OPA Family Planning Provider Organization"/>
          <description value="Family Planning Provider Organization (DE#1)"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
          <exampleBoolean value="false"/>
          <groupingId value="new-group5"/>
       </resource>
@@ -614,6 +1091,35 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+<<<<<<< HEAD
+            <valueUri value="StructureDefinition-fpar-english-proficiency.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-english-proficiency"/>
+         </reference>
+         <name value="FPAR English Proficiency Extension"/>
+         <description value="Extension to convey Limited English Proficiency (DE#8). This extension is expected to extend Patient.communication."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-fpar-insurance-type.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/fpar-insurance-type"/>
+         </reference>
+         <name value="FPAR Insurance Coverage Type Extension"/>
+         <description value="Extension for Insurance Coverage Type (DE#13)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+=======
             <valueUri value="StructureDefinition-opa-practitioner.html"/>
          </extension>
          <reference>
@@ -624,6 +1130,7 @@
          <description value="Family Planning Provider"/>
          <exampleBoolean value="false"/>
          <groupingId value="new-group5"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -633,14 +1140,21 @@
             <valueString value="StructureDefinition:extension"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-payer-for-visit.html"/>
+            <valueUri value="StructureDefinition-fpar-payer-for-visit.html"/>
          </extension>
          <reference>
+<<<<<<< HEAD
+            <reference value="StructureDefinition/fpar-payer-for-visit"/>
+         </reference>
+         <name value="FPAR Payer for Visit Extension"/>
+         <description value="Extension for Payer for Visit (DE#14)"/>
+=======
             <reference value="StructureDefinition/payer-for-visit"/>
             <display value="PayerForVisit"/>
          </reference>
          <name value="Payer For Visit"/>
          <description value="Extension for Payer For Visit (DE#14)"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
          <exampleBoolean value="false"/>
          <groupingId value="new-group7"/>
       </resource>
@@ -658,8 +1172,13 @@
             <reference value="StructureDefinition/insurance-type"/>
             <display value="InsuranceType"/>
          </reference>
+<<<<<<< HEAD
+         <name value="FPAR Contraceptive Discussion Value Set"/>
+         <description value="A value set used in the Office of Population Affairs Title X Family Planning Annual Report (FPAR)."/>
+=======
          <name value="Insurance Coverage Type"/>
          <description value="Extension for Insurance Coverage Type (DE#13)"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
          <exampleBoolean value="false"/>
          <groupingId value="new-group7"/>
       </resource>
@@ -677,8 +1196,13 @@
             <reference value="StructureDefinition/english-proficiency"/>
             <display value="EnglishProficiencyExtension"/>
          </reference>
+<<<<<<< HEAD
+         <name value="FPAR Pap Smear Results Value Set"/>
+         <description value="A value set used in the Office of Population Affairs Title X Family Planning Annual Report (FPAR)."/>
+=======
          <name value="English Proficiency"/>
          <description value="Extension to convey Limited English Proficiency (DE#8). This extension is expected to extend Patient.communication."/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
          <exampleBoolean value="false"/>
          <groupingId value="new-group7"/>
       </resource>
@@ -696,8 +1220,13 @@
             <reference value="StructureDefinition/contraceptive-method-intake"/>
             <display value="ContraceptiveMethodIntake"/>
          </reference>
+<<<<<<< HEAD
+         <name value="FPAR Yes and No Answers Value Set"/>
+         <description value="A value set used in the Office of Population Affairs Title X Family Planning Annual Report (FPAR)."/>
+=======
          <name value="Contraceptive Method - Intake"/>
          <description value="Contraceptive method at intake (DE#17)"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
          <exampleBoolean value="false"/>
          <groupingId value="new-group2"/>
       </resource>
@@ -715,10 +1244,17 @@
             <reference value="StructureDefinition/contraceptive-method-exit"/>
             <display value="ContraceptiveMethodExit"/>
          </reference>
+<<<<<<< HEAD
+         <name value="Blood Pressure example"/>
+         <description value="Blood Pressure example"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-blood-pressure|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <name value="Contraceptive Method - Exit"/>
          <description value="Contraceptive method at exit (DE#19)"/>
          <exampleBoolean value="false"/>
          <groupingId value="new-group2"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -734,10 +1270,17 @@
             <reference value="StructureDefinition/no-contraceptive-reason-intake"/>
             <display value="NoContraceptiveReasonIntake"/>
          </reference>
+<<<<<<< HEAD
+         <name value="Body Height example"/>
+         <description value="Body Height example"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-body-height|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <name value="Reason For No Contraceptive - Intake"/>
          <description value="Reason for no contraceptive method use at intake (DE#18)"/>
          <exampleBoolean value="false"/>
          <groupingId value="new-group2"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -753,10 +1296,17 @@
             <reference value="StructureDefinition/no-contraceptive-reason-exit"/>
             <display value="NoContraceptiveReasonExit"/>
          </reference>
+<<<<<<< HEAD
+         <name value="Body Weight example"/>
+         <description value="Body Weight example"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-body-weight|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <name value="Reason For No Contraceptive - Exit"/>
          <description value="Reason for no contraceptive method use at exit (DE#20)"/>
          <exampleBoolean value="false"/>
          <groupingId value="new-group2"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -772,10 +1322,17 @@
             <reference value="StructureDefinition/contraceptive-provision"/>
             <display value="ContraceptiveProvision"/>
          </reference>
+<<<<<<< HEAD
+         <name value="Chlamydia Lab Result example - Final"/>
+         <description value="Chlamydia Lab Result example - Final"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-chlamydia-result|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <name value="Contraceptive Provision"/>
          <description value="How contraceptive counseling was provided (DE #21)."/>
          <exampleBoolean value="false"/>
          <groupingId value="new-group2"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -791,10 +1348,17 @@
             <reference value="StructureDefinition/contraceptive-counseling-was-provided"/>
             <display value="ContraceptiveCounselingWasProvided"/>
          </reference>
+<<<<<<< HEAD
+         <name value="Chlamydia Lab Result example - Preliminary"/>
+         <description value="Chlamydia Lab Result example - Preliminary"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-chlamydia-result|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <name value="Contraceptive Counseling Was Provided"/>
          <description value="Contraceptive counseling was provided (DE #22)."/>
          <exampleBoolean value="false"/>
          <groupingId value="new-group2"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -810,10 +1374,17 @@
             <reference value="StructureDefinition/pregnancy-counseling"/>
             <display value="PregnancyCounseling"/>
          </reference>
+<<<<<<< HEAD
+         <name value="Contraceptive Counseling given example"/>
+         <description value="Contraceptive Counseling given example"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-contraceptive-counseling-was-provided|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <name value="Pregnancy Counseling"/>
          <description value="Pregnancy Counseling was provided (DE#23)"/>
          <exampleBoolean value="false"/>
          <groupingId value="new-group2"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -829,10 +1400,17 @@
             <reference value="StructureDefinition/seeking-counseling"/>
             <display value="SeekingCounseling"/>
          </reference>
+<<<<<<< HEAD
+         <name value="Contraceptive Counseling not given example"/>
+         <description value="Contraceptive Counseling not given example"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-contraceptive-counseling-was-provided|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <name value="Seeking Counseling"/>
          <description value="Observation to convey 'Do you want to talk about contraceptive or pregnancy prevention during your visit today?' (DE#41)"/>
          <exampleBoolean value="false"/>
          <groupingId value="new-group2"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -848,10 +1426,17 @@
             <reference value="StructureDefinition/household-income"/>
             <display value="HouseholdIncome"/>
          </reference>
+<<<<<<< HEAD
+         <name value="Contraceptive Method - Exit Observation example"/>
+         <description value="Contraceptive Method - Exit Observation example"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-contraceptive-method-exit|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <name value="Household Income"/>
          <description value="Household income profile (DE#11)"/>
          <exampleBoolean value="false"/>
          <groupingId value="new-group2"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -867,6 +1452,12 @@
             <reference value="StructureDefinition/household-size"/>
             <display value="HouseholdSize"/>
          </reference>
+<<<<<<< HEAD
+         <name value="Contraceptive Method - Intake Observation example"/>
+         <description value="Contraceptive Method - Intake Observation example"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-contraceptive-method-intake|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <name value="Household Size"/>
          <description value="Placeholder text for household size (DE#12)"/>
          <exampleBoolean value="false"/>
@@ -985,6 +1576,7 @@
          <description value="HPV Result (DE#32). If an HPV test was not performed in this visit (DE#31), the submission Bundle should not include an Observation (entry) representing this lab result."/>
          <exampleBoolean value="false"/>
          <groupingId value="new-group1"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -1001,8 +1593,13 @@
          </reference>
          <name value="Encounter Submission Full Report Example"/>
          <description value="This Bundle exemplifies a scenario of an encounter where the Patient reported using an oral contraceptive at intake, had a contraceptive provision method of a procedure during the encounter, and at exit, reported contraceptive method of an IUD.&#xA;&#xA;The following information was documented: patient, provider and encounter details, vital signs for blood pressure, height and weight, smoking status, pregnancy status and intent, contraceptive method at intake and exit, reason for no contraceptive use at intake, contraceptive and pregnancy counseling provided, and five possible STI lab tests (pending Pap smear, HPV, chlamydia, gonorrhoaea, and HIV).&#xA;&#xA;Note the Pap smear Observation exemplifies a pending/preliminary result (Observation.status=preliminary and .value is omitted). No test for syphilis was ordered as part of this example encounter and therefore, no Observation pertaining to syphilis is included in this Bundle.&#xA;&#xA;Because contraceptive methods at intake and exit were provided, reasons for no contraceptive method (at intake and exit) are omitted from this Bundle."/>
+<<<<<<< HEAD
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-encounter-submission-full-report|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/encounter-submission-full-report"/>
          <groupingId value="new-group11"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -1019,8 +1616,13 @@
          </reference>
          <name value="Encounter Submission Full Report Example 2"/>
          <description value="This Bundle example exemplifies a scenario of an encounter where the Patient reported no contraceptive use because the patient wants to become pregnant, and has responded ‘true’ in response to ‘Counseling to achieve pregnancy was provided’ (Observation.code=86655-8). This Patient therefore does not have contraceptive counseling provided (i.e., Contraceptive Counseling Observation is omitted). This Patient also has a pregnancy status of ‘not pregnant’ and a pregnancy intent of ‘wants to become pregnant’.&#xA;&#xA;This Patient is also an ex-smoker. This example does not include any STI tests/results."/>
+<<<<<<< HEAD
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-encounter-submission-full-report|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/encounter-submission-full-report"/>
          <groupingId value="new-group11"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -1037,14 +1639,231 @@
          </reference>
          <name value="Encounter Submission Full Report Example 3"/>
          <description value="This Bundle exemplifies a scenario of multiple encounters where the Patient is seeking lab testing for chlamydia and has required multiple STI tests for diagnosis and treatment. The following information was documented: patient, provider and encounter details, vital signs for blood pressure, height and weight, smoking status, and three chlamydia lab tests; one lab test that was deemed inconclusive, a second test that was taken a month later and was found to be positive, and a third preliminary test to retest the patient after treatment. Because contraceptive methods at intake and exit were provided, reasons for no contraceptive method (at intake and exit) are omitted from this Bundle."/>
+<<<<<<< HEAD
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-encounter-submission-full-report|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/encounter-submission-full-report"/>
          <groupingId value="new-group11"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+<<<<<<< HEAD
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-example-opa-hiv-1-2-result-final.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/example-opa-hiv-1-2-result-final"/>
+         </reference>
+         <name value="HIV Lab Result example - Final"/>
+         <description value="HIV Lab Result example - Final"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-hiv-1-2-result|2.0.0"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-example-opa-hiv-1-2-result-prelim.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/example-opa-hiv-1-2-result-prelim"/>
+         </reference>
+         <name value="HIV Lab Result example - Preliminary"/>
+         <description value="HIV Lab Result example - Preliminary"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-hiv-1-2-result|2.0.0"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-example-opa-hpv-result-final.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/example-opa-hpv-result-final"/>
+         </reference>
+         <name value="HPV Lab Result example - Final"/>
+         <description value="HPV Lab Result example - Final"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-hpv-result|2.0.0"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-example-opa-hpv-result-prelim.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/example-opa-hpv-result-prelim"/>
+         </reference>
+         <name value="HPV Lab Result example - Preliminary"/>
+         <description value="HPV Lab Result example - Preliminary"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-hpv-result|2.0.0"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-example-opa-household-income.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/example-opa-household-income"/>
+         </reference>
+         <name value="Household Income example"/>
+         <description value="Household Income example"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-household-income|2.0.0"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-example-opa-household-size.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/example-opa-household-size"/>
+         </reference>
+         <name value="Household Size example"/>
+         <description value="Household Size example"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-household-size|2.0.0"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-example-opa-neisseria-gonorrhoeae-result-final.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/example-opa-neisseria-gonorrhoeae-result-final"/>
+         </reference>
+         <name value="Neisseria Gonorrhoeae Lab Result example - Final"/>
+         <description value="Neisseria Gonorrhoeae Lab Result example - Final"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-neisseria-gonorrhoeae-result|2.0.0"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-example-opa-neisseria-gonorrhoeae-result-prelim.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/example-opa-neisseria-gonorrhoeae-result-prelim"/>
+         </reference>
+         <name value="Neisseria Gonorrhoeae Lab Result example - Preliminary"/>
+         <description value="Neisseria Gonorrhoeae Lab Result example - Preliminary"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-neisseria-gonorrhoeae-result|2.0.0"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-example-opa-no-contraceptive-method-exit.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/example-opa-no-contraceptive-method-exit"/>
+         </reference>
+         <name value="No Contraceptive Method - Exit example"/>
+         <description value="No Contraceptive Method - Exit example"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-no-contraceptive-reason-exit|2.0.0"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-example-opa-no-contraceptive-method-intake.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/example-opa-no-contraceptive-method-intake"/>
+         </reference>
+         <name value="No Contraceptive Method - Intake example"/>
+         <description value="No Contraceptive Method - Intake example"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-no-contraceptive-reason-intake|2.0.0"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Encounter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Encounter-example-opa-encounter.html"/>
+         </extension>
+         <reference>
+            <reference value="Encounter/example-opa-encounter"/>
+         </reference>
+         <name value="OPA Encounter example"/>
+         <description value="OPA Encounter example"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-encounter|2.0.0"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Organization"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Organization-example-opa-fp-provider-organization.html"/>
+         </extension>
+         <reference>
+            <reference value="Organization/example-opa-fp-provider-organization"/>
+         </reference>
+         <name value="OPA Family Planning Clinic example"/>
+         <description value="OPA Family Planning Clinic example"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-fp-provider-organization|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
             <valueString value="Bundle"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -1057,6 +1876,7 @@
          <description value="This Bundle exemplifies the finalization of a Pap smear Lab Result Observation. Subsequent Lab Result Bundle.identifier SHALL match (system and value) the Bundle.identifier of the Bundle to which it is associated."/>
          <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner"/>
          <groupingId value="new-group11"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -1073,6 +1893,10 @@
          </reference>
          <name value="OPA Patient example"/>
          <description value="OPA Patient example"/>
+<<<<<<< HEAD
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-patient|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/opa-patient"/>
          <groupingId value="new-group3"/>
       </resource>
@@ -1093,6 +1917,7 @@
          <description value="OPA Encounter example"/>
          <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/opa-encounter"/>
          <groupingId value="new-group3"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -1109,8 +1934,49 @@
          </reference>
          <name value="OPA PractitionerRole example"/>
          <description value="OPA PractitionerRole example"/>
+<<<<<<< HEAD
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-practitioner-role|2.0.0"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-example-opa-pap-smear-result-final.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/example-opa-pap-smear-result-final"/>
+         </reference>
+         <name value="Pap Smear Lab Result example - Final"/>
+         <description value="Pap Smear Lab Result example - Final"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-pap-smear-result|2.0.0"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-example-opa-pap-smear-result-prelim.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/example-opa-pap-smear-result-prelim"/>
+         </reference>
+         <name value="Pap Smear Lab Result example - Preliminary"/>
+         <description value="Pap Smear Lab Result example - Preliminary"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-pap-smear-result|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/opa-practitioner-role"/>
          <groupingId value="new-group3"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -1127,6 +1993,10 @@
          </reference>
          <name value="Practitioner example (US Core)"/>
          <description value="US Core Practitioner example"/>
+<<<<<<< HEAD
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-practitioner|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <exampleBoolean value="true"/>
          <groupingId value="new-group3"/>
       </resource>
@@ -1148,6 +2018,7 @@
          <description value="OPA Family Planning Clinic example"/>
          <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fp-provider-organization"/>
          <groupingId value="new-group3"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -1162,10 +2033,17 @@
          <reference>
             <reference value="Observation/example-opa-blood-pressure"/>
          </reference>
+<<<<<<< HEAD
+         <name value="Pregnancy Counseling example"/>
+         <description value="Pregnancy Counseling example"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-pregnancy-counseling|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <name value="Blood Pressure example (US Core)"/>
          <description value="Blood Pressure example (US Core)"/>
          <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|6.1.0"/>
          <groupingId value="new-group3"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -1180,10 +2058,17 @@
          <reference>
             <reference value="Observation/example-opa-body-height"/>
          </reference>
+<<<<<<< HEAD
+         <name value="Pregnancy Intention example (US Core)"/>
+         <description value="Pregnancy intention example (DE#16). Pregnancy Intention Observations shall conform to US Core Pregnancy Intention profile"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-pregnancy-intent|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <name value="Body Height example (US Core)"/>
          <description value="Body Height example (US Core)"/>
          <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height|6.1.0"/>
          <groupingId value="new-group3"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -1198,10 +2083,35 @@
          <reference>
             <reference value="Observation/example-opa-body-weight"/>
          </reference>
+<<<<<<< HEAD
+         <name value="Pregnancy Status example (US Core)"/>
+         <description value="Pregnancy Status example (DE#15). Pregnancy Status Observations shall conform to US Core Pregnancy Status profile"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-pregnancy-status|2.0.0"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-example-opa-seeking-counseling.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/example-opa-seeking-counseling"/>
+         </reference>
+         <name value="Seeking Counseling example"/>
+         <description value="Seeking Counseling example"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-seeking-counseling|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <name value="Body Weight example (US Core)"/>
          <description value="Body Weight example (US Core)"/>
          <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight|6.1.0"/>
          <groupingId value="new-group3"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -1218,8 +2128,31 @@
          </reference>
          <name value="Smoking Status example (US Core)"/>
          <description value="Smoking Status example (US Core)"/>
+<<<<<<< HEAD
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Bundle"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Bundle-example-opa-subsequent-lab-result-submission-bundle.html"/>
+         </extension>
+         <reference>
+            <reference value="Bundle/example-opa-subsequent-lab-result-submission-bundle"/>
+         </reference>
+         <name value="Subsequent Lab Result Submission Bundle"/>
+         <description value="This Bundle exemplifies the finalization of a Pap smear Lab Result Observation. Subsequent Lab Result Bundle.identifier SHALL match (system and value) the Bundle.identifier of the Bundle to which it is associated."/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-subsequent-lab-results-submission|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus|6.1.0"/>
          <groupingId value="new-group3"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -1235,6 +2168,12 @@
             <reference value="Observation/example-opa-pregnancy-status"/>
             <display value="Pregnancy Status example"/>
          </reference>
+<<<<<<< HEAD
+         <name value="Syphilis Lab Result example - Final"/>
+         <description value="Syphilis Lab Result example - Final"/>
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-syphilis-result|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <name value="Pregnancy Status example (US Core)"/>
          <description value="Pregnancy Status example (DE#15). Pregnancy Status Observations shall conform to US Core Pregnancy Status profile"/>
          <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus|6.1.0"/>
@@ -1538,6 +2477,7 @@
          <description value="HIV Lab Result example - Preliminary"/>
          <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/hiv-1-2-result"/>
          <groupingId value="new-group9"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -1554,6 +2494,10 @@
          </reference>
          <name value="Syphilis Lab Result example - Preliminary"/>
          <description value="Syphilis Lab Result example - Preliminary"/>
+<<<<<<< HEAD
+         <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/fpar-syphilis-result|2.0.0"/>
+         <groupingId value="-ex-example"/>
+=======
          <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result"/>
          <groupingId value="new-group9"/>
       </resource>
@@ -1664,6 +2608,7 @@
          <description value="Syphilis Lab Result example - Final"/>
          <exampleCanonical value="http://oash.org/fhir/us/opa/StructureDefinition/syphilis-result"/>
          <groupingId value="new-group10"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -1734,6 +2679,17 @@
          </page>
          <page>
             <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="artifact_listing.html"/>
+            </extension>
+            <nameUrl value="artifact_listing.html"/>
+            <title value="Artifact Index"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+               <valueCode value="informative"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
                <valueUrl value="downloads.html"/>
             </extension>
             <nameUrl value="downloads.html"/>
@@ -1754,6 +2710,80 @@
             </title>
             <generation value="html"/>
             <page>
+<<<<<<< HEAD
+               <nameUrl value="StructureDefinition-fpar-encounter.html"/>
+               <title value="FPAR Encounter"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-encounter-submission-full-report.html"/>
+               <title value="FPAR Encounter Submission Full Report"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-fp-provider-organization.html"/>
+               <title value="FPAR Family Planning Provider Organization"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-chlamydia-result.html"/>
+               <title value="FPAR Lab Observation Chlamydia Trachomatis Result"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-hiv-1-2-result.html"/>
+               <title value="FPAR Lab Observation HIV 1 and 2 Result"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-hpv-result.html"/>
+               <title value="FPAR Lab Observation HPV Result"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-neisseria-gonorrhoeae-result.html"/>
+               <title value="FPAR Lab Observation Neisseria Gonorrhoeae Result"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-pap-smear-result.html"/>
+               <title value="FPAR Lab Observation Pap Smear Result"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-syphilis-result.html"/>
+               <title value="FPAR Lab Observation Syphilis Result"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-blood-pressure.html"/>
+               <title value="FPAR Observation Blood Pressure"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-body-height.html"/>
+               <title value="FPAR Observation Body Height"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-body-weight.html"/>
+               <title value="FPAR Observation Body Weight"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-contraceptive-counseling-was-provided.html"/>
+               <title value="FPAR Observation Contraceptive Counseling Was Provided"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-contraceptive-method-exit.html"/>
+               <title value="FPAR Observation Contraceptive Method - Exit"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-contraceptive-method-intake.html"/>
+               <title value="FPAR Observation Contraceptive Method - Intake"/>
+=======
                <nameUrl value="StructureDefinition-encounter-submission-full-report.html"/>
                <title value="Encounter Submission Full Report"/>
                <generation value="generated"/>
@@ -1761,14 +2791,34 @@
             <page>
                <nameUrl value="StructureDefinition-subsequent-lab-results-submission.html"/>
                <title value="Subsequent Lab Result Submission"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-opa-patient.html"/>
-               <title value="OPA Patient"/>
+               <nameUrl value="StructureDefinition-fpar-contraceptive-provision.html"/>
+               <title value="FPAR Observation Contraceptive Provision"/>
                <generation value="generated"/>
             </page>
             <page>
+<<<<<<< HEAD
+               <nameUrl value="StructureDefinition-fpar-household-income.html"/>
+               <title value="FPAR Observation Household Income"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-household-size.html"/>
+               <title value="FPAR Observation Household Size"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-no-contraceptive-reason-exit.html"/>
+               <title value="FPAR Observation No Contraceptive Reason Exit"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-no-contraceptive-reason-intake.html"/>
+               <title value="FPAR Observation No Contraceptive Reason Intake"/>
+=======
                <nameUrl value="StructureDefinition-opa-encounter.html"/>
                <title value="OPA Encounter"/>
                <generation value="generated"/>
@@ -1831,19 +2881,124 @@
             <page>
                <nameUrl value="StructureDefinition-contraceptive-counseling-was-provided.html"/>
                <title value="Contraceptive Counseling Was Provided"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-pregnancy-counseling.html"/>
-               <title value="Pregnancy Counseling"/>
+               <nameUrl value="StructureDefinition-fpar-pregnancy-counseling.html"/>
+               <title value="FPAR Observation Pregnancy Counseling"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-seeking-counseling.html"/>
-               <title value="Seeking Counseling"/>
+               <nameUrl value="StructureDefinition-fpar-pregnancy-intent.html"/>
+               <title value="FPAR Observation Pregnancy Intent"/>
                <generation value="generated"/>
             </page>
             <page>
+<<<<<<< HEAD
+               <nameUrl value="StructureDefinition-fpar-pregnancy-status.html"/>
+               <title value="FPAR Observation Pregnancy Status"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-seeking-counseling.html"/>
+               <title value="FPAR Observation Seeking Counseling"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-patient.html"/>
+               <title value="FPAR Patient"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-practitioner.html"/>
+               <title value="FPAR Practitioner"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-practitioner-role.html"/>
+               <title value="FPAR Practitioner Role"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-subsequent-lab-results-submission.html"/>
+               <title value="FPAR Subsequent Lab Result Submission"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-english-proficiency.html"/>
+               <title value="FPAR English Proficiency Extension"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-insurance-type.html"/>
+               <title value="FPAR Insurance Coverage Type Extension"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-fpar-payer-for-visit.html"/>
+               <title value="FPAR Payer for Visit Extension"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-2.16.840.1.113762.1.4.1166.211-20230818.html"/>
+               <title value="FPAR Contraceptive Discussion Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-2.16.840.1.113762.1.4.1166.210-20230708.html"/>
+               <title value="FPAR Pap Smear Results Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-2.16.840.1.113762.1.4.1166.209-20230708.html"/>
+               <title value="FPAR Yes and No Answers Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-example-opa-blood-pressure.html"/>
+               <title value="Blood Pressure example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-example-opa-body-height.html"/>
+               <title value="Body Height example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-example-opa-body-weight.html"/>
+               <title value="Body Weight example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-example-opa-chlamydia-result-final.html"/>
+               <title value="Chlamydia Lab Result example - Final"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-example-opa-chlamydia-result-prelim.html"/>
+               <title value="Chlamydia Lab Result example - Preliminary"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-example-opa-contraceptive-counseling-given.html"/>
+               <title value="Contraceptive Counseling given example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-example-opa-contraceptive-counseling-not-given.html"/>
+               <title value="Contraceptive Counseling not given example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-example-opa-contraceptive-method-exit.html"/>
+               <title value="Contraceptive Method - Exit Observation example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-example-opa-contraceptive-method-intake.html"/>
+               <title value="Contraceptive Method - Intake Observation example"/>
+=======
                <nameUrl value="StructureDefinition-household-income.html"/>
                <title value="Household Income"/>
                <generation value="generated"/>
@@ -1881,6 +3036,7 @@
             <page>
                <nameUrl value="StructureDefinition-hpv-result.html"/>
                <title value="HPV Result"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
                <generation value="generated"/>
             </page>
             <page>
@@ -1899,6 +3055,10 @@
                <generation value="generated"/>
             </page>
             <page>
+<<<<<<< HEAD
+               <nameUrl value="Observation-example-opa-hiv-1-2-result-final.html"/>
+               <title value="HIV Lab Result example - Final"/>
+=======
                <nameUrl value="Bundle-example-opa-subsequent-lab-result-submission-bundle.html"/>
                <title value="Subsequent Lab Result Submission Bundle"/>
                <generation value="generated"/>
@@ -1906,6 +3066,7 @@
             <page>
                <nameUrl value="Patient-example-opa-patient.html"/>
                <title value="OPA Patient example"/>
+>>>>>>> parent of 9fb15f6 (Converted IG to FSH)
                <generation value="generated"/>
             </page>
             <page>
