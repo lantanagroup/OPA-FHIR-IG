@@ -1,0 +1,72 @@
+canonical: http://oash.org/fhir/us/opa
+fhirVersion: 4.0.1
+# FSHOnly: true
+applyExtensionMetadataToRoot: false
+id: oash.fhir.us.opa
+name: FamilyPlanningAnnualReport
+status: active
+version: 2.0.0
+packageId: oash.fhir.us.opa
+title: Family Planning Annual Report (FPAR) Implementation Guide
+date: 2026-09-28
+releaseLabel: Release 2 - draft
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: trial-use
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+    valueInteger: 2
+contact:
+  - name: Lantana Consulting Group
+    telecom:
+      - system: url
+        value: https://www.lantanagroup.com/
+jurisdiction: urn:iso:std:iso:3166#US "United States of America"
+copyrightYear: 2020+
+
+parameters:
+  apply-jurisdiction: true
+  path-expansion-params: Parameters-expansion-parameters-opa.json
+  auto-oid-root: 2.16.840.1.113762.1.4.1166.100
+  pin-canonicals: pin-all
+
+
+dependencies:
+  hl7.terminology.r4:
+    version: 7.4.0
+    uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
+    id: hl7tx
+  hl7.fhir.uv.extensions.r4:
+    version: 5.3.0
+    uri: http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions
+    id: hl7ext
+  hl7.fhir.us.core:
+    version: 6.1.0
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#6.1.0
+    id: hl7fhiruscore
+  us.nlm.vsac:
+    version: 0.11.0
+    uri: http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac
+    id: usnlmvsac
+
+menu:
+  IG Home: index.html
+  Table of Contents: toc.html
+  Overview: overview.html
+  Data Elements: data_elements.html
+  Reuse of External Profiles: reuse_of_external_profiles.html
+  Artifact Index: artifact_listing.html
+  Downloads: downloads.html
+
+pages:
+  index.md:
+    title: Family Planning Annual Report
+  overview.md:
+    title: Overview
+  data_elements.md:
+    title: Data Elements
+  reuse_of_external_profiles.md:
+    title: Reuse of External Profiles
+  artifact_listing.md:
+    title: Artifact Index
+  downloads.md:
+    title: Downloads

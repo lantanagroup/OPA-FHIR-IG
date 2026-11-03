@@ -1,0 +1,35 @@
+ValueSet: FPARContraceptiveDiscussion
+Id: 2.16.840.1.113762.1.4.1166.211-20230818
+Title: "FPAR Contraceptive Discussion Value Set"
+Description: "A value set used in the Office of Population Affairs Title X Family Planning Annual Report (FPAR)."
+* ^meta.versionId = "9"
+* ^meta.lastUpdated = "2026-07-06T10:10:21.000-04:00"
+* ^meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm"
+* ^meta.profile[+] = "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+* ^language = #en
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-author"
+* ^extension[=].valueContactDetail.name = "Office of Population Affairs"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate"
+* ^extension[=].valueDate = "2023-08-18"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate"
+* ^extension[=].valueDateTime = "2023-08-18"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod"
+* ^extension[=].valuePeriod.start = "2023-08-18"
+* ^url = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.211"
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113762.1.4.1166.211"
+* ^version = "20230818"
+* ^status = #retired
+* ^experimental = false
+* ^date = "2026-07-06T10:10:21-04:00"
+* ^publisher = "Office of Population Affairs"
+* ^jurisdiction.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* ^jurisdiction.extension.valueCode = #unknown
+* ^purpose = "(Clinical Focus: The purpose of this value set is to identify concepts for a response to contraceptive need discussion.),(Data Element Scope: This value set may use a model element related to Observation.),(Inclusion Criteria: Includes concepts that describe a reason for discussing contraception.),(Exclusion Criteria: No exclusions.)"
+* $loinc#LA32389-1 "No - I do not want to talk about contraception today because I am here for something else"
+* $loinc#LA32390-9 "No - This question does not apply to me/I prefer not to answer"
+* $loinc#LA32391-7 "No - I am unsure or don't want to use contraception"
+* $loinc#LA32392-5 "No - I am hoping to become pregnant in the near future"
+* $loinc#LA32393-3 "No - I am already using contraception"
+* $loinc#LA33-6 "Yes"

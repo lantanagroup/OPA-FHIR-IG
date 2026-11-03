@@ -1,0 +1,113 @@
+
+
+
+groups:
+  submission:
+    name: Submission Bundles Profiles
+    resources:
+      - StructureDefinition/fpar-encounter-submission-full-report
+      - StructureDefinition/fpar-subsequent-lab-results-submission
+
+  general-profiles:
+    name: FPAR General Profiles
+    resources:
+      - StructureDefinition/fpar-patient
+      - StructureDefinition/fpar-encounter
+      - StructureDefinition/fpar-fp-provider-organization
+      - StructureDefinition/fpar-practitioner-role
+      - StructureDefinition/fpar-practitioner
+      
+  extensions:
+    name: OPA Extensions
+    resources:
+      - StructureDefinition/fpar-payer-for-visit
+      - StructureDefinition/fpar-insurance-type
+      - StructureDefinition/fpar-english-proficiency  
+
+  fp-observations:
+    name: Family Planning Observation Profiles
+    resources:
+      - StructureDefinition/fpar-contraceptive-method-intake
+      - StructureDefinition/fpar-contraceptive-method-exit
+      - StructureDefinition/fpar-no-contraceptive-reason-intake
+      - StructureDefinition/fpar-no-contraceptive-reason-exit
+      - StructureDefinition/fpar-contraceptive-provision
+      - StructureDefinition/fpar-contraceptive-counseling-was-provided
+      - StructureDefinition/fpar-pregnancy-counseling
+      - StructureDefinition/fpar-seeking-counseling
+      - StructureDefinition/fpar-household-income
+      - StructureDefinition/fpar-household-size
+      - StructureDefinition/fpar-pregnancy-intent
+      - StructureDefinition/fpar-pregnancy-status
+
+  lab-testing-profiles:
+    name: Lab Testing Profiles
+    resources:
+      - StructureDefinition/fpar-neisseria-gonorrhoeae-result
+      - StructureDefinition/fpar-chlamydia-result
+      - StructureDefinition/fpar-pap-smear-result
+      - StructureDefinition/fpar-hiv-1-2-result
+      - StructureDefinition/fpar-syphilis-result
+      - StructureDefinition/fpar-hpv-result
+
+  submission-bundle-examples:
+    name: Submission Bundle Examples
+    resources:
+      - Bundle/example-opa-full-encounter-submission-bundle-1
+      - Bundle/example-opa-full-encounter-submission-bundle-2
+      - Bundle/example-opa-full-encounter-submission-bundle-3
+      - Bundle/example-opa-subsequent-lab-result-submission-bundle
+
+  general-examples:
+    name: FPAR General Examples
+    resources:
+      - Patient/example-opa-patient
+      - Encounter/example-opa-encounter
+      - PractitionerRole/example-opa-practitioner-role
+      - Practitioner/example-opa-practitioner
+      - Organization/example-opa-fp-provider-organization
+      - Observation/example-opa-blood-pressure
+      - Observation/example-opa-body-height
+      - Observation/example-opa-body-weight
+      - Observation/example-opa-smoking-status
+      - Observation/example-opa-pregnancy-status
+      - Observation/example-opa-pregnancy-intent
+
+  fp-observation-examples:
+    name: Family Planning Observation Examples
+    resources:
+      - Observation/example-opa-contraceptive-counseling-not-given
+      - Observation/example-opa-contraceptive-counseling-given
+      - Observation/example-opa-contraceptive-method-intake
+      - Observation/example-opa-contraceptive-method-exit
+      - Observation/example-opa-no-contraceptive-method-intake
+      - Observation/example-opa-no-contraceptive-method-exit
+      - Observation/example-opa-pregnancy-counseling
+      - Observation/example-opa-seeking-counseling
+      - Observation/example-opa-household-income
+      - Observation/example-opa-household-size
+
+  lab-preliminary-examples:
+    name: Lab Testing Examples - Preliminary
+    resources:
+      - Observation/example-opa-pap-smear-result-prelim
+      - Observation/example-opa-chlamydia-result-prelim
+      - Observation/example-opa-hpv-result-prelim
+      - Observation/example-opa-neisseria-gonorrhoeae-result-prelim
+      - Observation/example-opa-hiv-1-2-result-prelim
+      - Observation/example-opa-syphilis-result-prelim
+
+  lab-final-examples:
+    name: Lab Testing Examples - Final
+    resources:
+      - Observation/example-opa-pap-smear-result-final
+      - Observation/example-opa-chlamydia-result-final
+      - Observation/example-opa-hpv-result-final
+      - Observation/example-opa-neisseria-gonorrhoeae-result-final
+      - Observation/example-opa-hiv-1-2-result-final
+      - Observation/example-opa-syphilis-result-final
+
+  terminology:
+    name: FPAR Terminology
+    resources:
+      - Parameters/expansion-parameters-opa
